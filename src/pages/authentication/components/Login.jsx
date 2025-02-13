@@ -128,7 +128,7 @@ const Login = () => {
         </NavLink>
       </div>
 
-      <div className="mt-4 text-center">
+      {/*<div className="mt-4 text-center">
         <p className="text-sm">
           Pas de compte?{" "}
           <NavLink
@@ -138,7 +138,7 @@ const Login = () => {
             Créez-en un
           </NavLink>
         </p>
-      </div>
+      </div>*/}
     </div>
   );
 };
