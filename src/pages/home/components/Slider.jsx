@@ -147,10 +147,10 @@ const Slider = () => {
                   compétences recherchées et reconnues par les employeurs
                 </p>
                 <NavLink
-                  to="/formations/categorie/btp"
+                  to="/formations/juridique/:categorie"
                   className="flex items-center justify-center rounded-full text-white font-medium md:text-base text-xs px-10 py-4 bg-primary hover:bg-secondary hover:text-primary transition-all ease-in-out duration-500"
                 >
-                  Notre catalogue Bâtiment
+                  Notre catalogue Juridique et adminitrative
                 </NavLink>
                 <div className="md:flex hidden absolute -bottom-6 left-[calc(50%+120px)]">
                   <svg
