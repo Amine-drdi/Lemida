@@ -19,12 +19,12 @@ const Hero = () => {
             >
               Demander une information
             </NavLink>
-            <NavLink
+           {/* <NavLink
               to="/formations/categorie/sante"
               className="bg-white px-6 py-3 rounded-full hover:opacity-90 flex items-center w-fit gap-2"
             >
               <span>Toutes les formations</span> <FaLongArrowAltRight />
-            </NavLink>
+            </NavLink>*/}
           </div>
         </div>
         <div className="relative max-md:hidden">
