@@ -1,0 +1,45 @@
+export const medicalJobFilters = [
+  "Médecins",
+  "Infirmiers",
+  "Masseurs-kinésithérapeutes",
+  "Chirurgiens-dentistes",
+  "Gynécologues",
+  "Sages-femmes",
+  "Pédiatres",
+  "Pharmaciens",
+  "Orthophonistes",
+  "Podologues",
+  "Dermatologues",
+  "Médecins cardio-vasculaires",
+  "Aides-soignants",
+  "Psychiatres",
+  "Gériatres",
+  "Rhumatologues",
+  "Neurologues",
+  "Préparateurs en pharmacie",
+];
+export const btpJobFilters = [
+  "CACES R482 catégorie A, B1 et F",
+  "CACES R486 catégorie A et B",
+  "CACES R489 catégorie 1A, 3 et 5",
+  "Echafaudage roulant",
+  "Montage démontage échafaudage fixe R408",
+  "Habilitations électriques B1V, B2V, BR, BC, BE, H1V, B2V, HE, HC",
+  "Mise en oeuvre du développement durable dans les TPE PME",
+  "Préparation aux Habilitations Électriques B0/H0/H0V",
+  "Travail en hauteur",
+  "SST",
+];
+export const aidFilters = [
+  "DPC",
+  "FIF PL",
+  "FAF PM",
+  "Pôle Emploi",
+  "Employeur et OPCO",
+  "Financement Personnel",
+];
+export const durationFilters = [
+  "0 à 8 heures",
+  "9-18 heures",
+  "Plus de 19 heures",
+];
