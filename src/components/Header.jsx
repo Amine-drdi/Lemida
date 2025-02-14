@@ -117,7 +117,20 @@ const Header = () => {
 >
   {/* Texte avec effet de couleur blanche au hover */}
   <span className="relative z-10 group-hover:text-white transition-all">
-    Formations
+    
+  <NavLink
+          to="/AllTrainings"
+          className={({ isActive }) =>
+            [
+              isActive
+                ? "text-primary border-b-2 border-primary"
+                : "text-nav_color/85 border-b-2 border-transparent",
+              "w-fit h-full flex items-center",
+            ].join(" ")
+          }
+        >
+          Formations
+        </NavLink>
   </span>
 
   {/* Icône avec effet de rotation */}

@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import LoadingSpinner from "./components/LoadingSpinner";
 
 const Home = React.lazy(() => import("./pages/home"));
+const AllTrainings = React.lazy(() => import("./pages/home/AllTrainings"));
 const Trainings = React.lazy(() => import("./pages/trainings"));
 const Trainings2 = React.lazy(() => import("./pages/trainingsJuridique"));
 const Trainings3 = React.lazy(() => import("./pages/trainingsBtp"));
@@ -66,6 +67,14 @@ const AppRoutes = () => {
         element={
           <React.Suspense fallback={<LoadingSpinner />}>
             <Home />
+          </React.Suspense>
+        }
+      />
+      <Route
+          path="/AllTrainings"
+        element={
+          <React.Suspense fallback={<LoadingSpinner />}>
+            <AllTrainings />
           </React.Suspense>
         }
       />
