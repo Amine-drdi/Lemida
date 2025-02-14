@@ -125,11 +125,13 @@ const Header = () => {
               isActive
                 ? "text-primary border-b-2 border-primary"
                 : "text-nav_color/85 border-b-2 border-transparent",
-              "w-fit h-full flex items-center",
+              "w-fit h-full flex items-center ",
             ].join(" ")
           }
         >
+          <span className="relative z-10 group-hover:text-white transition-all">
           Formations
+          </span>
         </NavLink>
   </span>
 
