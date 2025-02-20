@@ -5,23 +5,21 @@ import { Comptabilite } from '../../assets/data/comptabilite'; // Assurez-vous d
 const FormationDetails = () => {
   const { id } = useParams(); // Récupère l'ID de l'URL
   const formation = Comptabilite.find((f) => f.id === parseInt(id)); // Conversion de l'ID en entier
-   // State pour gérer l'ouverture des sections du programme
-   const [openSections, setOpenSections] = useState({});
+  // State pour gérer l'ouverture des sections du programme
+  const [openSections, setOpenSections] = useState({});
 
-   // Fonction pour ouvrir/fermer une section
-   const toggleSection = (index) => {
-     setOpenSections((prev) => ({
-       ...prev,
-       [index]: !prev[index],
-     }));
-   };
- 
+  // Fonction pour ouvrir/fermer une section
+  const toggleSection = (index) => {
+    setOpenSections((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
+
   if (!formation) {
     return <div>Formation non trouvée</div>;
   }
 
-
- 
   // Définir les couleurs en fonction de l'ID
   const colors = [
     "bg-red-500",
@@ -75,11 +73,6 @@ const FormationDetails = () => {
           </ul>
         </div>
 
-        {/* Programme de la formation */}
-        <div className="max-w-4xl mx-auto p-6">
-      <div className="bg-white rounded-lg shadow-lg p-6">
-        <h2 className="text-xl font-semibold mb-4">PROGRAMME DE LA FORMATION</h2>
-
         {/* Programme de la formation avec accordéon */}
         <div className="mb-8">
           <h2 className="text-xl font-semibold mb-4 flex items-center">
@@ -121,8 +114,7 @@ const FormationDetails = () => {
             <p className="text-gray-600">Aucun programme défini.</p>
           )}
         </div>
-      </div>
-    </div>
+
         {/* Profil des bénéficiaires */}
         <div className="mb-8">
           <h2 className="text-xl font-semibold mb-4 flex items-center">
@@ -142,13 +134,13 @@ const FormationDetails = () => {
         </div>
 
         {/* Infos supplémentaires */}
-        <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
-          <div className="flex items-center gap-4">
-            <div className="flex flex-col">
+        <div className="flex flex-col sm:flex-row items-center justify-between p-4 bg-gray-50 rounded-lg">
+          <div className="flex flex-col sm:flex-row sm:gap-4 w-full sm:w-auto">
+            <div className="flex flex-col mb-4 sm:mb-0">
               <span className="text-sm text-gray-600">Durée :</span>
               <span className="font-medium">{formation.duration}</span>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col mb-4 sm:mb-0">
               <span className="text-sm text-gray-600">Formateur :</span>
               <span className="font-medium">{formation.instructors}</span>
             </div>
