@@ -35,7 +35,7 @@ const Footer = () => {
                </div>
                    </div>
  {/* Navigation sections */}
-  <div className="grid grid-cols-1 sm:grid-cols md:grid-cols-4 gap-0 text-center md:text-left ">
+  <div className="grid grid-cols-1 sm:grid-cols md:grid-cols-4 gap-[5px] text-center md:text-left">
   {/* Découvrir Lemida */}
   <div className="ml-100 ">
     <p className="text-sm font-medium mb-2">Découvrir Lemida</p>
