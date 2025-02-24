@@ -1016,8 +1016,6 @@ programme: [
                 "Appliquer les connaissances acquises à travers des projets pratiques",
                 "Analyser des études de cas réels utilisant V-Ray pour SketchUp"
                 ] },
-               
-
                   ]  
       },
       {
@@ -1035,7 +1033,108 @@ programme: [
         "Capturer et enregistrer une image, utiliser des outils variés de sélection et manipuler les images.\n" +
         "Créer et utiliser des calques, travailler avec du texte, utiliser des effets et des filtres.\n" +
         "Utiliser des outils de dessin et peinture.\n" +
-        "Préparer les images pour l’impression ou la publication."
+        "Préparer les images pour l’impression ou la publication.",
+        programme: [
+          {
+            title: "Télécharger le logiciel",
+            items: [
+            " Comment télécharger le logiciel ?"
+            ]
+          },
+          {
+            title: "PhotoShop - Prise en main",
+            items: [
+              "PhotoShop, à quoi ça sert ?",
+              "Ouvrons PhotoShop",
+             " Création d’un nouveau document",
+            "  L’interface de PhotoShop",
+             " Ouvrir et importer une image",
+             " Enumération des outils",
+              "Déplacez vous dans le document",
+             " Comment enregistrer",
+              "Autres options pour zoomer",
+              "Personnaliser son espace de travail",
+            ]
+          },
+          { title: " Les images - Les bases", items: [
+           " Informations sur une image ouverte",
+          "  Les pixels, c’est quoi ?",
+            "Redimensionner une image",
+           " Transformer la taille d’une image",
+           " Comment faire une rotation d’une image",
+          "  Effet miroir : faire des symétries",
+          "  Cadre photo",
+          "  Outil recadrage",
+           " Corriger l’inclinaison d’une image",
+           " Réglages automatiques d’une image",
+          "  Luminosité - Contraste",
+          "  Réglage de la courbe",
+           " Réglage en noir et blanc",
+          ] },
+          { title: "Les calques - Les bases", items: [
+                  "Ouvrons un fichier PhotoShop",
+                  "Qu’est-ce qu’un calque ?",
+                "  Les différents calques",
+                  "Créer un nouveau calque - Renommer et disposer les calques",
+                 " Les différentes actions sur les calques",
+                 " Déplacer et redimensionner les calques",
+                 " Présentation de l’exercice",
+                 " Solution de l’exercice",
+          ] },
+          { title: "La Sélection - Les bases", items: [
+           " Sélectionner un sujet",
+           " Outil de sélection rapide",
+            "Outil baguette magique",
+           " Outil de sélection d’objet",
+           " Outil Lasso",
+           " Outil de sélection Rectangle et Ellipse",
+            ] },
+            { title: "La couleur - Les bases", items: [
+                 "Calque de remplissage - Mettre un fond de couleur",
+                " Pot de peinture",
+                 "Introduction au dégradé",
+                " Outil dégradé : plus de détails",
+                " Le pinceau",
+                " Différence entre RVB et CMJN",
+              ] },
+              { title: "Le texte - Les bases", items: [
+                "Exercice texte - Ouvrir et recadrer",
+                "Générer du texte",
+                "Changer les propriétés du texte",
+              "  Exercice texte - Trouver une typo",
+               " Bloc de texte",
+                "Exercice texte - Finaliser la mise en page",
+                ] },
+                { title: "Les formes - Les bases", items: [
+                     "Générer un rectangle et changer les paramètres",
+                     "Créer d’autres formes",
+                     "Modifier les formes",
+                  ] },
+                  { title: "Fonctions graphiques et effets", items: [
+                     "Option tablette graphique",
+                     "Traitement par lot",
+                     " Effet Flou",
+                      " Filtre Rendu",
+                      "Filtre Pixellisation",
+                     " Fluidité - Portrait",
+                      " Fluidité – Corps",
+                       "Mise en forme du texte",
+                       "Filtre bruit",
+                      " Filtre de déformation",
+                      " Script Action",
+                 ] },
+                 { title: "Géométrie et corrections de l’image", items: [
+                  "Redresser l’image - Perspective",
+                  "Correction de la densité - Outil densité",
+                 " Outils : Netteté - Doigt - Goutte",
+                  "Paramètre forme pinceau",
+                 " Création forme de pinceau",
+              ] },
+              { title: " Export et impression", items: [
+                 "Les différents exports",
+                "Imprimer et publier ses créations"
+            ] },
+                  ]  
       },
       {
         id: 12,
@@ -1052,7 +1151,115 @@ programme: [
 "Capturer et enregistrer une image, utiliser des outils variés de sélection et manipuler les images.\n" +
 "Créer et utiliser des calques, travailler avec du texte, utiliser des effets et des filtres.\n" +
 "Utiliser des outils de dessin et peinture.\n" +
-"Préparer les images pour l’impression ou la publication."
+"Préparer les images pour l’impression ou la publication.",
+programme: [
+  {
+    title: "Télécharger le logiciel",
+    items: [
+    " Comment télécharger le logiciel ?"
+    ]
+  },
+  {
+    title: "PhotoShop - Prise en main",
+    items: [
+      "PhotoShop, à quoi ça sert ?",
+      "Ouvrons PhotoShop",
+     " Création d’un nouveau document",
+    "  L’interface de PhotoShop",
+     " Ouvrir et importer une image",
+     " Enumération des outils",
+      "Déplacez vous dans le document",
+     " Comment enregistrer",
+      "Autres options pour zoomer",
+      "Personnaliser son espace de travail",
+    ]
+  },
+  { title: " Les images - Les bases", items: [
+   " Informations sur une image ouverte",
+  "  Les pixels, c’est quoi ?",
+    "Redimensionner une image",
+   " Transformer la taille d’une image",
+   " Comment faire une rotation d’une image",
+  "  Effet miroir : faire des symétries",
+  "  Cadre photo",
+  "  Outil recadrage",
+   " Corriger l’inclinaison d’une image",
+   " Réglages automatiques d’une image",
+  "  Luminosité - Contraste",
+  "  Réglage de la courbe",
+   " Réglage en noir et blanc",
+  ] },
+  { title: "Les calques - Les bases", items: [
+          "Ouvrons un fichier PhotoShop",
+          "Qu’est-ce qu’un calque ?",
+        "  Les différents calques",
+          "Créer un nouveau calque - Renommer et disposer les calques",
+         " Les différentes actions sur les calques",
+         " Déplacer et redimensionner les calques",
+         " Présentation de l’exercice",
+         " Solution de l’exercice",
+  ] },
+  { title: "La Sélection - Les bases", items: [
+   " Sélectionner un sujet",
+   " Outil de sélection rapide",
+    "Outil baguette magique",
+   " Outil de sélection d’objet",
+   " Outil Lasso",
+   " Outil de sélection Rectangle et Ellipse",
+    ] },
+    { title: "La couleur - Les bases", items: [
+         "Calque de remplissage - Mettre un fond de couleur",
+        " Pot de peinture",
+         "Introduction au dégradé",
+        " Outil dégradé : plus de détails",
+        " Le pinceau",
+        " Différence entre RVB et CMJN",
+      ] },
+      { title: "Le texte - Les bases", items: [
+        "Exercice texte - Ouvrir et recadrer",
+        "Générer du texte",
+        "Changer les propriétés du texte",
+      "  Exercice texte - Trouver une typo",
+       " Bloc de texte",
+        "Exercice texte - Finaliser la mise en page",
+        ] },
+        { title: "Les formes - Les bases", items: [
+             "Générer un rectangle et changer les paramètres",
+             "Créer d’autres formes",
+             "Modifier les formes",
+          ] },
+          { title: "Fonctions graphiques et effets", items: [
+             "Option tablette graphique",
+             "Traitement par lot",
+             " Effet Flou",
+              " Filtre Rendu",
+              "Filtre Pixellisation",
+             " Fluidité - Portrait",
+              " Fluidité – Corps",
+               "Mise en forme du texte",
+               "Filtre bruit",
+              " Filtre de déformation",
+              " Script Action",
+         ] },
+         { title: "Géométrie et corrections de l’image", items: [
+          "Redresser l’image - Perspective",
+          "Correction de la densité - Outil densité",
+         " Outils : Netteté - Doigt - Goutte",
+          "Paramètre forme pinceau",
+         " Création forme de pinceau",
+      ] },
+      { title: " Export et impression", items: [
+         "Les différents exports",
+        "Imprimer et publier ses créations"
+    ] },
+    { title: "Les calques", items: [
+        "Options des calques",
+        "Lier des calques",
+        "Style de calque",
+ ] },
+        
+          ]  
+ 
       },
       {
         id: 13,
@@ -1069,7 +1276,201 @@ programme: [
 "Capturer et enregistrer une image, utiliser des outils variés de sélection et manipuler les images.\n" +
 "Créer et utiliser des calques, travailler avec du texte, utiliser des effets et des filtres.\n" +
 "Utiliser des outils de dessin et peinture.\n" +
-"Préparer les images pour l’impression ou la publication."
+"Préparer les images pour l’impression ou la publication.",
+programme: [
+  {
+    title: "Télécharger le logiciel",
+    items: [
+    " Comment télécharger le logiciel ?"
+    ]
+  },
+  {
+    title: "PhotoShop - Prise en main",
+    items: [
+      "PhotoShop, à quoi ça sert ?",
+      "Ouvrons PhotoShop",
+     " Création d’un nouveau document",
+    "  L’interface de PhotoShop",
+     " Ouvrir et importer une image",
+     " Enumération des outils",
+      "Déplacez vous dans le document",
+     " Comment enregistrer",
+      "Autres options pour zoomer",
+      "Personnaliser son espace de travail",
+    ]
+  },
+  { title: " Les images - Les bases", items: [
+   " Informations sur une image ouverte",
+  "  Les pixels, c’est quoi ?",
+    "Redimensionner une image",
+   " Transformer la taille d’une image",
+   " Comment faire une rotation d’une image",
+  "  Effet miroir : faire des symétries",
+  "  Cadre photo",
+  "  Outil recadrage",
+   " Corriger l’inclinaison d’une image",
+   " Réglages automatiques d’une image",
+  "  Luminosité - Contraste",
+  "  Réglage de la courbe",
+   " Réglage en noir et blanc",
+  ] },
+  { title: "Les calques - Les bases", items: [
+          "Ouvrons un fichier PhotoShop",
+          "Qu’est-ce qu’un calque ?",
+        "  Les différents calques",
+          "Créer un nouveau calque - Renommer et disposer les calques",
+         " Les différentes actions sur les calques",
+         " Déplacer et redimensionner les calques",
+         " Présentation de l’exercice",
+         " Solution de l’exercice",
+  ] },
+  { title: "La Sélection - Les bases", items: [
+   " Sélectionner un sujet",
+   " Outil de sélection rapide",
+    "Outil baguette magique",
+   " Outil de sélection d’objet",
+   " Outil Lasso",
+   " Outil de sélection Rectangle et Ellipse",
+    ] },
+    { title: "La couleur - Les bases", items: [
+         "Calque de remplissage - Mettre un fond de couleur",
+        " Pot de peinture",
+         "Introduction au dégradé",
+        " Outil dégradé : plus de détails",
+        " Le pinceau",
+        " Différence entre RVB et CMJN",
+      ] },
+      { title: "Le texte - Les bases", items: [
+        "Exercice texte - Ouvrir et recadrer",
+        "Générer du texte",
+        "Changer les propriétés du texte",
+      "  Exercice texte - Trouver une typo",
+       " Bloc de texte",
+        "Exercice texte - Finaliser la mise en page",
+        ] },
+        { title: "Les formes - Les bases", items: [
+             "Générer un rectangle et changer les paramètres",
+             "Créer d’autres formes",
+             "Modifier les formes",
+          ] },
+          { title: "Fonctions graphiques et effets", items: [
+             "Option tablette graphique",
+             "Traitement par lot",
+             " Effet Flou",
+              " Filtre Rendu",
+              "Filtre Pixellisation",
+             " Fluidité - Portrait",
+              " Fluidité – Corps",
+               "Mise en forme du texte",
+               "Filtre bruit",
+              " Filtre de déformation",
+              " Script Action",
+         ] },
+         { title: "Géométrie et corrections de l’image", items: [
+          "Redresser l’image - Perspective",
+          "Correction de la densité - Outil densité",
+         " Outils : Netteté - Doigt - Goutte",
+          "Paramètre forme pinceau",
+         " Création forme de pinceau",
+      ] },
+      { title: " Export et impression", items: [
+         "Les différents exports",
+        "Imprimer et publier ses créations"
+    ] },
+    { title: "Les calques", items: [
+        "Options des calques",
+        "Lier des calques",
+        "Style de calque",
+ ] },
+ { title: "Interface expert", items: [
+       "Interface des calques",
+       "La loupe",
+      " Préférences dans PhotoShop",
+       "L’historique",
+      " Repère et repère commenté",
+       "Créer des plans de travail",
+      "Enregistrer les plans de travail",
+    "  Option du texte",
+] },
+{ title: " Géométrie", items: [
+    "  Texte 3D",
+    "  Lancer le rendu 3D",
+   "   Matière 3D",
+    "  3D image",
+     " De la 2D à la 3D",
+      "Déformation de la marionnette",
+      "Transformation perspective",
+      "Déformation personnalisée",
+     "alque de réglage",
+] }, 
+
+{ title: "Détourage et masques", items: [
+  "Plume : option des tracés",
+  "Masque de fusion sur les calques de réglage",
+ " Masque d’écrêtage",
+  "Les calques dynamiques - Les bases",
+  "Changement de la couleur du t-shirt",
+] }, 
+
+{ title: " Les filtres - Les bases", items: [
+   " Présentation des flous",
+  "Appliquer un flou gaussien",
+  "Flou et profondeur de champ",
+  "Présentation rapide de la galerie de filtres",
+] }, 
+
+{ title: "Les Images – Les retouches", items: [
+   "Outil tampon - A quoi ça sert ?",
+  "Outil correcteur localisé",
+ " Outil Correcteur",
+  "Outil Pièce",
+ " Déplacement de base sur le contenu",
+  "Exercice - Utiliser l’outil correcteur localisé",
+] },
+{ title: "Les calques - Nouveaux paramètres", items: [
+ " Introduction aux calques de réglages",
+  "Voyons les autres calques de réglages",
+ " Disposition des calques de réglages",
+ " Calques de fusion - Ombre portée",
+ " Autres calques de fusion",
+ " Changer l’opacité d’un calque",
+ " Masque de fusion – Introduction",
+] },
+{ title: "La sélection", items: [
+    "Intervertir la sélection",
+  "Dilater et contacter la sélection",
+  "Contour progressif de la sélection",
+  "Outil plume - Faire des lignes droites",
+  "Outil plume - Faire des courbes",
+  "Transformer son tracé en sélection",
+  "Modifier le tracé",
+  "Sélectionner la tasse avec la plume",
+ " Améliorer le contour",
+ ] },
+ { title: "La couleur - Plus de paramètres", items: [
+ " Formes de pinceaux plus avancées",
+  "Télécharger des formes de pinceaux",
+ " Utiliser l’outil Pipette",
+  "Le nuancier – Introduction",
+] },
+
+{ title: "Autres Fonctionnalités", items: [
+   "Présentation du changement de ciel",
+"  Changer un 1er ciel",
+  "Importer ses propres ciels",
+  "Aller plus loin avec cette fonction",
+  "Changer les expressions du visage - Portrait Femme",
+  "Changer les expressions du visage - Portrait Homme",
+  "Coloriser ces vieilles photos",
+ " Affichage - Extra et Règles",
+  "Affichage - Magnétisme",
+  "Installer des plugins sur PhotoShop",
+  "L’Historique, c’est quoi ?",
+ " Importer une image depuis son iPhone",
+ ] },
+
+          ]  
+        
       },
 
       {
@@ -1084,6 +1485,56 @@ programme: [
 "Acquérir des compétences fondamentales pour modéliser des objets en 3D.\n" +
 "Apprendre à sculpter des détails fins pour créer des modèles plus réalistes.\n" +
 "Utiliser la fonction Polypaint pour peindre directement sur vos modèles 3D.\n" +
-"Présenter efficacement vos modèles sculptés dans un rendu final de haute qualité."
+"Présenter efficacement vos modèles sculptés dans un rendu final de haute qualité.",
+programme: [
+  {
+    title: "Présentation de Zbrush",
+    items: [
+      "Histoire et développement du logiciel Zbrush.",
+      "Applications et cas d'utilisation dans les industries de la modélisation 3D, du jeu vidéo, du cinéma, etc.",
+      "Avantages et points forts de Zbrush par rapport à d'autres logiciels de sculpture 3D."
+    ]
+  },
+  {
+    title: "Interface utilisateur et navigation",
+    items: [
+    "Exploration de l'interface de Zbrush et de ses différentes sections (palettes, brosses, outils, etc.).",
+"Personnalisation de l'interface pour optimiser votre flux de travail.",
+"Utilisation des raccourcis clavier essentiels pour une navigation rapide et efficace.",
+    ]
+  },
+  { title: "Bases de la sculpture", items: [
+   " Prise en main des outils de sculpture de base (pinceau, tirer, pousser, etc.).",
+    "Utilisation des primitives 3D pour commencer la modélisation.",
+  "  Application des principes de la sculpture traditionnelle (formes, volumes, proportions) dans Zbrush."
+  ] },
+  { title: "Sculpture de détails fins", items: [
+    "Utilisation de brosses spécifiques pour ajouter des détails fins (rides, plis, textures).",
+"Utilisation de la fonction DynaMesh pour gérer la résolution de votre modèle tout en ajoutant des détails.",
+"Techniques de subdivision pour augmenter la densité de votre maillage sans perdre de détails.",
+  ] },
+  { title: "Utilisation avancée des brosses", items: [
+    
+    "Exploration des différentes catégories de brosses (Standard, ClayBuildup, Dam_Standard, etc.).",
+   " Personnalisation des brosses pour créer des effets uniques.",
+   " Utilisation de brosses spécifiques pour sculpter des matériaux organiques (peau, cheveux) et inorganiques (métal, pierre).",
+    ] },
+    { title: "Polypainting", items: [
+      "Introduction à la fonction Polypaint pour peindre directement sur votre modèle 3D.",
+     " Utilisation des différentes brosses et options de Polypaint pour ajouter de la couleur et des détails.0",
+     " Intégration de Polypaint dans le processus de sculpture pour améliorer la créativité.",
+      ] },
+      { title: "Gestion des UV avec UV Master", items: [
+       " Compréhension des UV et leur rôle dans le texturage de modèles 3D.",
+       " Utilisation de l'outil UV Master pour générer des UV de manière optimale à partir de votre modèle.",
+       " Réparation et optimisation des UV pour une meilleure peinture et texturage.",
+        ] },
+        { title: "Projection de textures", items: [
+"Importation et utilisation de textures externes pour ajouter des détails et des motifs à votre modèle.",
+"Projection de textures pour adapter les détails d'un modèle haute résolution sur une topologie basse résolution.",
+"Peaufinage des textures projetées pour obtenir un rendu réaliste."
+         ]},
+         
+          ]  
       },
    ];
