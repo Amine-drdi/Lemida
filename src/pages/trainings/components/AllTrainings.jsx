@@ -15,7 +15,7 @@ const AllTrainings = ({ trainings}) => {
         </p>
       </div>
       <div className="flex lg:flex-row flex-col lg:gap-4 gap-8 w-full">
-        <Filter />
+      { /* <Filter />*/}
         <TrainingList trainings={trainings} />
       </div>
     </div>

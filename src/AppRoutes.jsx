@@ -12,6 +12,11 @@ const TrainingDetails = React.lazy(() => import("./pages/trainingDetails"));
 const TrainingBtpDetails = React.lazy(() => import("./pages/trainingBtpDetails"));
 const Contact = React.lazy(() => import("./pages/contact"));
 const About = React.lazy(() => import("./pages/about"));
+const Cpf = React.lazy(() => import("./pages/Financements/Cpf"));
+const Opco = React.lazy(() => import("./pages/Financements/Opco"));
+const Faf = React.lazy(() => import("./pages/Financements/Faf"));
+const Agefiph = React.lazy(() => import("./pages/Financements/Agefiph"));
+const PoleEmploi = React.lazy(() => import("./pages/Financements/PoleEmploi"));
 const LegalNotices = React.lazy(() => import("./pages/legalNotices"));
 const PrivacyPolicy = React.lazy(() => import("./pages/privacyPolicy"));
 const TermsOfUse = React.lazy(() => import("./pages/termsAndConditionsOfUse"));
@@ -83,6 +88,46 @@ const AppRoutes = () => {
         element={
           <React.Suspense fallback={<LoadingSpinner />}>
             <Trainings />
+          </React.Suspense>
+        }
+      />
+       <Route
+        path="/cpf"
+        element={
+          <React.Suspense fallback={<LoadingSpinner />}>
+            <Cpf/>
+          </React.Suspense>
+        }
+      />
+        <Route
+        path="/opco"
+        element={
+          <React.Suspense fallback={<LoadingSpinner />}>
+            <Opco/>
+          </React.Suspense>
+        }
+      />
+      <Route
+        path="/faf"
+        element={
+          <React.Suspense fallback={<LoadingSpinner />}>
+            <Faf/>
+          </React.Suspense>
+        }
+      />
+      <Route
+        path="/poleEmploi"
+        element={
+          <React.Suspense fallback={<LoadingSpinner />}>
+            <PoleEmploi/>
+          </React.Suspense>
+        }
+      />
+       <Route
+        path="/agefiph"
+        element={
+          <React.Suspense fallback={<LoadingSpinner />}>
+            <Agefiph/>
           </React.Suspense>
         }
       />

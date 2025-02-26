@@ -2,51 +2,51 @@ export const testimonials = [
   {
     _id: "1",
     avatarUrl:
-      "https://png.pngtree.com/png-clipart/20230927/original/pngtree-man-avatar-image-for-profile-png-image_13001879.png",
+      "https://img.20mn.fr/ssHy31dGROq8thS-YyykWQ/1444x920_maria-sharapova-le-11-fevrier-2020",
     name: "Marta Sharapova",
-    position: "Enseignante",
+    position: "Infemiére",
     description:
-      "Des cas intéressants, avec des analyses très poussées Les cas sont concrets et permettent une application concrète rapide.",
+      "Cette formation m'a permis d'acquérir des compétences pratiques essentielles en soins infirmiers, renforçant ma capacité à intervenir efficacement auprès des patients en situation réelle.",
     note: 3,
   },
   {
     _id: "2",
     avatarUrl:
-      "https://png.pngtree.com/element_our/png_detail/20181206/female-avatar-vector-icon-png_262142.jpg",
-    name: "Marta Sharapova",
-    position: "Enseignante",
+      "https://www.nousfrance.fr/wp-content/uploads/2022/11/jean-philippe-lefevre-new-e1570520761952.jpg",
+    name: "Jean Lefevre",
+    position: "Manager",
     description:
-      "Des cas intéressants, avec des analyses très poussées Les cas sont concrets et permettent une application concrète rapide.",
+      "Cette formation m'a permis de maîtriser Excel pour gérer efficacement des projets, analyser des données et créer des tableaux de bord performants pour mes équipes.",
     note: 5,
   },
   {
     _id: "3",
     avatarUrl:
-      "https://png.pngtree.com/png-clipart/20230927/original/pngtree-man-avatar-image-for-profile-png-image_13001879.png",
-    name: "Marta Sharapova",
-    position: "Enseignante",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOwz0g4EZj2J8SAr31tkR2iqWWFGm9kkKQcA&s",
+    name: "Sophie Martin",
+    position: "Physiothérapeute",
     description:
-      "Des cas intéressants, avec des analyses très poussées Les cas sont concrets et permettent une application concrète rapide.",
+      "Cette formation m'a permis de perfectionner mes techniques de rééducation et d'apprendre à évaluer et traiter efficacement diverses pathologies musculosquelettiques.",
     note: 4,
   },
   {
     _id: "4",
     avatarUrl:
-      "https://png.pngtree.com/element_our/png_detail/20181206/female-avatar-vector-icon-png_262142.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdSGVuStFxj_Dnv9V9qlzkor22IRPIglGkVA&s",
     name: "Jon Doe",
     position: "Société Civile",
     description:
-      "Le côté pluridisciplinaire permet de rafraichir ses connaissances et d'apprendre de nouvelles choses. Le fait de pouvoir communiquer si besoin avec des professionnels qui répondent rapidement a nos questions est un vrai plus.",
+      "Cette formation m'a permis de mieux comprendre le rôle des organisations de la société civile et d'acquérir des compétences en gestion de projets communautaires et en plaidoyer.",
     note: 3,
   },
   {
     _id: "5",
     avatarUrl:
-      "https://png.pngtree.com/png-clipart/20230927/original/pngtree-man-avatar-image-for-profile-png-image_13001879.png",
+      "https://www.flintriverkeeper.org/wp-content/uploads/2022/01/Henry-Jackson-300x301.jpg",
     name: "Henry Jackson",
     position: "Product Manager",
     description:
-      "Je suis plutôt satisfait de cette formation, qui propose de bons rappels de l'essentiel",
+      "La formation m'a offert une perspective nouvelle sur le marketing digital, avec des outils concrets pour améliorer la visibilité de mon entreprise.",
     note: 4,
   },
 ];

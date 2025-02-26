@@ -20,11 +20,11 @@ const FounderProfile = () => {
         <div className="grid md:grid-cols-2 gap-8 p-8">
           {/* Image Section */}
           <div className="flex items-center justify-center">
-            <img 
-              src="/images/zeno.jpeg" 
-              alt="Emmanuel Zenou - Fondateur de Lemida" 
-              className="rounded-lg shadow-md max-h-[600px] object-cover w-full"
-            />
+          <img 
+            src="/images/zeno.jpeg" 
+            alt="Emmanuel Zenou - Fondateur de Lemida" 
+            className="rounded-lg shadow-md w-full h-auto max-w-[800px] md:max-w-[600px] sm:max-w-[500px] object-cover"
+/>
           </div>
           
           {/* Text Content Section */}

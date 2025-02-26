@@ -51,7 +51,7 @@ const Sidebar = () => {
           </div>
           <div className="flex flex-col justify-center">
             <NavLink to="/a-propos" onClick={() => setActiveMenu(!activeMenu)}>
-              À proposQui 
+              Qui sommes-nous?
             </NavLink>
           </div>
           <div className="flex items-center">
