@@ -49,9 +49,9 @@ const HealthAndConstructionTrainings = () => {
         <p className="font-normal md:text-base text-sm text-left max-w-5xl">{description}</p>
       </div>
 
-      <TopRated trainings={trainingsList} />
-      {trainingsList.length > 0 && <Featured training={trainingsList[0]} />}
-      <AllTrainings trainings={trainingsList} />
+      {/*<TopRated trainings={trainingsList} />*/}
+      {/*trainingsList.length > 0 && <Featured training={trainingsList[0]} />*/}
+       <AllTrainings trainings={trainingsList} />
     </div>
   );
 };

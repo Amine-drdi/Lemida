@@ -4202,7 +4202,7 @@ pour prévenir les risques sur les chantiers.
 },
  {
   id: 5,
-  image: "https://le-cdn.website-editor.net/s/1472e3428d6447f5af1280a268cd0cb4/dms3rep/multi/opt/shutterstock_425709067-640w.jpg?Expires=1738319204&Signature=KlyJB-iOa9u4X8ioa4H-3qqhxns7y2pCc5~yi4ImpE4Q5GkJnOr4ScNYnfKFaTO6NUqkmTGBGvSoA~v7KR5O20hlT61nax7nT9oEwD1dyMYs-IJTcrPYImJvAgeiFaAGK0YiVch-uzK~MtEzHWB~89xwlgGBgXcY7M7sUAm7qbIcqvbUYFPggSAJ7l4nVr6djiwumO9J7xtfGjNcjyaoFFIqlW7ZbGegKAB8g9RowHqV1ZqoHNHceKdKPGuGadaP6lyMY7vUBBllKTbabJwKxzelhqnZaXJA7qolD3vaKJc2wlrzhRbgkLbMEneKjQHoFs4eTiQGhnrjBBrHIYOJWA__&Key-Pair-Id=K2NXBXLF010TJW",
+  image: "https://www.haladjian-industrial.fr/wp-content/uploads/2019/03/antichute-construction.jpg",
   duration: "14 heures (2 jours)",
   title: "Travail en Hauteur et Prévention des Risques",
   description: `
@@ -5081,6 +5081,51 @@ instructors2: [
 
 
 ];
+
+
+export const finance = [ 
+  {
+    id: 0,
+    image:
+      "https://media.istockphoto.com/id/1403453245/fr/photo/les-financiers-calculent-les-imp%C3%B4ts-personnels-pour-leurs-clients.jpg?s=612x612&w=0&k=20&c=r9gMU55SrdSdiar7XcwIAAxOroZ6DoZSDwPAuUguR9c=",
+    title: "Comptabilité",
+    duration: "24H",
+    instructors: "Jean-François Renucci",
+  },
+  
+  {
+  
+  id: 200,
+  image:
+    "https://eco-assurance.com/wp-content/uploads/2023/06/operateur-de-competences-1024x719.jpg",
+  title: "Comptabilité",
+  duration: "24H",
+  instructors: "Jean-François Renucci",
+},
+{
+  id: 300,
+  image:
+    "https://www.learnthings.fr/wp-content/uploads/2024/08/Comment-se-faire-financer-une-formation-par-un-FAF--768x578.jpg.webp",
+  title: "Comptabilité",
+  duration: "24H",
+  instructors: "Jean-François Renucci",
+},
+{
+  id: 400,
+  image:
+    "https://eco-assurance.com/wp-content/uploads/2021/09/Call_to_Actions1.png",
+  title: "Comptabilité",
+  duration: "24H",
+  instructors: "Jean-François Renucci",
+},
+{
+  id: 500,
+  image:
+    "https://www.je-change-de-metier.com/images/se_former/financement/handicape/aide-reconversion-handicapes-agefiph-2.jpg",
+  title: "Comptabilité",
+  duration: "24H",
+  instructors: "Jean-François Renucci",
+},];
 export const juridiqueTrainings = [
   {
     id: 0,
@@ -5090,6 +5135,7 @@ export const juridiqueTrainings = [
     duration: "24H",
     instructors: "Jean-François Renucci",
   },
+ 
   {
     id: 1,
     image:

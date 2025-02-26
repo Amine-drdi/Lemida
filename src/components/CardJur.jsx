@@ -96,7 +96,7 @@ const Card = (props) => {
           <div className="flex flex-col gap-4 justify-between mb-3 text-white">
            <div className="flex flex-row gap-2 items-center">
               <FaEuroSign className="w-5 h-5 text-white" />
-              <span className="font-medium">100% financé par DPC</span>
+              <span className="font-medium">Contactez nous pour le prix</span>
             </div>
             <div className="flex flex-row gap-2 items-center">
               <MdTimer className="w-5 h-5 text-white" />
