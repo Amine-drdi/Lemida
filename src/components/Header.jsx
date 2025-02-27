@@ -329,7 +329,7 @@ const Header = () => {
 >
   <span className="relative z-10 group-hover:text-white transition-all">
     <NavLink
-      to="/AllTrainings"
+      to="/AllFinance"
       className={({ isActive }) =>
         [
           isActive
@@ -377,10 +377,10 @@ const Header = () => {
   </div>
   <div className="group/item relative px-8 py-5">
     <NavLink
-      to="/faf"
+      to="/fiphfp"
       className="  w-full h-full flex items-center justify-between gap-5 text-black relative group-hover/item:text-white transition-all duration-500 ease-in-out"
     >
-      <span className="relative z-10 group-hover/item:text-white transition-all">Fonds d'Assurance Formation(FAF)</span>
+      <span className="relative z-10 group-hover/item:text-white transition-all">FIPHFP</span>
     </NavLink>
     <span className="absolute inset-0 bg-primary opacity-0 group-hover/item:opacity-100 transition-all"></span>
     

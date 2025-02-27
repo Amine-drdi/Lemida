@@ -4,6 +4,7 @@ import LoadingSpinner from "./components/LoadingSpinner";
 
 const Home = React.lazy(() => import("./pages/home"));
 const AllTrainings = React.lazy(() => import("./pages/home/AllTrainings"));
+const AllFinance = React.lazy(() => import("./pages/home/AllFinance"));
 const Trainings = React.lazy(() => import("./pages/trainings"));
 const Trainings2 = React.lazy(() => import("./pages/trainingsJuridique"));
 const Trainings3 = React.lazy(() => import("./pages/trainingsBtp"));
@@ -14,7 +15,7 @@ const Contact = React.lazy(() => import("./pages/contact"));
 const About = React.lazy(() => import("./pages/about"));
 const Cpf = React.lazy(() => import("./pages/Financements/Cpf"));
 const Opco = React.lazy(() => import("./pages/Financements/Opco"));
-const Faf = React.lazy(() => import("./pages/Financements/Faf"));
+const Fiphfp = React.lazy(() => import("./pages/Financements/Fiphfp"));
 const Agefiph = React.lazy(() => import("./pages/Financements/Agefiph"));
 const PoleEmploi = React.lazy(() => import("./pages/Financements/PoleEmploi"));
 const LegalNotices = React.lazy(() => import("./pages/legalNotices"));
@@ -83,6 +84,14 @@ const AppRoutes = () => {
           </React.Suspense>
         }
       />
+        <Route
+          path="/AllFinance"
+        element={
+          <React.Suspense fallback={<LoadingSpinner />}>
+            <AllFinance/>
+          </React.Suspense>
+        }
+      />
       <Route
         path="/formations/categorie/sante"
         element={
@@ -108,10 +117,10 @@ const AppRoutes = () => {
         }
       />
       <Route
-        path="/faf"
+        path="/fiphfp"
         element={
           <React.Suspense fallback={<LoadingSpinner />}>
-            <Faf/>
+            <Fiphfp/>
           </React.Suspense>
         }
       />

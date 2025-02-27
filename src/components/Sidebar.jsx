@@ -50,6 +50,14 @@ const Sidebar = () => {
             </NavLink>
           </div>
           <div className="flex flex-col justify-center">
+            <NavLink
+              to="/AllFinance"
+              onClick={() => setActiveMenu(!activeMenu)}
+            >
+              Financements
+            </NavLink>
+          </div>
+          <div className="flex flex-col justify-center">
             <NavLink to="/a-propos" onClick={() => setActiveMenu(!activeMenu)}>
               Qui sommes-nous?
             </NavLink>

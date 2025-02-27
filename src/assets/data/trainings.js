@@ -4347,7 +4347,7 @@ pour prévenir les risques sur les chantiers.
 },
  {
   id: 6,
-  image: "https://lh6.googleusercontent.com/proxy/OLM8f4rR5SAuLoICjbh6MUYKghhTDPrJ2R0MocEfgOJw6KuLZRVbV6dni1SLN8YCg_OInnQF3IsKQiitvjjZubw740z_ZfhkCe54KjB7R2ue28rI2YD-rIefUhmv-DUvhfYh7C7m4vOEo_GUt2KeTQ",
+  image: "https://www.cmesmat.fr/media/wysiwyg/Les_quipements_de_s_curit_pour_les_travaux_de_d_molition.jpg",
   duration: "21 heures (3 jours)",
   title: "Gestion et Sécurité des Travaux de Démolition",
   description: `
@@ -5097,7 +5097,7 @@ export const finance = [
   
   id: 200,
   image:
-    "https://eco-assurance.com/wp-content/uploads/2023/06/operateur-de-competences-1024x719.jpg",
+    "https://www.matchers.fr/wp-content/uploads/2024/03/MACBOOK-PRO-2017-MOCK-UP-3-1536x926.jpg",
   title: "Comptabilité",
   duration: "24H",
   instructors: "Jean-François Renucci",
