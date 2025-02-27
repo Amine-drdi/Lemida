@@ -348,6 +348,7 @@ const AppRoutes = () => {
         <Route path="inscrire" element={<Register />} />
         <Route path="mot-de-passe-oublie" element={<ForgotPassword />} />
        
+       
       </Route>
     </Routes>
   );

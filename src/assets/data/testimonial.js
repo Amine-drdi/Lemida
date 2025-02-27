@@ -1,8 +1,10 @@
+
+
 export const testimonials = [
   {
     _id: "1",
     avatarUrl:
-      "https://img.20mn.fr/ssHy31dGROq8thS-YyykWQ/1444x920_maria-sharapova-le-11-fevrier-2020",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCGDQQrAkH9-7Gup-xkAmvMXRxde0oe_taZu2HsVTY6iO7UE25-oUbAkUfjN0pA9aWP5M&usqp=CAU",
     name: "Marta Sharapova",
     position: "Infemiére",
     description:
@@ -12,7 +14,7 @@ export const testimonials = [
   {
     _id: "2",
     avatarUrl:
-      "https://www.nousfrance.fr/wp-content/uploads/2022/11/jean-philippe-lefevre-new-e1570520761952.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV4AiTVnmQsYoyqk2qQUXddEUGsA_0L7tbbuxJZVdG1fT3s9iEEQdmfYYwv9x-d1HragA&usqp=CAU",
     name: "Jean Lefevre",
     position: "Manager",
     description:
@@ -22,7 +24,7 @@ export const testimonials = [
   {
     _id: "3",
     avatarUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOwz0g4EZj2J8SAr31tkR2iqWWFGm9kkKQcA&s",
+      "https://e7.pngegg.com/pngimages/439/19/png-clipart-avatar-user-profile-icon-women-wear-frock-face-holidays.png",
     name: "Sophie Martin",
     position: "Physiothérapeute",
     description:
@@ -32,7 +34,7 @@ export const testimonials = [
   {
     _id: "4",
     avatarUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdSGVuStFxj_Dnv9V9qlzkor22IRPIglGkVA&s",
+      "https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.png",
     name: "Jon Doe",
     position: "Société Civile",
     description:
@@ -42,7 +44,7 @@ export const testimonials = [
   {
     _id: "5",
     avatarUrl:
-      "https://www.flintriverkeeper.org/wp-content/uploads/2022/01/Henry-Jackson-300x301.jpg",
+      "https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg",
     name: "Henry Jackson",
     position: "Product Manager",
     description:

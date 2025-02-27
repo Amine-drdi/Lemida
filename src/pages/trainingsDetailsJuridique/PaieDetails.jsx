@@ -153,10 +153,10 @@ const FormationDetails = () => {
               <span className="text-sm text-gray-600">Durée :</span>
               <span className="font-medium">{formation.duration}</span>
             </div>
-            <div className="flex flex-col">
+           {/* <div className="flex flex-col">
               <span className="text-sm text-gray-600">Formateur :</span>
               <span className="font-medium">{formation.instructors}</span>
-            </div>
+            </div>*/}
           </div>
           <div className="font-bold text-lg text-blue-600">{formation.price || "Tarif non spécifié"}</div>
         </div>

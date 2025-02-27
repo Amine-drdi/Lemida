@@ -5097,7 +5097,7 @@ export const finance = [
   
   id: 200,
   image:
-    "https://www.matchers.fr/wp-content/uploads/2024/03/MACBOOK-PRO-2017-MOCK-UP-3-1536x926.jpg",
+    "https://e7w7t7d7.delivery.rocketcdn.me/wp-content/uploads/2024/04/city_pro_opco-2.png",
   title: "Comptabilité",
   duration: "24H",
   instructors: "Jean-François Renucci",
@@ -5121,7 +5121,7 @@ export const finance = [
 {
   id: 500,
   image:
-    "https://www.je-change-de-metier.com/images/se_former/financement/handicape/aide-reconversion-handicapes-agefiph-2.jpg",
+    "https://institut.amelis-services.com/wp-content/uploads/2018/11/agefiph.jpeg",
   title: "Comptabilité",
   duration: "24H",
   instructors: "Jean-François Renucci",
