@@ -13,6 +13,7 @@ import { trainings, btpTrainings,juridiqueTrainings } from "../../assets/data/tr
 import Slider from "./components/Slider";
 import Categories from "./components/Categories";
 
+
 AOS.init({ duration: 1000 });
 AOS.refresh();
 
@@ -56,6 +57,7 @@ const Home = () => {
       />
       <Timeline />
       <Testimonial />
+      
     </section>
   );
 };

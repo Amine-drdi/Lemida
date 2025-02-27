@@ -6,7 +6,7 @@ const OurApproach = () => {
       <div className= "absolute top-0 left-0 z-10 w-full h-full bg-black/5" />
       <div className="absolute top-0 left-0 w-full h-full">
         <img
-          src="/images/our-approach.jpg"
+          src="/images/approche.jpg"
           alt="our story"
           className="w-full h-[calc(100vh-64px)] object-cover filter brightness-800"
         />

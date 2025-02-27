@@ -11,5 +11,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     open: true, // Ouvre automatiquement le navigateur à l'adresse du serveur
+    historyApiFallback: true, // Permet la gestion des routes SPA
+
   },
 });
