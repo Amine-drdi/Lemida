@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import LoadingSpinner from "./components/LoadingSpinner";
 
+
 const Home = React.lazy(() => import("./pages/home"));
 const AllTrainings = React.lazy(() => import("./pages/home/AllTrainings"));
 const AllFinance = React.lazy(() => import("./pages/home/AllFinance"));
@@ -346,6 +347,7 @@ const AppRoutes = () => {
         <Route index element={<Login />} />
         <Route path="inscrire" element={<Register />} />
         <Route path="mot-de-passe-oublie" element={<ForgotPassword />} />
+       
       </Route>
     </Routes>
   );

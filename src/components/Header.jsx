@@ -146,7 +146,7 @@ const Header = () => {
               <span className="absolute inset-0 bg-primary opacity-0 group-hover/item:opacity-100 transition-all"></span>
               
               {/* Changed positioning to top-full */}
-              <div className="absolute left-0 top-full hidden group-hover/item:grid grid-cols-6 px-8 py-5 w-[800px] max-h-[300px] gap-y-8 bg-white whitespace-normal shadow-lg overflow-y-auto overscroll-contain pb-4">
+              <div className="absolute left-0 top-full hidden group-hover/item:grid grid-cols-6 px-8 py-5 w-[800px] max-h-[300px] gap-y-8 bg-primary whitespace-normal shadow-lg overflow-y-auto overscroll-contain pb-4">
   {medicalCategories.map((category) => (
     <div
       key={category.name}
@@ -156,7 +156,7 @@ const Header = () => {
         to={`formations/${category.id}`}
         className="col-span-1 flex justify-center items-center text-center relative group/category w-full px-4 py-2"
       >
-        <span className="relative z-10 text-black group-hover/category:text-white transition-all">
+        <span className="relative z-10 text-white group-hover/category:text-black transition-all">
           {category.name}
         </span>
         <span className="absolute inset-0 bg-primary opacity-0 group-hover/category:opacity-100 transition-all"></span>
@@ -179,7 +179,7 @@ const Header = () => {
               <span className="absolute inset-0 bg-primary opacity-0 group-hover/item:opacity-100 transition-all"></span>
               
               {/* Changed positioning to top-full */}
-              <div className="absolute left-0 top-full hidden group-hover/item:grid grid-cols-3 px-8 py-5 w-[700px] gap-y-8 bg-white whitespace-normal shadow-lg">
+              <div className="absolute left-0 top-full hidden group-hover/item:grid grid-cols-3 px-8 py-5 w-[700px] gap-y-8 bg-primary whitespace-normal shadow-lg">
                 {btpCategories.map((category) => (
                   <div
                     key={category.name}
@@ -189,7 +189,7 @@ const Header = () => {
                       to={`formations/btp/${category.id}`}
                       className="col-span-1 flex justify-center items-center text-center relative group/category w-full px-4 py-2"
                     >
-                      <span className="relative z-10 text-black group-hover/category:text-white transition-all">
+                      <span className="relative z-10 text-white group-hover/category:text-black transition-all">
                         {category.name}
                       </span>
                       <span className="absolute inset-0 bg-primary opacity-0 group-hover/category:opacity-100 transition-all"></span>
@@ -212,14 +212,14 @@ const Header = () => {
               <span className="absolute inset-0 bg-primary opacity-0 group-hover/item:opacity-100 transition-all"></span>
               
               {/* Changed positioning to top-full */}
-              <div className="absolute left-0 top-full hidden group-hover/item:grid grid-cols-3 px-8 py-5 w-[500px] gap-y-8 bg-white whitespace-normal shadow-lg">
+              <div className="absolute left-0 top-full hidden group-hover/item:grid grid-cols-3 px-8 py-5 w-[500px] gap-y-8 bg-primary whitespace-normal shadow-lg">
                 {administrativeCategories.map((category) => (
                   <NavLink
                     key={category.name}
                     to={`formation/${category.name.toLowerCase().replace(/\s+/g, '-')}`}
                     className="col-span-1 flex justify-center items-center text-center relative group/category w-full px-4 py-2"
                   >
-                    <span className="relative z-10 text-black group-hover/category:text-white transition-all">
+                    <span className="relative z-10 text-white group-hover/category:text-black transition-all">
                       {category.name}
                     </span>
                     <span className="absolute inset-0 bg-primary opacity-0 group-hover/category:opacity-100 transition-all"></span>

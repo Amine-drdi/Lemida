@@ -1,5 +1,5 @@
 import React from "react";
-
+import img1 from "../../../../public/images/mission2.jpg"
 const OurMission = () => {
   return (
     <section className="flex items-center justify-center md:px-desktop_padding sm:px-tablet_padding px-mobile_padding max-w-5xl mx-auto py-16">
@@ -17,16 +17,13 @@ const OurMission = () => {
                 accessibles et adaptées à leurs besoins.
               </p>*/}
                <p className="sm:text-base text-sm font-medium">
-               Notre objectif est de révolutionner l'accès à la formation pour les professionnels 
-               de la santé en proposant des solutions d’apprentissage en ligne innovantes,
-                accessibles et parfaitement adaptées à leurs besoins.
-              </p>
+               Nous révolutionnons l'accès à la formation pour les professionnels de la santé, du bâtiment ainsi que du secteur juridique et administratif en proposant des solutions d’apprentissage en ligne innovantes, flexibles et adaptées à leurs besoins spécifiques. Notre engagement : offrir des parcours pédagogiques de qualité, accessibles partout et à tout moment, afin d’accompagner chaque professionnel dans son évolution et sa réussite.              </p>
             </div>
           </div>
         </div>
         <div className="flex items-center justify-center md:w-[421px] min-w-[350px] max-sm:w-[320px] max-md:w-[400px]">
           <img
-            src="https://t3.ftcdn.net/jpg/04/18/52/88/360_F_418528804_xgyFvVsMSHeWk1UgDtR9aoccqSC7BrHy.jpg"
+            src={img1}
             alt="our mission"
             className="rounded-md shadow-md object-cover"
           />

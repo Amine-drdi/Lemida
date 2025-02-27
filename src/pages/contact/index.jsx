@@ -2,7 +2,11 @@ import React from "react";
 import ContactUsForm from "./components/ContactUsForm";
 import Hero from "./components/Hero";
 import Faq from "./components/Faq";
+<<<<<<< HEAD
 import contactImage from '../../assets/images/contactus.webp';
+=======
+import contactImage from '../../assets/images/contact.jpg'
+>>>>>>> 9e333cf52978a69b426675338aab497a9709940e
 
 const Contact = () => {
   return (
