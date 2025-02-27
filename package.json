@@ -2,6 +2,7 @@
   "name": "lemida-client",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "@radix-ui/react-toast": "^1.2.4",
