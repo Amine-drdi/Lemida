@@ -11,28 +11,43 @@ const Footer = () => {
     <footer className="w-full px-4 sm:px-6 md:px-8 bg-gray-900 text-gray-200 pt-0 pb-4">
       <div className="flex flex-col gap-4 py-8 md:py-16">
         {/* Logos section */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10 w-full max-w-screen-xl mx-auto px-4">
+
+        <div className="flex flex-col md:flex-row items-start justify-start gap-10 w-full max-w-screen-xl mx-auto px-4">
             {/* Logo Lemida */}
-         <div className="w-32 h-16 bg-white flex items-center justify-center">
-         <NavLink to="/">
-         <img
-         className="w-full h-full object-contain"
-         src="/images/logo_lemida.png"
-         alt="Lemida"/>
-         </NavLink>
-         </div>
+            <div className="flex flex-col items-start gap-2">
+  <div className="w-32 h-16 bg-white flex items-center justify-center">
+    <NavLink to="/">
+      <img
+        className="w-full h-full object-contain"
+        src="/images/logo_lemida.png"
+        alt="Lemida"
+      />
+    </NavLink>
+  </div>
+  <div className="text-gray-300 text-xs">
+    <p className="m-0 p-0">
+    Lemida est un organisme de formation <br/>  dédié à la montée en compétences<br/> 
+     des professionnels et des entreprises.<br/>  En combinant expertise et pédagogie <br/> 
+     innovante, nous proposons des formations<br/>  adaptées aux exigences actuelles<br/> 
+      du marché et aux besoins <br/> spécifiques de chaque apprenant.
+    </p>
+  </div>
+</div>
 
   {/* Certificat */}
-  <div className="flex flex-col sm:flex-row items-start gap-4 text-sm">
-    <img
-      src="/images/qualiopi.png"
-      alt="Qualiopi"
-      className="w-24 h-16 bg-white"/>
-       <div className="text-left">
-         <p className="text-gray-300">La certification qualité a été délivrée au titre de :</p>
-          <p className="font-semibold">Actions de formation</p>
-            </div>
-               </div>
+  <div className="flex flex-col items-start gap-2 text-xs sm:text-left">
+  <img src="/images/qualiopi.png" alt="Qualiopi" className="w-24 h-16 bg-white" />
+  <div className="text-gray-300">
+    <p className="m-0 p-0">
+      Notre organisme est certifié Qualiopi<br/> 
+      pour les actions de formation (L.6313-1 - 1°).<br/> 
+      Cette certification atteste de la qualité des<br/>
+       processus que nous mettons en œuvre pour accompagner<br/>
+        nos clients dans leur montée en compétences,<br/>
+         conformément au référentiel national de certification qualité.
+    </p>
+  </div>
+</div>
                    </div>
  {/* Navigation sections */}
   <div className="grid grid-cols-1 sm:grid-cols md:grid-cols-4 gap-[5px] text-center md:text-left">
@@ -73,6 +88,10 @@ const Footer = () => {
         <MdOutlineMail className="w-3 h-3" />
         <span>contact@lemida.fr</span>     
       </li>
+      <li className="flex justify-center md:justify-start items-center gap-1">
+        
+        <span>SIRET : 932 315 914 00014</span>     
+      </li>
     </ul>
   </div>
 
@@ -104,10 +123,7 @@ const Footer = () => {
   <div className="flex flex-row gap-2 items-center">
           <p>&copy; {currentDate} Lemida.</p>
           </div>
-  <div className="flex flex-row gap-2 items-center">
-  <p className="font-semibold">SIRET :</p>
-  <p className="text-gray-500">932 315 914 00014</p>
-</div>
+
    {/* <div className="flex flex-row gap-2 items-center">
       <p className="font-semibold">NDA :</p>
       <p className="text-gray-500">11757074975</p>
@@ -118,16 +134,30 @@ const Footer = () => {
     </div>*/}
   </div>
 </div>
-
-          <div className="flex space-x-4 mt-4 sm:mt-0">
-            <a href="https://www.facebook.com/@lemida" target="_blank" rel="noreferrer" className="w-9 h-9 flex items-center justify-center rounded-full bg-blue-600 hover:bg-blue-500 transition">
-              <FaFacebookF className="w-4 h-4" />
+<div className="flex items-center space-x-4">
+            <a
+              href="https://www.facebook.com/@lemida"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white border border-white hover:text-primary hover:border-primary hover:bg-white transition-all duration-300"
+            >
+              <FaFacebookF className="w-5 h-5" />
             </a>
-            <a href="https://www.instagram.com/@lemida" target="_blank" rel="noreferrer" className="w-9 h-9 flex items-center justify-center rounded-full bg-pink-500 hover:bg-pink-400 transition">
-              <FaInstagram className="w-4 h-4" />
+            <a
+              href="https://www.instagram.com/@lemida"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white border border-white hover:text-primary hover:border-primary hover:bg-white transition-all duration-300"
+            >
+              <FaInstagram className="w-5 h-5" />
             </a>
-            <a href="https://www.linkedin.com/@lemida" target="_blank" rel="noreferrer" className="w-9 h-9 flex items-center justify-center rounded-full bg-blue-800 hover:bg-blue-700 transition">
-              <FaLinkedinIn className="w-4 h-4" />
+            <a
+              href="https://www.linkedin.com/@lemida"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white border border-white hover:text-primary hover:border-primary hover:bg-white transition-all duration-300"
+            >
+              <FaLinkedinIn className="w-5 h-5" />
             </a>
           </div>
         </div>

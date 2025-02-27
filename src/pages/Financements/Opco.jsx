@@ -11,7 +11,8 @@ const Tab = () => {
         {/*<TableDesMatieres />*/}
         {found && (
           <img
-            className="object-cover  shadow-lg border-4 border-white bg-gray-300 transform -translate-y-100"
+          className="object-cover w-56 h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full shadow-lg border-4 border-white bg-gray-300 transform -translate-y-100"
+
             src={found.image}
             alt={found.title}
             referrerPolicy="no-referrer"
