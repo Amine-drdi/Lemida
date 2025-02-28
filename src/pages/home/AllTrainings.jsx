@@ -20,7 +20,7 @@ AOS.refresh();
 const Home = () => {
   return (
     <section className="flex flex-col">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-1 p-16">
         <FormationCard
            image="/images/authentication.jpg"
            link= "/formations/categorie/sante"
