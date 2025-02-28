@@ -3,13 +3,13 @@ import React from "react";
 const Aside = () => {
   return (
     <div className="w-[265px] min-w-[265px] flex-col gap-14 lg:flex hidden">
-      <div className="w-full flex flex-col gap-4 px-[15px] py-4 rounded-[14px] border border-[#ECECEC] shadow-tableOfContentShadow">
+      {/*<div className="w-full flex flex-col gap-4 px-[15px] py-4 rounded-[14px] border border-[#ECECEC] shadow-tableOfContentShadow">
         <div className="flex flex-col gap-4 font-medium border-r border-gray-100">
           <a
             href="#policy-1"
             className="px-6 py-2 text-[#691160] border-r-4 border-[#4C0873]"
           >
-            Privacy Agreement
+            Privacy Agreement 
           </a>
           <a href="#policy-2" className="px-6 py-2 text-black/85">
             Site Privacy Policy
@@ -28,7 +28,7 @@ const Aside = () => {
             Site Privacy Policy
           </a>
         </div>
-      </div>
+      </div>*/}
     </div>
   );
 };
