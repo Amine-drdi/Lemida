@@ -115,17 +115,16 @@ const Footer = () => {
    {/* Social media and copyright */}
 <div className="flex flex-col sm:flex-row items-center justify-between border-t border-gray-700 pt-4 pb-4 sm:pt-2 sm:pb-2 text-sm">
   {/* Copyright section - Centered */}
-  <div className="flex-1 text-center  sm:text-left mb-4 sm:mb-0">
-    
+  <div className="flex-1  sm:text-left mb-4 sm:mb-0">
   </div>
-  <div className="flex-1 text-center  sm:text-left mb-4 sm:mb-0">
+  <div className="flex-1 text-center  sm:text-left mb-4 sm:mb-0 mr-48">
     <p>&copy; 2025 Lemida.  Tous droits réservés</p>
   </div>
 
   {/* Social media icons - Aligned to the right */}
   <div className="flex items-center justify-end gap-4 sm:gap-6">
     <a
-      href="https://www.facebook.com/@lemida"
+      href="https://www.facebook.com"
       target="_blank"
       rel="noreferrer"
       className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full text-white border border-white hover:text-primary hover:border-primary hover:bg-white transition-all duration-300"
@@ -133,7 +132,7 @@ const Footer = () => {
       <FaFacebookF className="w-4 h-4 sm:w-5 sm:h-5" />
     </a>
     <a
-      href="https://www.instagram.com/@lemida"
+      href="https://www.instagram.com"
       target="_blank"
       rel="noreferrer"
       className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full text-white border border-white hover:text-primary hover:border-primary hover:bg-white transition-all duration-300"
@@ -141,7 +140,7 @@ const Footer = () => {
       <FaInstagram className="w-4 h-4 sm:w-5 sm:h-5" />
     </a>
     <a
-      href="https://www.linkedin.com/@lemida"
+      href="https://www.linkedin.com"
       target="_blank"
       rel="noreferrer"
       className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full text-white border border-white hover:text-primary hover:border-primary hover:bg-white transition-all duration-300"

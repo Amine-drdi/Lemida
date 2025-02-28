@@ -1,31 +1,120 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 
 const Cookies = () => {
+  const [showBanner, setShowBanner] = useState(false);
+  const [selectedCookies, setSelectedCookies] = useState({
+    essential: true,
+    performance: false,
+    marketing: false,
+  });
+
+  useEffect(() => {
+    const cookiePreference = localStorage.getItem("cookieConsent");
+    const lastRejectionDate = localStorage.getItem("lastRejectionDate");
+
+    if (!cookiePreference || (lastRejectionDate && new Date() - new Date(lastRejectionDate) > 30 * 24 * 60 * 60 * 1000)) {
+      setShowBanner(true);
+    }
+  }, []);
+
+  const handleCategoryChange = (category) => {
+    setSelectedCookies({
+      ...selectedCookies,
+      [category]: !selectedCookies[category],
+    });
+  };
+
+  const handleAccept = async () => {
+    localStorage.setItem("cookieConsent", JSON.stringify(selectedCookies));
+    setShowBanner(false);
+
+    // Envoyer les préférences au serveur
+    await fetch("/api/save-cookie-preferences", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(selectedCookies),
+    });
+  };
+
+  const handleReject = () => {
+    localStorage.setItem("cookieConsent", "rejected");
+    localStorage.setItem("lastRejectionDate", new Date().toISOString());
+    setShowBanner(false);
+  };
+
+  const handleClose = () => {
+    setShowBanner(false);
+  };
+
+  if (!showBanner) return null;
+
   return (
-    <section className="fixed max-w-md p-4 mx-auto bg-white border border-gray-200 dark:bg-gray-800 left-12 bottom-16 dark:border-gray-700 rounded-2xl">
-    <h2 className="font-semibold text-gray-800 dark:text-white">🍪 We use cookies!</h2>
-
-    <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <a href="#" className="font-medium text-gray-700 underline transition-colors duration-300 dark:hover:text-blue-400 dark:text-white hover:text-blue-500">Let me choose</a>. </p>
-    
-    <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">Closing this modal default settings will be saved.</p>
-    
-    <div className="grid grid-cols-2 gap-4 mt-4 shrink-0">
-        <button className=" text-xs bg-gray-900 font-medium rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
-            Accept all
+    <section className="fixed  z-[99999] max-w-md p-6 mx-auto bg-gradient-to-br from-blue-50 to-purple-50 border border-gray-200 dark:bg-gray-800 left-12 bottom-16 dark:border-gray-700 rounded-2xl shadow-lg animate-fade-in">
+      <div className="flex items-center justify-between">
+        <h2 className="font-semibold text-gray-800 dark:text-white text-lg flex items-center">
+          🍪 <span className="ml-2">Nous utilisons des cookies !</span>
+        </h2>
+        <button
+          onClick={handleClose}
+          className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
+        >
+          ✕
         </button>
+      </div>
 
-        <button className=" text-xs border text-gray-800 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 font-medium rounded-lg px-4 py-2.5 duration-300 transition-colors focus:outline-none">
-            Reject all
+      <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
+        Ce site web utilise des cookies essentiels pour fonctionner correctement
+        et des cookies de suivi pour analyser votre navigation. Ces derniers nécessitent votre consentement.
+      </p>
+
+      <div className="mt-4 space-y-2">
+        <label className="flex items-center space-x-2">
+          <input
+            type="checkbox"
+            checked={selectedCookies.essential}
+            disabled
+            className="form-checkbox h-4 w-4 accent-primary rounded"
+          />
+          <span className="text-sm text-gray-700 dark:text-gray-300">Cookies essentiels</span>
+        </label>
+        <label className="flex items-center space-x-2">
+          <input
+            type="checkbox"
+            checked={selectedCookies.performance}
+            onChange={() => handleCategoryChange("performance")}
+            className="form-checkbox h-4 w-4 accent-primary rounded"
+          />
+          <span className="text-sm text-gray-700 dark:text-gray-300">Cookies de performance</span>
+        </label>
+        <label className="flex items-center space-x-2">
+          <input
+            type="checkbox"
+            checked={selectedCookies.marketing}
+            onChange={() => handleCategoryChange("marketing")}
+            className="form-checkbox h-4 w-4 accent-primary rounded"
+          />
+          <span className="text-sm text-gray-700 dark:text-gray-300">Cookies de marketing</span>
+        </label>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4 mt-6">
+        <button
+          onClick={handleAccept}
+          className="flex items-center justify-center  text-white font-medium rounded-lg text-sm px-4 py-2 bg-primary hover:bg-secondary hover:text-primary border border-transparent hover:border-primary transition-all ease-in-out duration-500"
+        >
+          Accepter tout
         </button>
-
-
-
-        <button className=" text-xs border text-gray-800 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 font-medium rounded-lg px-4 py-2.5 duration-300 transition-colors focus:outline-none">
-            Close
+        <button
+          onClick={handleReject}
+          className="text-sm bg-white text-primary font-medium rounded-lg border border-primary px-4 py-2.5 duration-300 transition-colors focus:outline-none hover:bg-primary hover:text-white "
+        >
+          Rejeter tout
         </button>
-    </div>
-</section>
-  )
-}
+      </div>
+    </section>
+  );
+};
 
-export default Cookies
+export default Cookies;

@@ -35,7 +35,7 @@ function MainApp() {
       </ScrollToTop>
       <NewsLetter />
       <Footer />
-      {/*<Cookies/>*/}
+    <Cookies/>
       
 
     </div>
