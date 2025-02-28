@@ -12,7 +12,8 @@ const Sidebar = () => {
         <button
           className="absolute right-6 top-6 cursor-pointer"
           onClick={() => setActiveMenu(!activeMenu)}
-        >
+        > 
+
           <svg
             width="24"
             height="24"
@@ -32,7 +33,7 @@ const Sidebar = () => {
             />
           </svg>
         </button>
-        <div className="px-5 pt-6 text-blue-500 text-xl font-semibold">
+        <div className="px-5 pt-6 text-primary text-xl font-semibold">
           <p>Lemida</p>
         </div>
         <div className="flex flex-col px-5 py-[50px] text-xl text-nav_color/85 font-semibold leading-[45px]">
@@ -88,6 +89,7 @@ const Sidebar = () => {
           >
             Mentions légales
           </NavLink>
+          <p className="mt-6">&copy; 2025 Lemida.  Tous droits réservés</p>
         </div>
       </div>
     </div>

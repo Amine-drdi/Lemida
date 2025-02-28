@@ -79,12 +79,12 @@ const Header = () => {
           <NavLink to="/connexion">
             <MdOutlineAccountCircle className="w-8 h-8 text-[#141414]" />
           </NavLink>
-          <button
+          {/*<button
             className="cursor-pointer"
             onClick={() => setOpenSearchMenu(!openSearchMenu)}
           >
             <MdSearch className="w-8 h-8 text-[#141414]" />
-          </button>
+          </button>*/}
         </div>
       </div>
 
