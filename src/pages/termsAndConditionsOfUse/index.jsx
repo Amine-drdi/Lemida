@@ -9,14 +9,7 @@ const TermsAndConditions = () => {
         </h1>
       </div>
       <div className="flex flex-col gap-3">
-        <div>
-          <p className="text-lg font-bold text-primary">Accord de confidentialité</p>
-        </div>
-        <div>
-          <p className="text-base font-normal uppercase">
-            IMPORTANT : EN UTILISANT LES SERVICES (TELS QUE DÉFINIS CI-DESSOUS), VOUS ACCEPTEZ LES CONDITIONS GÉNÉRALES SUIVANTES. SI VOUS N'ÊTES PAS D'ACCORD AVEC LES CONDITIONS GÉNÉRALES ÉNONCÉES CI-DESSOUS, VEUILLEZ NE PAS UTILISER LES SERVICES.
-          </p>
-        </div>
+        
         <div className="flex flex-col gap-3">
           <ol className="flex flex-col gap-3 list-decimal list-inside">
             <li className="text-primary font-bold">

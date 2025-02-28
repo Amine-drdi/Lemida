@@ -152,7 +152,7 @@ const Slider = () => {
                 >
                   Notre catalogue Juridique et adminitrative
                 </NavLink>
-                <div className="md:flex hidden absolute -bottom-6 left-[calc(50%+120px)]">
+                <div className="md:flex hidden absolute -bottom-6 left-[calc(58%+120px)]">
                   <svg
                     width="160"
                     height="143"

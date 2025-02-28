@@ -141,7 +141,7 @@ const Header = () => {
                 to="/formations/categorie/sante"
                 className="  w-full h-full flex items-center justify-between gap-5 text-black relative group-hover/item:text-white transition-all duration-500 ease-in-out"
               >
-                <span className="relative z-10 group-hover/item:text-white transition-all">Santé</span>
+                <span className="relative z-10 group-hover/item:text-orange-500 transition-all">Santé</span>
               </NavLink>
               <span className="absolute inset-0 bg-primary opacity-0 group-hover/item:opacity-100 transition-all"></span>
               
@@ -156,7 +156,7 @@ const Header = () => {
         to={`formations/${category.id}`}
         className="col-span-1 flex justify-center items-center text-center relative group/category w-full px-4 py-2"
       >
-        <span className="relative z-10 text-white group-hover/category:text-black transition-all">
+        <span className="relative z-10 text-white group-hover/category:text-orange-500 transition-all">
           {category.name}
         </span>
         <span className="absolute inset-0 bg-primary opacity-0 group-hover/category:opacity-100 transition-all"></span>
@@ -174,7 +174,7 @@ const Header = () => {
                 to="/formations/categorie/btp"
                 className="w-full h-full flex items-center justify-between gap-5 text-black relative group-hover/item:text-white transition-all duration-500 ease-in-out"
               >
-                <span className="relative z-10 group-hover/item:text-white transition-all">BTP</span>
+                <span className="relative z-10 group-hover/item:text-orange-500 transition-all">BTP</span>
               </NavLink>
               <span className="absolute inset-0 bg-primary opacity-0 group-hover/item:opacity-100 transition-all"></span>
               
@@ -189,7 +189,7 @@ const Header = () => {
                       to={`formations/btp/${category.id}`}
                       className="col-span-1 flex justify-center items-center text-center relative group/category w-full px-4 py-2"
                     >
-                      <span className="relative z-10 text-white group-hover/category:text-black transition-all">
+                      <span className="relative z-10 text-white group-hover/category:text-orange-500 transition-all">
                         {category.name}
                       </span>
                       <span className="absolute inset-0 bg-primary opacity-0 group-hover/category:opacity-100 transition-all"></span>
@@ -205,7 +205,7 @@ const Header = () => {
                 to="/formations/juridique/juridique-et-administrative"
                 className="w-full h-full flex items-center justify-between gap-5 text-black relative group-hover/item:text-white transition-all duration-500 ease-in-out"
               >
-                <span className="relative z-10 group-hover/item:text-white transition-all">
+                <span className="relative z-10 group-hover/item:text-orange-500 transition-all">
                   Juridique et Administrative
                 </span>
               </NavLink>
@@ -219,7 +219,7 @@ const Header = () => {
                     to={`formation/${category.name.toLowerCase().replace(/\s+/g, '-')}`}
                     className="col-span-1 flex justify-center items-center text-center relative group/category w-full px-4 py-2"
                   >
-                    <span className="relative z-10 text-white group-hover/category:text-black transition-all">
+                    <span className="relative z-10 text-white group-hover/category:text-orange-500 transition-all">
                       {category.name}
                     </span>
                     <span className="absolute inset-0 bg-primary opacity-0 group-hover/category:opacity-100 transition-all"></span>
@@ -342,6 +342,8 @@ const Header = () => {
       <span className="relative z-10 group-hover:text-white transition-all">
       Financements
       </span>
+      <HiChevronDown className="w-5 h-5 relative z-10 transition-all group-hover:rotate-180 group-hover:text-white" />
+            <span className="absolute inset-0 -mx-2 bg-primary opacity-0 group-hover:opacity-100 transition-all"></span>
     </NavLink>
   </span>
   <span className="absolute inset-0 -mx-2 bg-primary opacity-0 group-hover:opacity-100 transition-all"></span>
@@ -354,7 +356,7 @@ const Header = () => {
       to="/CPF"
       className="  w-full h-full flex items-center justify-between gap-5 text-black relative group-hover/item:text-white transition-all duration-500 ease-in-out"
     >
-      <span className="relative z-10 group-hover/item:text-white transition-all">CPF</span>
+      <span className="relative z-10 group-hover/item:text-orange-500 transition-all">CPF</span>
     </NavLink>
     <span className="absolute inset-0 bg-primary opacity-0 group-hover/item:opacity-100 transition-all"></span>
     
@@ -367,7 +369,7 @@ const Header = () => {
       to="/Opco"
       className="  w-full h-full flex items-center justify-between gap-5 text-black relative group-hover/item:text-white transition-all duration-500 ease-in-out"
     >
-      <span className="relative z-10 group-hover/item:text-white transition-all">OPCO</span>
+      <span className="relative z-10 group-hover/item:text-orange-500 transition-all">OPCO</span>
     </NavLink>
     <span className="absolute inset-0 bg-primary opacity-0 group-hover/item:opacity-100 transition-all"></span>
     
@@ -381,7 +383,7 @@ const Header = () => {
       to="/poleEmploi"
       className="  w-full h-full flex items-center justify-between gap-5 text-black relative group-hover/item:text-white transition-all duration-500 ease-in-out"
     >
-      <span className="relative z-10 group-hover/item:text-white transition-all">Pôle d'emploi</span>
+      <span className="relative z-10 group-hover/item:text-orange-500 transition-all">Pôle d'emploi</span>
     </NavLink>
     <span className="absolute inset-0 bg-primary opacity-0 group-hover/item:opacity-100 transition-all"></span>
   </div>
@@ -391,7 +393,7 @@ const Header = () => {
       to="/fiphfp"
       className="  w-full h-full flex items-center justify-between gap-5 text-black relative group-hover/item:text-white transition-all duration-500 ease-in-out"
     >
-      <span className="relative z-10 group-hover/item:text-white transition-all">FIPHFP</span>
+      <span className="relative z-10 group-hover/item:text-orange-500 transition-all">FIPHFP</span>
     </NavLink>
     <span className="absolute inset-0 bg-primary opacity-0 group-hover/item:opacity-100 transition-all"></span>
   
@@ -402,7 +404,7 @@ const Header = () => {
       to="/agefiph"
       className="  w-full h-full flex items-center justify-between gap-5 text-black relative group-hover/item:text-white transition-all duration-500 ease-in-out"
     >
-      <span className="relative z-10 group-hover/item:text-white transition-all">AGEFIPH</span>
+      <span className="relative z-10 group-hover/item:text-orange-500 transition-all">AGEFIPH</span>
     </NavLink>
     <span className="absolute inset-0 bg-primary opacity-0 group-hover/item:opacity-100 transition-all"></span>
     

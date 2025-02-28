@@ -3,7 +3,10 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
 const OurImpact = () => {
-  const { ref, inView } = useInView({ triggerOnce: true });
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Ne se déclenche qu'une seule fois
+    threshold: 0.5, // Déclenche lorsque 50% du composant est visible
+  });
 
   return (
     <div className="relative bg-gradient-to-r from-[#EAEDF3] to-[#F5F7FA]">
@@ -22,7 +25,7 @@ const OurImpact = () => {
         </div>
         <div className="flex flex-wrap items-center sm:justify-between justify-center max-sm:gap-6 text-black">
           {[
-            { end: 120, label1: "formations spécialisées", label2: "couvrant divers domaines médicaux" },
+            { end: 120, label1: "formations spécialisées", label2: "couvrant divers domaines" },
             { end: 10000, label1: "Professionnels", label2: "ont suivi nos formations" },
             { end: 24, label1: "Experts", label2: "offrant un contenu précis" }
           ].map(({ end, label1, label2 }, index) => (

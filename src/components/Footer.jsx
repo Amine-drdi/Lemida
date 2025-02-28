@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="flex flex-col gap-4 py-2 md:py-5">
         {/* Logos section */}
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10 w-full max-w-screen-xl mx-auto px-4">
+        <div className="flex flex-col md:flex-row items-start justify-start gap-10 w-full max-w-screen-xl mx-auto px-16">
             {/* Logo Lemida */}
             <div className="flex flex-col items-start gap-2">
   <div className="w-32 h-16 bg-white flex items-center justify-center">
@@ -35,7 +35,7 @@ const Footer = () => {
 </div>
 
   {/* Certificat */}
-  <div className="flex flex-col items-start gap-2 text-xs sm:text-left">
+  <div className="flex flex-col items-start gap-2 text-xs sm:text-left ">
   <img src="/images/logo-qualiopi.jpeg" alt="Qualiopi" className="w-40 h-20 bg-white" />
   <div className="text-gray-300">
     <p className="m-0 p-0">
