@@ -1,7 +1,7 @@
 import React from 'react';
-import TableDesMatieres from './components/TableDeMatiere';
+
 import { finance } from '../../assets/data/trainings';
-import { FaGraduationCap, FaGlobe, FaUserCheck } from "react-icons/fa";
+
 const Tab = () => {
   const found = finance.find((element) => element.id === 200);
 
