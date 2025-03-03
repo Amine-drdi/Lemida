@@ -5087,7 +5087,7 @@ export const finance = [
   {
     id: 0,
     image:
-      "https://media.istockphoto.com/id/1403453245/fr/photo/les-financiers-calculent-les-imp%C3%B4ts-personnels-pour-leurs-clients.jpg?s=612x612&w=0&k=20&c=r9gMU55SrdSdiar7XcwIAAxOroZ6DoZSDwPAuUguR9c=",
+      "https://www.gofluent.com/wp-content/uploads/2022/12/CPF-Logo-422x221px.webp",
     title: "Comptabilité",
     duration: "24H",
     instructors: "Jean-François Renucci",
@@ -5105,7 +5105,7 @@ export const finance = [
 {
   id: 300,
   image:
-    "https://www.learnthings.fr/wp-content/uploads/2024/08/Comment-se-faire-financer-une-formation-par-un-FAF--768x578.jpg.webp",
+    "https://www.anfh.fr/sites/default/files/ged/logo_fiphfp_2.jpg",
   title: "Comptabilité",
   duration: "24H",
   instructors: "Jean-François Renucci",
@@ -5113,7 +5113,7 @@ export const finance = [
 {
   id: 400,
   image:
-    "https://eco-assurance.com/wp-content/uploads/2021/09/Call_to_Actions1.png",
+    "https://voila-le-travail.fr/wp-content/uploads/2021/07/Pole-Emploi.png",
   title: "Comptabilité",
   duration: "24H",
   instructors: "Jean-François Renucci",
@@ -5121,7 +5121,7 @@ export const finance = [
 {
   id: 500,
   image:
-    "https://institut.amelis-services.com/wp-content/uploads/2018/11/agefiph.jpeg",
+    "https://webzine.okeenea.com/wp-content/uploads/2021/08/agefiph-logo-inclusion-handicap.jpg",
   title: "Comptabilité",
   duration: "24H",
   instructors: "Jean-François Renucci",

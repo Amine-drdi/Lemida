@@ -14,11 +14,11 @@ const OurImpact = () => {
         ref={ref}
         className="flex flex-col gap-16 md:px-desktop_padding sm:px-tablet_padding px-mobile_padding max-w-5xl mx-auto py-16"
       >
-        <div className="flex flex-col gap-4">
-          <p className="sm:text-3xl text-xl font-bold text-gray-700">
+        <div className="flex flex-col gap-4 ">
+          <p className="sm:text-3xl text-xl font-bold text-primary ">
             Notre Impact
           </p>
-          <p className="sm:text-base text-sm font-medium max-w-2xl">
+          <p className="sm:text-base text-sm font-medium max-w-2xl ">
             Depuis notre création, nous avons eu un impact significatif dans le
             domaine de la formation médicale en ligne.
           </p>
@@ -30,10 +30,10 @@ const OurImpact = () => {
             { end: 24, label1: "Experts", label2: "offrant un contenu précis" }
           ].map(({ end, label1, label2 }, index) => (
             <div key={index} className="p-4 flex flex-col gap-6 text-center">
-              <p className="text-7xl leading-10 font-semibold mb-4">
+              <p className="text-5xl leading-10 font-semibold mb-4 text-primary">
                 {inView ? <CountUp end={end} duration={2} separator="," /> : 0}
               </p>
-              <p className="text-xl leading-3 font-medium">{label1}</p>
+              <p className="text-xl leading-3 font-medium text-primary">{label1}</p>
               <p className="text-base leading-3 font-normal">{label2}</p>
             </div>
           ))}

@@ -1,6 +1,6 @@
 import React , { useState } from 'react';
 import { finance } from '../../assets/data/trainings';
-
+import { FaUserTie, FaBriefcase, FaUserGraduate, FaUserClock, FaCheckCircle } from 'react-icons/fa';
 const Tab = () => {
   const found = finance.find((element) => element.id === 500);
   const [activeTab, setActiveTab] = useState("aides");
@@ -19,63 +19,65 @@ const Tab = () => {
         )}
       </div>
    
-      <div className="max-w-4xl mx-auto p-6 bg-gray-100 rounded-lg shadow-md">
-      <h1 className="text-2xl font-bold text-center mb-4 text-blue-600">
-        Aides de l'AGEFIPH pour les Personnes en Situation de Handicap
-      </h1>
+            <div className="w-full">
+        <p className="text-4xl ml-40 text-primary">
+        AGEFIPH
+        </p>
+      
+         {/* Section CPF */}
+         <section className="bg-gray-100 shadow-lg rounded-2xl p-6 mb-10">
+              <h2 className="text-2xl font-semibold text-primary text-center mb-4">Qu'est-ce que Agefiph ?</h2>
+              <p className="text-gray-700 leading-relaxed ml-32">
+                c'est <strong>L'Association de gestion du fonds pour l'insertion des personnes handicapées (Agefiph)</strong> est un organisme paritaire français institué par la loi du 10 juillet 1987 pour favoriser l'insertion professionnelle et le maintien dans l'emploi des personnes handicapées dans les entreprises du secteur privé.
+               </p>
+            </section>
+      
+            {/* Utiliser son CPF */}
+            <section className="bg-white shadow-lg rounded-2xl p-6 mb-10 ">
+            <h2 className="text-2xl font-semibold text-primary text-center mb-4">Les avantages de la reconnaissance de la qualité de travailleur handicapé (RQTH)</h2>
+              <p className="text-gray-700 leading-relaxed ml-32">
+              Obtenir la reconnaissance en tant que travailleur handicapé permet d’accéder à divers dispositifs facilitant l’intégration <br/>
+              et le maintien dans l’emploi des personnes en situation de handicap. Cette demande s’effectue auprès de la Commission  <br/>
+              des droits et de l’autonomie des personnes handicapées (CDAPH).Un travailleur handicapé est défini comme toute personne <br/> dont l’accès à l’emploi est limité en raison d’une altération physique, sensorielle, mentale ou psychique.
 
-      <div className="flex justify-center mb-4">
-        <button
-          className={`px-4 py-2 mx-2 rounded-md font-semibold ${
-            activeTab === "aides" ? "bg-blue-500 text-white" : "bg-gray-300"
-          }`}
-          onClick={() => setActiveTab("aides")}
-        >
-          Aides de l'AGEFIPH
-        </button>
-        <button
-          className={`px-4 py-2 mx-2 rounded-md font-semibold ${
-            activeTab === "rqth" ? "bg-blue-500 text-white" : "bg-gray-300"
-          }`}
-          onClick={() => setActiveTab("rqth")}
-        >
-          Reconnaissance RQTH
-        </button>
+La demande de <br/>
+ reconnaissance de la qualité de travailleur handicapé (RQTH) vise à officialiser, auprès de la CDAPH, la capacité à travailler <br/>
+ tout en prenant en compte les contraintes liées au handicap.
+
+Cette reconnaissance ouvre droit à un accès prioritaire aux aides <br/>
+à l’emploi et à la formation, ainsi qu’à des aménagements adaptés aux dispositifs existants.
+              </p>
+              
+            </section>
+      
+            {/* Liste des bénéficiaires du CPF */}
+            <section className="bg-white shadow-lg rounded-2xl p-6 mb-10 ">
+                <h2 className="text-2xl font-semibold text-primary text-center mb-4">Notre Référente Handicap peut vous accompagner</h2>
+                <h2 className="text-lg font-semibold text-black text-center mb-4">Ce que dit la loi</h2>
+
+                <p className="text-gray-700 leading-relaxed ml-32">
+                 La loi du 11 février 2005 pour l’égalité des droits et des chances des personnes handicapées définit le handicap comme <br/>
+                  toute limitation d’activité ou restriction de participation à la vie en société subie dans son environnement.<br/>
+                   Cette loi énonce également des principes fondamentaux, dont le droit à la compensation des conséquences du handicap <br/>
+                   et le principe d’accessibilité généralisé, quel que soit le handicap. Depuis lors, des évolutions ont été opérées, tant au niveau <br/>
+                   des exigences vis-à-vis des opérateurs de formation que des dispositifs proposés par l’AGEFIPH. Dans la loi Avenir professionnel <br/>
+                    du 5 septembre 2018, les autorités ont exprimé leur volonté de faciliter l’accès aux formations pour les personnes en situation de handicap, plaçant ainsi cette démarche au cœur de la qualité des opérateurs de formation.</p>
+                
+              </section>
+      
+                {/* Avantages d'utiliser le CPF */}
+                <section className="bg-white shadow-lg rounded-2xl p-6 mb-10 ">
+                <h2 className="text-2xl font-semibold text-primary text-center mb-4">Pourquoi utiliser votre CPF pour nos formations ?</h2>
+                <ul className="space-y-3">
+                  <li className="flex items-center text-gray-700 ml-32"><FaCheckCircle className="text-blue-500 mr-2" /> Encourager l’identification précoce des personnes en situation de handicap dès leur arrivée au centre de formation.</li>
+                  <li className="flex items-center text-gray-700 ml-32"><FaCheckCircle className="text-blue-500 mr-2" /> Garantir un traitement équitable tout au long du processus de recrutement, de sélection et de placement, assurant <br/> ainsi un accès égal aux opportunités de formation pour les personnes en situation de handicap.</li>
+                  <li className="flex items-center text-gray-700 ml-32"><FaCheckCircle className="text-blue-500 mr-2" /> Proposer activement des améliorations pour rendre les formations dispensées plus accessibles sur le plan pédagogique, <br/> en identifiant les défis et les possibilités d’amélioration.</li>
+                  <li className="flex items-center text-gray-700 ml-32"><FaCheckCircle className="text-blue-500 mr-2" /> Savoir mobiliser les ressources régionales disponibles pour soutenir la compensation du handicap en formation,<br/> le cas échéant, en faisant appel à des structures telles que Accea, Epatech, etc.</li>
+                  <li className="flex items-center text-gray-700 ml-32"><FaCheckCircle className="text-blue-500 mr-2" /> Prévoir la transition vers la fin de la formation en fournissant aux partenaires les informations nécessaires <br/>pour faciliter l’intégration professionnelle des personnes handicapées.</li>
+
+                </ul>
+              </section>
       </div>
-
-      {activeTab === "aides" ? (
-        <div className="bg-white p-4 rounded-md shadow-sm">
-          <h2 className="text-xl font-semibold mb-2 text-blue-600">Quelles aides peut-on obtenir ?</h2>
-          <ul className="list-disc list-inside space-y-2">
-            <li>Aide au parcours vers l’emploi</li>
-            <li>Aide à la création d’activité</li>
-            <li>Aide à la formation individuelle</li>
-            <li>Aide aux frais de transport, restauration et garde</li>
-            <li>Aide technique pour équipements spécifiques</li>
-            <li>Aide aux déplacements et aménagement du véhicule</li>
-            <li>Aide humaine : preneur de notes, lecteur, soutien spécifique</li>
-            <li>Audioprothèses pour déficients auditifs</li>
-            <li>Soutien à la formation Inclu’Pro</li>
-          </ul>
-          <p className="mt-4 text-gray-700 text-sm">
-            Pour demander une aide, un formulaire détaillant le projet et les justificatifs doivent être envoyés à l'Agefiph avant toute action.
-          </p>
-        </div>
-      ) : (
-        <div className="bg-white p-4 rounded-md shadow-sm">
-          <h2 className="text-xl font-semibold mb-2 text-blue-600">Comment obtenir la RQTH ?</h2>
-          <p className="text-gray-700 mb-2">
-            La reconnaissance de la qualité de travailleur handicapé (RQTH) permet d'accéder à des mesures favorisant l'insertion et le maintien en emploi.
-          </p>
-          <p className="text-gray-700 mb-2">
-            La demande est à déposer auprès de la MDPH avec le formulaire Cerfa n°15692*01, un certificat médical et les pièces justificatives nécessaires.
-          </p>
-          <p className="text-gray-700 text-sm">
-            Certaines personnes bénéficient automatiquement des mêmes droits (victimes d’accidents du travail, titulaires de pension d’invalidité, AAH...)
-          </p>
-        </div>
-      )}
-    </div>
 
     </div>
   );

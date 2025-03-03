@@ -1,7 +1,7 @@
 import React from 'react';
 import TableDesMatieres from './components/TableDeMatiere';
 import { finance } from '../../assets/data/trainings';
-
+import { FaBuilding, FaHandsHelping, FaCheckCircle } from 'react-icons/fa';
 const Tab = () => {
   const found = finance.find((element) => element.id === 400);
 
@@ -18,18 +18,29 @@ const Tab = () => {
           />
         )}
       </div>
-      <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
-      <h2 className="text-2xl font-bold text-center text-blue-600 mb-4">
-        Vous êtes demandeur d'emploi et avez trouvé une formation qui vous intéresse, mais vous vous demandez :
-        <br />
-        Quelles aides Pôle Emploi peut-il vous accorder ?
+      <p className="text-4xl  text-primary">
+      Pôle Emploi
+  </p>
+      <div className="max-w-4xl mx-auto p-6  ">
+
+      <h2 className="text-2xl font-bold text-center text-primary mb-4">
+        Qu'est ce que Pôle Emploi
       </h2>
 
       <p className="text-lg text-gray-700 mb-6">
-        Vous avez repéré la formation qui correspond à votre projet professionnel et vous vous demandez qui et comment la financer ?
+      Pôle Emploi propose plusieurs dispositifs de financement pour les demandeurs d’emploi souhaitant suivre une formation afin d’améliorer leur employabilité et favoriser leur retour à l’emploi.
       </p>
 
-      <h3 className="text-xl font-semibold text-gray-800 mb-3">
+
+         {/* Qui peut en bénéficier ? */}
+         <div className=" text-left mb-16 mt-16">
+          <h2 className="text-2xl font-semibold text-center text-primary mb-4">Qui peut bénéficier du financement Pôle Emploi ?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1 ml-32">
+            <div className="flex items-center text-gray-700"><FaBuilding className="text-blue-500 mr-2" /> Chômeurs inscrits à Pôle Emploi</div>
+            <div className="flex items-center text-gray-700"><FaHandsHelping className="text-green-500 mr-2" /> Bénéficiaires de l’Aide Individuelle à la Formation (AIF)</div>
+          </div>
+        </div>
+      <h3 className="text-2xl font-semibold text-primary text-center mb-3">
         Types de financements
       </h3>
 

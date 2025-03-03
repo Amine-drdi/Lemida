@@ -1,7 +1,7 @@
 import React from 'react';
 import TableDesMatieres from './components/TableDeMatiere';
 import { finance } from '../../assets/data/trainings';
-
+import { FaUserTie, FaBriefcase, FaUserGraduate, FaUserClock, FaCheckCircle } from 'react-icons/fa';
 const Tab = () => {
   const found = finance.find((element) => element.id === 0);
 
@@ -19,38 +19,55 @@ const Tab = () => {
         )}
       </div>
       <div className="w-full">
-  <p className="text-4xl ml-40">
-    <span className="text-yellow-500">_</span>CPF
+  <p className="text-4xl ml-40 text-primary">
+    CPF
   </p>
-</div>
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center px-4">
-        TOUT COMPRENDRE SUR LE COMPTE PERSONNEL DE FORMATION
-      </h1>
-      <p className="w-full  ml-60">
-      Nos formations sont financées <b> jusqu'à 100% avec votre Compte Personnel <br/> de Formation</b> - CPF.
-       Il suffit d'utiliser vos crédits pour suivre depuis chez vous des <br/> formations certifiantes
-        et ainsi évoluer professionnellement.
+
+   {/* Section CPF */}
+   <section className="bg-gray-100 shadow-lg rounded-2xl p-6 mb-10">
+        <h2 className="text-2xl font-semibold text-primary text-center mb-4">Qu'est-ce que le CPF ?</h2>
+        <p className="text-gray-700 leading-relaxed ml-32">
+          Le <strong>Compte Personnel de Formation (CPF)</strong> permet à toute personne active d’accumuler des droits à la formation. <br/>
+          Chaque année, vous cumulez des crédits qui peuvent financer une formation certifiante.
         </p>
-        <h1 class="text-3xl font-bold text-center text-blue-600 bg-gray-100 p-4 rounded-lg shadow-lg">
-  FORMATION ÉLIGIBLE AU CPF
-</h1>
-<p class="text-lg text-gray-700 text-center mt-2">
-  Organisme certifié Qualiopi et habilité à former sur diverses certifications enregistrées auprès de France Compétences. N’attendez plus et formez-vous avec votre Compte Formation.
-</p>
-<ul class="list-inside space-y-2 text-lg text-gray-700">
-  <li class="flex items-center">
-    <span class="inline-block w-4 h-4 mr-2 bg-blue-600 rounded-full"></span>
-    Utilisez votre montant CPF pour financer votre formation​.
-  </li>
-  <li class="flex items-center">
-    <span class="inline-block w-4 h-4 mr-2 bg-blue-600 rounded-full"></span>
-    Profitez d’un financement allant jusqu’à 100% selon votre montant disponible​.
-  </li>
-  <li class="flex items-center">
-    <span class="inline-block w-4 h-4 mr-2 bg-blue-600 rounded-full"></span>
-    Nos formations sont disponibles sur l’application Mon Compte Formation​.
-  </li>
-</ul>
+      </section>
+
+      {/* Utiliser son CPF */}
+      <section className="bg-white shadow-lg rounded-2xl p-6 mb-10 ">
+      <h2 className="text-2xl font-semibold text-primary text-center mb-4">Comment utiliser votre CPF ?</h2>
+       <div className='ml-32'>
+        <ol className="list-decimal list-inside text-gray-700  ">
+          <li>Se connecter sur <a href="https://www.moncompteformation.gouv.fr/" target="_blank" className="text-blue-500 underline">MonCompteFormation</a></li>
+          <li>Choisir une formation éligible</li>
+          <li>S'inscrire directement en ligne</li>
+          <li>Compléter le financement si nécessaire</li>
+        </ol>
+        </div>
+      </section>
+
+      {/* Liste des bénéficiaires du CPF */}
+      <section className="bg-white shadow-lg rounded-2xl p-6 mb-10 ">
+          <h2 className="text-2xl font-semibold text-primary text-center mb-4">Qui peut bénéficier du CPF ?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ml-32">
+            <div className="flex items-center text-gray-700"><FaUserTie className="text-blue-500 mr-2" /> Salariés du secteur privé et public</div>
+            <div className="flex items-center text-gray-700"><FaBriefcase className="text-green-500 mr-2" /> Travailleurs indépendants et professions libérales</div>
+            <div className="flex items-center text-gray-700"><FaUserClock className="text-yellow-500 mr-2" /> Demandeurs d’emploi (sous certaines conditions)</div>
+            <div className="flex items-center text-gray-700"><FaUserGraduate className="text-purple-500 mr-2" /> Jeunes sortis du système scolaire et en recherche d’emploi</div>
+          </div>
+        </section>
+
+          {/* Avantages d'utiliser le CPF */}
+          <section className="bg-white shadow-lg rounded-2xl p-6 mb-10 ">
+          <h2 className="text-2xl font-semibold text-primary text-center mb-4">Pourquoi utiliser votre CPF pour nos formations ?</h2>
+          <ul className="space-y-3">
+            <li className="flex items-center text-gray-700 ml-32"><FaCheckCircle className="text-blue-500 mr-2" /> Financement accessible sans avance de frais</li>
+            <li className="flex items-center text-gray-700 ml-32"><FaCheckCircle className="text-green-500 mr-2" /> Formations adaptées aux besoins des professionnels du bâtiment et de la santé</li>
+            <li className="flex items-center text-gray-700 ml-32"><FaCheckCircle className="text-yellow-500 mr-2" /> Diplômes et certifications reconnues par l’État</li>
+            <li className="flex items-center text-gray-700 ml-32"><FaCheckCircle className="text-purple-500 mr-2" /> Apprentissage en ligne ou en présentiel selon vos préférences</li>
+          </ul>
+        </section>
+</div>
+      
 
     </div>
   );

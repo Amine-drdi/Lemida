@@ -11,9 +11,9 @@ const Home = () => {
   return (
     <section className="flex flex-col">
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-20">
         <FormationCard
-           image="https://media.istockphoto.com/id/1403453245/fr/photo/les-financiers-calculent-les-imp%C3%B4ts-personnels-pour-leurs-clients.jpg?s=612x612&w=0&k=20&c=r9gMU55SrdSdiar7XcwIAAxOroZ6DoZSDwPAuUguR9c="
+           image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVKn1c0Ti9RwqJhsTB0iVvnjt-7i1FRoryCQ&s"
 
            link= "/CPF"
           name="CPF"
@@ -26,19 +26,19 @@ const Home = () => {
           description="Les OPCO (Opérateurs de Compétences) sont des organismes chargés d'accompagner les entreprises dans le financement de la formation professionnelle de leurs salariés. Ils soutiennent les TPE, PME et les secteurs spécifiques en assurant le financement et le conseil en matière de formation."
         />
         <FormationCard
-           image="https://www.learnthings.fr/wp-content/uploads/2024/08/Comment-se-faire-financer-une-formation-par-un-FAF--768x578.jpg.webp"
+           image="https://handicap.anfh.fr/sites/default/files/styles/16x9_640/public/ged/logo-fiphfp.png?itok=b4nriSLZ"
            link= "/fiphfp"
           name ="FIPHFP"
           description="Le FIPHFP (Fonds pour l'Insertion des Personnes Handicapées dans la Fonction Publique) finance des actions permettant l'insertion, le maintien dans l'emploi et la formation des personnes handicapées dans la fonction publique. Il soutient les employeurs publics dans leurs démarches d'accessibilité et d'adaptation des postes de travail."
         />
          <FormationCard
-           image="https://eco-assurance.com/wp-content/uploads/2021/09/Call_to_Actions1.png"
+           image="https://voila-le-travail.fr/wp-content/uploads/2021/07/Pole-Emploi.png"
            link= "/poleEmploi"
           name ="Pôle d'emploi"
           description="Pôle emploi accompagne les demandeurs d'emploi dans leur recherche d'emploi en proposant des services de conseil, de formation, et d'indemnisation. Il facilite l'accès à l'emploi en mettant en relation les candidats et les recruteurs tout en offrant des dispositifs de soutien à la reconversion professionnelle."
         />
           <FormationCard
-           image="https://institut.amelis-services.com/wp-content/uploads/2018/11/agefiph.jpeg"
+           image="https://travail-emploi.gouv.fr/sites/travail-emploi/files/styles/w_1200/public/2024-06/logo-association-de-gestion-du-fonds-pour-linsertion-professionnelle-des-personnes-handicapees-agefiph.jpg.webp?itok=muymAzbD"
            link= "/agefiph"
           name ="Agefiph"
           description="L'AGEFIPH (Association de gestion du fonds pour l'insertion des personnes handicapées) finance des actions visant à favoriser l'insertion et le maintien dans l'emploi des personnes en situation de handicap. Elle soutient les entreprises et les travailleurs handicapés à travers des aides financières et des services d'accompagnement."

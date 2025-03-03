@@ -4,7 +4,7 @@ const FounderProfile = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
       {/* Adding more space above the component */}
-      <div className="mt-20 mb-12"></div>
+      <div className="mt-24 mb-16"></div>
 
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
         {/* Title Section */}
