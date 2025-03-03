@@ -13,7 +13,7 @@ const Home = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-20">
         <FormationCard
-           image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVKn1c0Ti9RwqJhsTB0iVvnjt-7i1FRoryCQ&s"
+           image="https://www.perspective-formation.fr/wp-content/uploads/2019/11/Logo-Mon-Compte-Formation-Appli-CPF.jpg"
 
            link= "/CPF"
           name="CPF"
