@@ -20,30 +20,32 @@ AOS.refresh();
 const Home = () => {
   return (
     <section className="flex flex-col">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-1 p-16">
-        <FormationCard
-           image="/images/authentication.jpg"
-           link= "/formations/categorie/sante"
-          name="Nos formations incontournables pour les professionnels de santé !"
-          description="Découvrez une sélection de formations essentielles pour perfectionner vos compétences et atteindre vos objectifs professionnels."
-        />
-        <FormationCard
-           image="/images/btp.jpg"
-            link= "/formations/categorie/btp"
-          name="Nos formations essentielles pour les professionnels du bâtiment !"
-          description="Explorez notre sélection de formations clés pour développer vos compétences techniques et mener à bien vos projets dans le secteur de la construction."
-        />
-        <FormationCard
-           image="/images/administratif.jpg"
-           link= "/formations/juridique/juridique-et-administrative"
-          name ="Nos formations essentielles pour les professionnels du juridique et de l’administration !"
-          description="Découvrez notre sélection de formations clés pour renforcer vos compétences en gestion, droit et administration, et assurer le bon fonctionnement des organisations et des institutions."
-        />
-      </div>
-      
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 md:p-8 lg:p-16">
+      <FormationCard
+        image="/images/authentication.jpg"
+        link="/formations/categorie/sante"
+        name="Nos formations incontournables pour les professionnels de santé !"
+        description="Découvrez une sélection de formations essentielles pour perfectionner vos compétences et atteindre vos objectifs professionnels."
+      />
+      <FormationCard
+        image="/images/btp.jpg"
+        link="/formations/categorie/btp"
+        name="Nos formations essentielles pour les professionnels du bâtiment !"
+        description="Explorez notre sélection de formations clés pour développer vos compétences techniques et mener à bien vos projets dans le secteur de la construction."
+      />
+      <FormationCard
+        image="/images/administratif.jpg"
+        link="/formations/juridique/juridique-et-administrative"
+        name="Nos formations essentielles pour les professionnels du juridique et de l’administration !"
+        description="Découvrez notre sélection de formations clés pour renforcer vos compétences en gestion, droit et administration."
+      />
+    </div>
+  
+    <div className="px-4 sm:px-8 md:px-16">
       <Timeline />
-     
-    </section>
+    </div>
+  </section>
+  
   );
 };
 

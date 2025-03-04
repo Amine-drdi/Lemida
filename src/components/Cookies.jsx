@@ -28,7 +28,6 @@ const Cookies = () => {
     localStorage.setItem("cookieConsent", JSON.stringify(selectedCookies));
     setShowBanner(false);
 
-    // Envoyer les préférences au serveur
     await fetch("/api/save-cookie-preferences", {
       method: "POST",
       headers: {
@@ -51,65 +50,41 @@ const Cookies = () => {
   if (!showBanner) return null;
 
   return (
-    <section className="fixed  z-[99999] max-w-md p-6 mx-auto bg-gradient-to-br from-blue-50 to-purple-50 border border-gray-200 dark:bg-gray-800 left-12 bottom-16 dark:border-gray-700 rounded-2xl shadow-lg animate-fade-in">
+    <section className="fixed z-[99999] max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl p-4 sm:p-6 md:p-8 mx-auto bg-gradient-to-br from-primary to-orange-500 border border-gray-200 dark:bg-gray-800 left-4 bottom-4 sm:left-8 sm:bottom-8 md:left-12 md:bottom-16 dark:border-gray-700 rounded-2xl shadow-lg animate-fade-in">
       <div className="flex items-center justify-between">
-        <h2 className="font-semibold text-gray-800 dark:text-white text-lg flex items-center">
+        <h2 className="font-semibold text-gray-800 dark:text-white text-sm sm:text-base md:text-lg flex items-center">
           🍪 <span className="ml-2">Nous utilisons des cookies !</span>
         </h2>
-        <button
-          onClick={handleClose}
-          className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
-        >
+        <button onClick={handleClose} className="text-gray-50 hover:text-gray-800 dark:hover:text-gray-300">
           ✕
         </button>
       </div>
 
-      <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
+      <p className="mt-4 text-xs sm:text-sm text-gray-50 dark:text-gray-300">
         Ce site web utilise des cookies essentiels pour fonctionner correctement
         et des cookies de suivi pour analyser votre navigation. Ces derniers nécessitent votre consentement.
       </p>
 
       <div className="mt-4 space-y-2">
         <label className="flex items-center space-x-2">
-          <input
-            type="checkbox"
-            checked={selectedCookies.essential}
-            disabled
-            className="form-checkbox h-4 w-4 accent-primary rounded"
-          />
-          <span className="text-sm text-gray-700 dark:text-gray-300">Cookies essentiels</span>
+          <input type="checkbox" checked={selectedCookies.essential} disabled className="form-checkbox h-4 w-4 accent-primary rounded" />
+          <span className="text-xs sm:text-sm text-gray-50 dark:text-gray-300">Cookies essentiels</span>
         </label>
         <label className="flex items-center space-x-2">
-          <input
-            type="checkbox"
-            checked={selectedCookies.performance}
-            onChange={() => handleCategoryChange("performance")}
-            className="form-checkbox h-4 w-4 accent-primary rounded"
-          />
-          <span className="text-sm text-gray-700 dark:text-gray-300">Cookies de performance</span>
+          <input type="checkbox" checked={selectedCookies.performance} onChange={() => handleCategoryChange("performance")} className="form-checkbox h-4 w-4 accent-primary rounded" />
+          <span className="text-xs sm:text-sm text-gray-50 dark:text-gray-300">Cookies de performance</span>
         </label>
         <label className="flex items-center space-x-2">
-          <input
-            type="checkbox"
-            checked={selectedCookies.marketing}
-            onChange={() => handleCategoryChange("marketing")}
-            className="form-checkbox h-4 w-4 accent-primary rounded"
-          />
-          <span className="text-sm text-gray-700 dark:text-gray-300">Cookies de marketing</span>
+          <input type="checkbox" checked={selectedCookies.marketing} onChange={() => handleCategoryChange("marketing")} className="form-checkbox h-4 w-4 accent-primary rounded" />
+          <span className="text-xs sm:text-sm text-gray-50 dark:text-gray-300">Cookies de marketing</span>
         </label>
       </div>
 
       <div className="grid grid-cols-2 gap-4 mt-6">
-        <button
-          onClick={handleAccept}
-          className="flex items-center justify-center  text-white font-medium rounded-lg text-sm px-4 py-2 bg-primary hover:bg-secondary hover:text-primary border border-transparent hover:border-primary transition-all ease-in-out duration-500"
-        >
+        <button onClick={handleAccept} className="flex items-center justify-center text-white font-medium rounded-lg text-xs sm:text-sm px-3 sm:px-4 py-2 bg-primary hover:bg-secondary hover:text-primary border border-transparent hover:border-primary transition-all ease-in-out duration-500">
           Accepter tout
         </button>
-        <button
-          onClick={handleReject}
-          className="text-sm bg-white text-primary font-medium rounded-lg border border-primary px-4 py-2.5 duration-300 transition-colors focus:outline-none hover:bg-primary hover:text-white "
-        >
+        <button onClick={handleReject} className="text-xs sm:text-sm bg-white text-primary font-medium rounded-lg border border-primary px-3 sm:px-4 py-2.5 duration-300 transition-colors focus:outline-none hover:bg-primary hover:text-white">
           Rejeter tout
         </button>
       </div>
