@@ -38,7 +38,7 @@ document.head.appendChild(styles);
     description:
       "Découvrez nos programmes variés qui s'adaptent à différents secteurs professionnels.",
   };
-  //console.log("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
+
 
   return (
     <div className="md:px-desktop_padding sm:px-tablet_padding px-mobile_padding py-16 flex flex-col gap-14">
@@ -47,12 +47,12 @@ document.head.appendChild(styles);
         <p className="font-normal md:text-base text-sm text-left max-w-5xl">{description}</p>
       </div>
       <h1 style={{
-  backgroundColor: 'rgba(255, 0, 0, 0.5)',  // Rouge avec opacité faible
+  backgroundColor: 'rgba(255, 1, 0, 1.5)',  // Rouge avec opacité faible
   color: 'white',
   padding: '10px',
   textAlign: 'center',
   fontSize: '24px',
-  animation: 'blink 5s infinite',
+  animation: 'blink 10s infinite',
   borderRadius: '30px',  // Coins arrondis
   display: 'flex',
   justifyContent: 'center',  // Centrer horizontalement

@@ -4,7 +4,7 @@ import Filter from "./Filter";
 
 const AllTrainings = ({ trainings}) => {
   return (
-    <div className="flex flex-col gap-10 w-full">
+    <div className="flex flex-col gap-10 w-full ">
       <div className="">
         <p className="font-medium md:text-xl text-base text-left">
           Toutes les formations
@@ -14,7 +14,7 @@ const AllTrainings = ({ trainings}) => {
           les dispositifs incontournables, dont le DPC.
         </p>
       </div>
-      <div className="flex lg:flex-row flex-col lg:gap-4 gap-8 w-full">
+      <div className="flex lg:flex-row flex-col lg:gap-4 gap-8 w-full ">
       { /* <Filter />*/}
         <TrainingList trainings={trainings} />
       </div>

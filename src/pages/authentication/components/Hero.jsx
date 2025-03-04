@@ -12,7 +12,7 @@ const Hero = () => {
       </div>
       <div className="absolute top-5 mx-auto z-20 pointer-events-none w-1/2 h-1/2 shadow-lg">
         <img
-          src="/images/auth-medic.jpg"
+          src="/images/docteur.jpg"
           alt="medical"
           className="w-full h-full object-cover shadow-xl"
         />

@@ -19,16 +19,11 @@ const Hero = () => {
             >
               Demander une information
             </NavLink>
-           {/* <NavLink
-              to="/formations/categorie/sante"
-              className="bg-white px-6 py-3 rounded-full hover:opacity-90 flex items-center w-fit gap-2"
-            >
-              <span>Toutes les formations</span> <FaLongArrowAltRight />
-            </NavLink>*/}
+
           </div>
         </div>
         <div className="relative max-md:hidden">
-          <div className="absolute 2xl:right-[calc(50%-250px)] xl:right-[calc(50%-300px)] right-[150%] top-[-10%]">
+          <div className="absolute 2xl:right-[calc(50%-250px)] xl:right-[calc(50%-300px)] right-[5%] top-[-10%]">
             <img
               src="/images/about-3.jpg"
               alt="about hero"

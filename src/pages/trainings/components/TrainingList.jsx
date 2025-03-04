@@ -24,7 +24,7 @@ const TrainingList = ({ trainings }) => {
           duration={training.duration}
           id ={training.id}
 
-        />
+         />
       ))}
       {/*trainings.map((training) => (
         <Card
