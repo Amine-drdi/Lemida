@@ -28,27 +28,21 @@ const Hero = () => {
           </div>
         </div>
         <div className="relative max-md:hidden">
-          <div className="absolute 2xl:right-[calc(50%-250px)] xl:right-[calc(50%-300px)] right-[5%] top-[-10%]">
+          <div className="absolute 2xl:right-[calc(50%-250px)] xl:right-[calc(50%-300px)] right-[150%] top-[-10%]">
             <img
               src="/images/about-3.jpg"
               alt="about hero"
               className="2xl:w-80 w-64 h-auto object-cover rounded-lg shadow-lg"
             />
           </div>
-         <div className="absolute 2xl:left-0  xl:left-[calc(50%-256px)] left-[5%] top-[25%]">
+         <div className="absolute 2xl:left-0  xl:left-[calc(50%-256px)] left-[15%] top-[30%]">
             <img
               src="/images/btp.jpg"
               alt="about hero"
               className="w-auto 2xl:h-72 h-56 object-cover rounded-lg shadow-lg"
             />
           </div>
-          <div className="absolute 2xl:right-[calc(50%-250px)] xl:right-[calc(50%-300px)] right-[1%] top-[65%]">
-            <img
-              src="/images/administratif.jpg"
-              alt="about hero"
-              className="2xl:w-80 w-64 h-auto object-cover rounded-lg shadow-lg"
-            />
-          </div>
+
         </div>
       </div>
     </div>
