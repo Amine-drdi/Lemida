@@ -246,77 +246,7 @@ const Header = () => {
           <span className="absolute inset-0 -mx-2 bg-primary opacity-0 group-hover:opacity-100 transition-all"></span>
         </NavLink>
 
-        {/*<div className="group relative h-full">
-          <p
-            className={`relative flex gap-1 items-center h-full cursor-pointer border-b-2 transition-all
-              ${location.pathname.includes("/financements") ? "border-primary text-primary" : "border-transparent text-nav_color/85"}
-            `}
-          >
-            <span className="relative z-10 group-hover:text-white transition-all">
-              Financements
-            </span>
-            <HiChevronDown className="w-5 h-5 relative z-10 transition-all group-hover:rotate-180 group-hover:text-white" />
-            <span className="absolute inset-0 -mx-4 bg-primary opacity-0 group-hover:opacity-100 transition-all"></span>
-          </p>
-
-          <div className="flex-col gap-3 hidden group-hover:flex absolute top-full left-0 w-fit bg-white rounded-sm px-8 py-5 shadow-lg whitespace-nowrap">
-            <NavLink
-              to="/financements/dpc"
-              className="relative w-full h-full flex items-center justify-between gap-5 text-black transition-all duration-500 ease-in-out group/dpc"
-            >
-              <span className="relative z-10 group-hover/dpc:text-white transition-all">DPC</span>
-              <span className="absolute inset-0 -mx-8 -mb-3 -mt-6 bg-primary opacity-0 group-hover/dpc:opacity-100 group-hover/dpc:scale-100 scale-90 transition-all"></span>
-            </NavLink>
-
-            <NavLink
-              to="/financements/opco"
-              className="relative w-full h-full flex items-center justify-between gap-5 text-black transition-all duration-500 ease-in-out group/opco"
-            >
-              <span className="relative z-10 group-hover/opco:text-white transition-all">OPCO</span>
-              <span className="absolute inset-0 -mx-8 -my-2 bg-primary opacity-0 group-hover/opco:opacity-100 transition-all"></span>
-            </NavLink>
-
-            <NavLink
-              to="/financements/fif-pl"
-              className="relative w-full h-full flex items-center justify-between gap-5 text-black transition-all duration-500 ease-in-out group/fifpl"
-            >
-              <span className="relative z-10 group-hover/fifpl:text-white transition-all">FIF PL</span>
-              <span className="absolute inset-0 -mx-8 -my-2 bg-primary opacity-0 group-hover/fifpl:opacity-100 transition-all"></span>
-            </NavLink>
-
-            <NavLink
-              to="/financements/faf-pm"
-              className="relative w-full h-full flex items-center justify-between gap-5 text-black transition-all duration-500 ease-in-out group/fafpm"
-            >
-              <span className="relative z-10 group-hover/fafpm:text-white transition-all">FAF PM</span>
-              <span className="absolute inset-0 -mx-8 -my-2 bg-primary opacity-0 group-hover/fafpm:opacity-100 transition-all"></span>
-            </NavLink>
-
-            <NavLink
-              to="/financements/pole-emploi"
-              className="relative w-full h-full flex items-center justify-between gap-5 text-black transition-all duration-500 ease-in-out group/pe"
-            >
-              <span className="relative z-10 group-hover/pe:text-white transition-all">Pôle Emploi</span>
-              <span className="absolute inset-0 -mx-8 -my-2 bg-primary opacity-0 group-hover/pe:opacity-100 transition-all"></span>
-            </NavLink>
-
-            <NavLink
-              to="/financements/employeur"
-              className="relative w-full h-full flex items-center justify-between gap-5 text-black transition-all duration-500 ease-in-out group/employeur"
-            >
-              <span className="relative z-10 group-hover/employeur:text-white transition-all">Employeur</span>
-              <span className="absolute inset-0 -mx-8 -my-2 bg-primary opacity-0 group-hover/employeur:opacity-100 transition-all"></span>
-            </NavLink>
-
-            <NavLink
-              to="/financements/financement-personnel"
-              className="relative w-full h-full flex items-center justify-between gap-5 text-black transition-all duration-500 ease-in-out group/fperso"
-            >
-              <span className="relative z-10 group-hover/fperso:text-white transition-all">Financement Personnel</span>
-              <span className="absolute inset-0 -mx-8 -mt-2 -mb-5 bg-primary opacity-0 group-hover/fperso:opacity-100 transition-all"></span>
-            </NavLink>
-          </div>
-        </div>*/}
+        
          <div className="group/main h-full ml-[20px]">
 
 <p
@@ -350,11 +280,11 @@ const Header = () => {
 </p>
 
 {/* Modified dropdown menu positioning */}
-<div  style={{marginLeft:"300px"}}className="flex hidden group-hover/main:flex absolute left-20 w-auto bg-white rounded-sm shadow-lg whitespace-nowrap">
-  <div className="group/item relative px-8 py-5">
+<div className="flex hidden group-hover/main:flex absolute right-64 w-auto bg-white rounded-sm shadow-lg whitespace-nowrap">
+  <div className="group/item relative px-8 py-5 left-70">
     <NavLink
       to="/CPF"
-      className="  w-full h-full flex items-center justify-between gap-5 text-black relative group-hover/item:text-white transition-all duration-500 ease-in-out"
+      className="  w-2 h-full flex items-center justify-between gap-2 text-black relative group-hover/item:text-white transition-all duration-500 ease-in-out"
     >
       <span className="relative z-10 group-hover/item:text-orange-500 transition-all">CPF</span>
     </NavLink>

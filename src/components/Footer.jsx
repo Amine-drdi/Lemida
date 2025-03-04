@@ -8,12 +8,12 @@ const Footer = () => {
   const currentDate = new Date().getFullYear();
 
   return (
-    <footer className="w-full px-4 sm:px-6 md:px-8 bg-gray-900 text-gray-200 ">
+    <footer className="w-full px-4 sm:px-6 md:px-8 bg-gray-900 text-gray-200">
       <div className="flex flex-col gap-4 py-2 md:py-5">
         {/* Logos section */}
-        <div className="flex flex-col md:flex-row items-start justify-start gap-10 w-full max-w-screen-xl mx-auto px-16">
+        <div className="flex flex-col md:flex-row items-start justify-start gap-10 w-full max-w-screen-xl mx-auto px-4 sm:px-8 md:px-16">
           {/* Logo Lemida et paragraphe */}
-          <div className="flex flex-row items-start gap-4">
+          <div className="flex flex-col md:flex-row items-start gap-4">
             <div className="w-32 h-16 bg-white flex items-center justify-center">
               <NavLink to="/">
                 <img
@@ -36,14 +36,14 @@ const Footer = () => {
           </div>
 
           {/* Certificat Qualiopi et paragraphe */}
-          <div className="flex flex-row items-start gap-4">
+          <div className="flex flex-col md:flex-row items-start gap-4">
             <img
               src="/images/logo-qualiopi.jpeg"
               alt="Qualiopi"
-              className="w-40 h-20 bg-white"
+              className="w-32 h-20 bg-white"
             />
             <div className="text-gray-300 text-xs">
-              <p className="m-0 p-0">
+              <p className="m-0 p-0 ">
                 Notre organisme est certifié Qualiopi
                 <br /> pour les actions de formation (L.6313-1 - 1°).
                 <br /> Cette certification atteste de la qualité des
@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
 
         {/* Navigation sections */}
-        <div className="grid grid-cols-1 sm:grid-cols md:grid-cols-4 gap-[0px] text-center md:text-left mx-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 text-center md:text-left mx-4 sm:mx-8 md:mx-16">
           {/* Découvrir Lemida */}
           <div className="">
             <p className="text-base font-medium mb-2">Découvrir Lemida</p>
@@ -138,7 +138,7 @@ const Footer = () => {
 
           {/* Carte Google Maps */}
           <div className="px-0">
-            <p className="text-base font-medium mb-2 ">Localisation</p>
+            <p className="text-base font-medium mb-2">Localisation</p>
             <iframe
               title="Google Maps Location"
               className="w-full h-32 rounded-lg"
@@ -156,8 +156,8 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row items-center justify-between border-t border-gray-700 pt-4 pb-4 sm:pt-2 sm:pb-2 text-sm">
           {/* Copyright section - Centered */}
           <div className="flex-1 sm:text-left mb-4 sm:mb-0"></div>
-          <div className="flex-1 text-center sm:text-left mb-4 sm:mb-0 mr-48">
-            <p>&copy; 2025 Lemida. Tous droits réservés</p>
+          <div className="flex-1 text-center sm:text-left mb-4 sm:mb-0">
+            <p>&copy; {currentDate} Lemida. Tous droits réservés</p>
           </div>
 
           {/* Social media icons - Aligned to the right */}

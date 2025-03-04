@@ -9,9 +9,9 @@ AOS.refresh();
 
 const Home = () => {
   return (
-    <section className="flex flex-col">
+    <section className="flex flex-col px-20">
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4 sm:p-10 md:p-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4  sm:p-10 md:p-28">
         <FormationCard
            image="https://www.perspective-formation.fr/wp-content/uploads/2019/11/Logo-Mon-Compte-Formation-Appli-CPF.jpg"
            link="/CPF"
