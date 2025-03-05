@@ -99,7 +99,7 @@ export const trainings = [
           {
             name: "Marie Dupont",
             image:
-              "https://www.francebleu.fr/s3/cruiser-production/2021/05/ecf02db7-b967-4c9f-9980-7b1394af27da/1200x680_gettyimages-509102307.jpg",
+              "https://media.doctolib.com/image/upload/q_auto:eco,f_auto/pnaelmeakxquvtnpwtu9.jpg",
             profession: "Infirmière Spécialisée en Techniques de Vaccination",
             comment:
               "Une formation très enrichissante, avec des outils pratiques pour la vaccination et une excellente pédagogie.",
@@ -124,7 +124,7 @@ export const trainings = [
         instructors2: [
           {
             name: "Jean-François Renucci",
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSmONQswxPf8Dkt10aPNODb0AWOfpqn3b2Q&s", // Remplacer par l'URL de l'image de l'instructeur
+            image: "https://media.licdn.com/dms/image/v2/C5603AQGvwos08A9YfQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517401253810?e=2147483647&v=beta&t=qCPryXi30djRCI7FZy1SE5B443C73U4uWp8PKf5rE4Y", // Remplacer par l'URL de l'image de l'instructeur
             role: "Expert en Immunologie et Vaccination",
             numOfTrainings: 13,
           },
