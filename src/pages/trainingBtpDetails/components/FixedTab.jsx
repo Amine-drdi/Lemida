@@ -12,14 +12,14 @@ const FixedTab = ({
         <p className="sm:text-2xl text-lg font-bold text-gray-500">
           {formation.title}
         </p>
-        <div className="flex items-center justify-center w-fit bg-main_color text-white hover:bg-secondary hover:text-primary border border-transparent hover:border-primary transition-all duration-500 ease-in-out">
+       {/*} <div className="flex items-center justify-center w-fit bg-main_color text-white hover:bg-secondary hover:text-primary border border-transparent hover:border-primary transition-all duration-500 ease-in-out">
           <button
             className="px-10 py-5 text-base font-semibold"
             onClick={() => setShowInscriptionForm(true)}
           >
             S'inscrire
           </button>
-        </div>
+        </div>*/}
       </div>
       <div className="flex flex-row h-12 border-b border-[#F0F0F0] box-border gap-1 text-base font-normal w-fit max-w-full overflow-x-auto scrollbar-hide">
         <a
