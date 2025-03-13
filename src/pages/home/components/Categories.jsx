@@ -27,7 +27,7 @@ const Categories = () => {
           route="categorie/btp"
         />
         <CategoriesCard
-          label="Juridique-et-administrative"
+          label="Juridique et administrative"
           categories={administrativeCategories}
           route="juridique/juridique-et-administrative"
         />
