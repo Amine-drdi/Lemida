@@ -2,8 +2,8 @@ import React from "react";
 
 const ContactUsForm = () => {
   return (
-    <div className="flex flex-col w-full md:w-1/2 py-8">
-      <h2 className="text-2xl font-semibold mb-6 text-primary">Envoyez-nous un Message</h2>
+    <div className="flex flex-col w-full md:w-1/2 py-8 mt-12">
+      {/*<h2 className="text-2xl font-semibold mb-6 text-primary">Envoyez-nous un Message</h2>*/}
       <form className="space-y-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium">
@@ -13,7 +13,7 @@ const ContactUsForm = () => {
             type="text"
             id="name"
             name="name"
-            className="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+            className="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none"
             placeholder="Entrez votre Nom et Prénom"
             required
           />
@@ -26,7 +26,7 @@ const ContactUsForm = () => {
             type="email"
             id="email"
             name="email"
-            className="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+            className="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none"
             placeholder="Entrez votre Email"
             required
           />
@@ -39,7 +39,7 @@ const ContactUsForm = () => {
             type="tel"
             id="tel"
             name="tel"
-            className="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+            className="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none"
             placeholder="Entrer votre numéro de téléphone"
             required
           />
@@ -52,7 +52,7 @@ const ContactUsForm = () => {
             id="message"
             name="message"
             rows="5"
-            className="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+            className="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none"
             placeholder="Votre Message"
             required
           ></textarea>

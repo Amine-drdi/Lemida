@@ -55,7 +55,7 @@ const Cookies = () => {
         <h2 className="font-semibold text-gray-800 dark:text-white text-sm sm:text-base md:text-lg flex items-center">
           🍪 <span className="ml-2">Nous utilisons des cookies !</span>
         </h2>
-        <button onClick={handleClose} className="text-gray-50 hover:text-gray-800 dark:hover:text-gray-300">
+        <button onClick={handleClose} className="text-gray-700 hover:text-black dark:hover:text-gray-300">
           ✕
         </button>
       </div>
