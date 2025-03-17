@@ -28,28 +28,28 @@ export const medicalAdvisors = [
 
 export const btpAdvisors = [
   {
-    name: "Rachel Smith",
-    title: "Consultante en Biologie et Biochimie",
+    name: "Sébastien Garnier",
+    title: "Formateur installations thermiques et sanitaires",
     image:
-      "https://img.freepik.com/photos-premium/travailleur-construction-gratuit-chantier-regardant-image-camera_999195-550.jpg",
+      "https://itss-idf.fr/wp-content/uploads/2021/12/intro-handyman.jpg",
     description:
-      "Biologie et Biochimie sont des domaines de la santé cruciaux pour comprendre et traiter les problèmes de santé. J'ai participé à des ateliers de biologie et biochimie pour apprendre à utiliser les nouvelles technologies pour améliorer notre santé et protéger nos enfants contre les maladies.",
+      "Le formateur en installations thermiques et sanitaires transmet son savoir-faire aux futurs professionnels du chauffage, de la plomberie et des systèmes de climatisation. Son rôle ne se limite pas à la pratique : il sensibilise aussi ses élèves aux réglementations en vigueur, aux normes de sécurité et aux bonnes pratiques en matière d’économie d’énergie et de respect de l’environnement.",
   },
   {
     name: "Alin Johnson",
-    title: "Enseignante en Biologie et Biochimie",
+    title: "Formateur électricien bâtiment",
     image:
       "https://www.metiers-btp.fr/wp-content/uploads/2019/05/CONDUCTEUR_DE_TRAVAUX.jpg",
     description:
-      "Biologie et Biochimie sont des domaines de la santé cruciaux pour comprendre et traiter les problèmes de santé. J'ai été en tant qu'enseignante pour apprendre aux élèves à utiliser les nouvelles technologies pour améliorer notre santé et protéger nos enfants contre les maladies.",
+      "Le formateur électricien bâtiment enseigne la conception, l’installation et l’entretien des réseaux électriques résidentiels et tertiaires. Il forme à la lecture de plans, au câblage, à la connexion des équipements et aux normes de sécurité, dont la NFC 15-100, tout en intégrant les innovations en efficacité énergétique et automatisation.",
   },
   {
-    name: "Jennifer Wilson",
-    title: "Praticienne en Biologie et Biochimie",
+    name: "Julien Lambert",
+    title: "Formateur bâtiment - étanchéité",
     image:
-      "https://media.istockphoto.com/id/1430852855/fr/photo/ing%C3%A9nieure-ouvri%C3%A8re-de-la-construction-ou-architecte-heureuse-se-sentant-fi%C3%A8re-et-satisfaite.jpg?s=612x612&w=0&k=20&c=X2LgJ0WkNBbEL0-oJquy0OWn0gnGr9RHLd90k9N9t38=",
+      "https://demain.ladn.eu/wp-content/uploads/2020/11/conducteur-travaux-publics.jpg",
     description:
-      "Biologie et Biochimie sont des domaines de la santé cruciaux pour comprendre et traiter les problèmes de santé. J'ai été en tant que praticienne pour apprendre aux patients à utiliser les nouvelles technologies pour améliorer notre santé et protéger nos enfants contre les maladies.",
+      "Le formateur en étanchéité du bâtiment apprend aux professionnels à protéger les ouvrages contre l’eau et l’humidité. Il enseigne la pose des membranes, l’application des revêtements et la réalisation des joints. Il sensibilise à l’entretien des toitures et aux règles de sécurité, garantissant la durabilité et la conformité des bâtiments.",
   },
 ];
 export const juridiqueAdministrationAdvisors = [
