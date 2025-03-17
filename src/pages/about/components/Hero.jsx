@@ -20,6 +20,13 @@ const Hero = () => {
               Demander une information
             </NavLink>
 
+            <NavLink
+              to="/AllTrainings"
+              className="bg-secondary px-6 py-3 rounded-full text-primary hover:text-secondary hover:bg-primary border border-primary hover:border-secondary w-fit transition-all duration-500 ease-in-out"
+            >
+              Decouvrez nos formations
+            </NavLink>
+
           </div>
         </div>
         <div className="relative max-md:hidden">
