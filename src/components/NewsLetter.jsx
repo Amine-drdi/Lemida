@@ -1,7 +1,8 @@
 import React from "react";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
-import * as yup from "yup";
+import yup from "yup";
+
 import * as Toast from "@radix-ui/react-toast";
 import { MdEmail } from "react-icons/md";
 
