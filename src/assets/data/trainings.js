@@ -5147,7 +5147,7 @@ export const juridiqueTrainings = [
   {
     id: 2,
     image:
-      "https://misterprepa.net/wp-content/uploads/2023/09/Formation-en-management-naviguez-avec-succes-dans-le-monde-des-affaires-scaled.jpg",
+      "https://static3.cegos.fr/content/uploads/2022/08/10141748/chef-de-projet-les-fondamentaux-Mag-min.jpg",
     title: "Management",
     duration: "24H",
     instructors: "Jean-François Renucci",
