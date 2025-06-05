@@ -20,6 +20,7 @@ const MostSeenTrainings = ({ title, description, trainings }) => {
               title={training.title}
               instructors={training.instructors}
               duration={training.duration}
+              tarif={training.tarif}
               id={training.id}
 
             />

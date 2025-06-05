@@ -13,6 +13,10 @@ import {
   medicalCategories,
 } from "../assets/data/categories";
 
+import {
+  trainings,
+} from "../assets/data/trainings";
+
 const Header = () => {
   const { activeMenu, setActiveMenu, openSearchMenu, setOpenSearchMenu } =
     useAppContext();

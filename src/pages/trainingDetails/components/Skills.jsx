@@ -14,9 +14,9 @@ console.log(formation)
   return (
     <div id="skills" className="flex flex-col gap-6 max-w-5xl scroll-mt-52">
       <div>
-        <p className="text-2xl font-medium text-gray-600 max-w-2xl">
+        <p className="text-xl font-semibold text-primary">
           Compétences développées
-        </p>
+        </p> 
       </div>
       <div className="flex flex-wrap gap-4">
         {skills.map((skill, index) => (

@@ -33,6 +33,7 @@ import {
   TbCar4WdFilled,
   TbContract,
   TbBriefcaseFilled,
+  TbDental,
 } from "react-icons/tb";
 import { PiLadderSimpleLight, PiMicrosoftWordLogoFill } from "react-icons/pi";
 import { LuCable } from "react-icons/lu";
@@ -40,146 +41,71 @@ import { SiPaloaltosoftware } from "react-icons/si";
 import { AiFillPrinter } from "react-icons/ai";
 
 export const medicalCategories = [
-  {  id : 0,
-    name: "Vaccination par l’Infirmier",
-    icon: MdLocalPharmacy,
-  },
-  {
-    id : 1,
-    name: "Gestion de Cabinet Infirmier",
-    icon: FaBaby,
+  {  id : 1,
+    name: "Améliorer la gestion de l’occlusion en prothèse",
+    icon: TbDentalBroken,
   },
   {
     id : 2,
-    name: "Prélèvements Sanguins",
-    icon: GiFootprint,
+    name: "Cervicalgie en phase aiguë",
+    icon: TbMassage,
   },
-
   {
     id : 3,
-    name: " Perfusions et Soins Complexes ",
-    icon: FaHeartPulse,
+    name: "Endométriose",
+    icon: TbDental,
   },
 
   {
     id : 4,
-    name: " Gestion des Soins Palliatifs",
-    icon: MdPregnantWoman,
-  },
-  {
-    id : 5,
-    name: " Burn-Out des Soignants",
-    icon: GiMagnifyingGlass,
-  },
-  {
-    id : 6,
-    name: " Diabète - Prise en charge globale",
-    icon: TbOld,
-  },
-  {
-    id : 7,
-    name: " Responsabilité Professionnelle",
-    icon: RiPsychotherapyLine,
-  },
-  {
-    id : 8,
-    name: " Prévention et Prise en Charge de l'Obésité",
+    name: "Lombalgie chronique en kinésithérapie ",
     icon: TbMassage,
   },
+
   {
-    id : 9,
-    name: " Cancérologie - Soins et Accompagnement",
-    icon: FaUserNurse,
+    id : 5,
+    name: "Maîtriser les restaurations adhésives",
+    icon: TbDental,
   },
-  { id : 10,
-    name: " Maladie de Parkinson - Prise en ChargeGlobale",
-    icon: FaHandHoldingMedical,
-  },
-  { id : 11,
-    name: "Plaies et Cicatrisation",
-    icon: LiaStethoscopeSolid,
-  },
-  { id : 12,
-    name: " Kinésithérapie - Approches Innovantes en Rééducation ",
+
+  {
+    id : 6,
+    name: "Prise en charge de l’usure dentaire pathologique",
     icon: TbDentalBroken,
   },
-  {   id : 13,
-    name: " Chirurgie Dentaire - Gestion des Pathologies Complexes",
-    icon: MdOutlineBabyChangingStation,
-  },
-  { id : 14,
-    name: " Pharmaciens - Optimisation des Conseils au Comptoir",
-    icon: GiDiscussion,
+
+  {
+    id : 7,
+    name: "Suivi de grossesse par les sage-femmes",
+    icon: MdPregnantWoman,
   },
 
-  { id : 15,
-    name: " Médecins Généralistes - Approches Multidisciplinaires",
-    icon: GiMedicinePills,
-  },
-  { id : 16,
-    name: "Sages-Femmes - Suivi Périnatal et Innovations en Santé Maternelle",
-    icon: GiBrain,
-  },
-  { id : 17,
-    name: "Aides-Soignantes - Soins et Relation Patient",
-    icon: GiJoint,
-  },
-  { id : 18,
-    name: " Gynécologie - Prise en Charge et Innovations",
-    icon: GiHospital,
-  },
-  { id : 19,
-    name: " Préparateurs en Pharmacie - Gestion et Conseil au Comptoir",
-    icon: GiHospital,
+  {
+    id : 8,
+    name: "Accompagnement à la parentalité par les sage-femmes",
+    icon: RiPsychotherapyLine,
   },
 
-  { id : 20,
-    name: " Dermatologie - Diagnostic et Traitements Modernes",
-    icon: GiHospital,
+  {
+    id : 9,
+    name: "Cervicalgie en phase aigüe ",
+    icon: TbMassage,
   },
 
-  { id : 21,
-    name: " Psychiatrie - Approches Thérapeutiques Modernes",
-    icon: GiHospital,
+  {
+    id : 10,
+    name: "Endométriose ",
+    icon: FaUserNurse,
   },
 
-  { id : 22,
-    name: " Pédiatrie - Soins et Pathologies Spécifiques",
-    icon: GiHospital,
+  { id : 11,
+    name: "Lombalgie chronique",
+    icon: FaHandHoldingMedical,
   },
 
-  { id : 22,
-    name: " Neurologie - Diagnostic et Prise en Charge",
-    icon: GiHospital,
-  },
-
-  { id : 23,
-    name: " Allaitement Maternel - Accompagnement et Soutien",
-    icon: GiHospital,
-  },
-
-  
-  { id : 24,
-    name: " Rééducation du Périnée",
-    icon: GiHospital,
-  },
-
-  { id : 25,
-    name: " Infertilité - Diagnostic et Parcours de Soins",
-    icon: GiHospital,
-  },
-
-  { id : 26,
-    name: " Suivi du Nouveau-né",
-    icon: GiHospital,
-  },
-  { id : 27,
-    name: " Suivi du Nouveau-né",
-    icon: GiHospital,
-  },
-  { id : 28,
-    name: " Vaccination par le Pharmacien",
-    icon: GiHospital,
+  { id : 12,
+    name: "Suivi de grossesse par les sage-femmes",
+    icon: LiaStethoscopeSolid,
   },
 ];
 

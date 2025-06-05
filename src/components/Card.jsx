@@ -7,8 +7,9 @@ import { MdTimer, MdOutlineSupportAgent } from "react-icons/md";
 const Card = (props) => {
   //const { id } = useParams(); // Récupère l'ID de l'URL
 
-  const { imageUrl, title, duration, instructors ,id} = props;
-  console.log(id,imageUrl)
+  const { imageUrl, title, duration, instructors,tarif ,id} = props;
+  console.log(id,imageUrl )
+  console.log("********Tarif*******",tarif )
   return (
     <section className="relative group flex flex-col h-[460px] bg-white overflow-hidden">
       <NavLink
@@ -95,7 +96,7 @@ const Card = (props) => {
           <div className="flex flex-col gap-4 justify-between mb-3 text-white">
            <div className="flex flex-row gap-2 items-center">
               <FaEuroSign className="w-5 h-5 text-white" />
-              <span className="font-medium">Contactez nous pour le prix</span>
+              <span className="font-medium">{tarif}</span>
             </div>
             <div className="flex flex-row gap-2 items-center">
               <MdTimer className="w-5 h-5 text-white" />

@@ -18,18 +18,19 @@ const Hero = ({ setShowInscriptionForm , formation }) => {
             Formateur : <span className="underline">{formation.instructors}</span>
           </p>*/}
         </div>
-        {/*<div className="flex items-center justify-center w-fit bg-main_color text-white hover:bg-secondary hover:text-primary border border-transparent hover:border-primary transition-all duration-500 ease-in-out">
+       <div className="flex items-center w-36 h-10 justify-center rounded-full text-white font-medium text-sm px-4 py-2 bg-primary hover:bg-secondary hover:text-primary border border-transparent hover:border-primary transition-all ease-in-out duration-500"
+>
           <button
             className="px-10 py-5 text-base font-semibold"
             onClick={() => setShowInscriptionForm(true)}
           >
             S'inscrire
           </button>
-        </div>*/}
-        <p className="text-gray-700 text-sm">
+        </div>
+        {/* <p className="text-gray-700 text-sm">
           <span className="text-black/80 font-bold text-base">15</span> sont
           déjà inscrits
-        </p>
+        </p>*/}
       </div>
       <div className="w-1/2 h-full absolute right-0 bottom-0 top-0 -z-10">
         <img

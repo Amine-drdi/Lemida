@@ -21,7 +21,7 @@ const FixedTab = ({
           </button>
         </div>*/}
       </div>
-      <div className="flex flex-row h-12 border-b border-[#F0F0F0] box-border gap-1 text-base font-normal w-fit max-w-full overflow-x-auto scrollbar-hide">
+      <div className="flex flex-row h-12  border-b border-[#F0F0F0] box-border gap-1 text-base font-normal w-fit max-w-full overflow-x-auto scrollbar-hide">
         <a
           href="#description"
           className={`${
@@ -66,7 +66,7 @@ const FixedTab = ({
         >
           Financements
         </a>
-        <a
+       { /*<a
           href="#testimonials"
           className={`${
             toggleResults === "Témoignages"
@@ -76,7 +76,7 @@ const FixedTab = ({
           onClick={() => setToggleResults("Témoignages")}
         >
           Témoignages
-        </a>
+        </a>*/}
       </div>
     </div>
   );

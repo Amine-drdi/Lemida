@@ -47,7 +47,7 @@ const Tab = ({ toggleResults, setToggleResults }) => {
       >
         Financements
       </a>
-      <a
+      {/*<a
         href="#testimonials"
         className={`${
           toggleResults === "Témoignages"
@@ -57,7 +57,7 @@ const Tab = ({ toggleResults, setToggleResults }) => {
         onClick={() => setToggleResults("Témoignages")}
       >
         Témoignages
-      </a>
+      </a>*/}
     </div>
   );
 };

@@ -9,62 +9,65 @@ import {
 } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
+
+// ✅ Formulaire d'inscription
+const InscriptionForm = ({ setShowInscriptionForm, formation }) => {
+  const sessions = formation?.Session || [];
+// ✅ Schéma de validation
 const schema = yup.object().shape({
-  username: yup
-    .string()
-    .min(4)
-    .matches(/^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/, "only letters accepted")
-    .required(),
-  email: yup
-    .string()
-    .email()
-    .matches(
-      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-      "Email not valid"
-    )
-    .required(),
+  username: yup.string().min(4).matches(/^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/, "only letters accepted").required(),
+  email: yup.string().email("Email non valide").required(),
   phone: yup.string().required(),
   job: yup.string().required(),
-  policy: yup.boolean().required(),
+  policy: yup.boolean().oneOf([true], "Vous devez accepter la politique"),
+  sessionDate: sessions.length > 0
+    ? yup.string().required("Veuillez sélectionner une session")
+    : yup.string().notRequired(),
 });
 
-const InscriptionForm = ({ setShowInscriptionForm }) => {
-  const {
-    formState: { errors },
-    handleSubmit,
-    register,
-    setError,
-    watch,
-  } = useForm({
-    defaultValues: {
-      username: "",
-      email: "",
-      phone: "",
-      job: "",
-      policy: false,
-    },
-    resolver: yupResolver(schema),
-  });
+ const {
+  formState: { errors },
+  handleSubmit,
+  register,
+  setError,
+  watch,
+} = useForm({
+  mode: "onSubmit", // ou "onChange" pour test en live
+  defaultValues: {
+    username: "",
+    email: "",
+    phone: "",
+    job: "",
+    policy: false,
+    sessionDate: "",
+  },
+  resolver: yupResolver(schema),
+});
+
 
   const policySelected = watch("policy");
 
-  const submit = async (values) => {
-    try {
-      console.log(values);
-      // const user = await login(values).unwrap();
-      // dispatch(setCurrentUser(user));
-      // navigate("/");
-    } catch (error) {
-      setError("email", {
-        type: "manual",
-        message: "Invalid email or password",
-      });
-      setError("phone", {
-        type: "manual",
-        message: "Invalid email or password",
-      });
-    }
-  };
+ const submit = async (values) => {
+  console.log("Formulaire soumis avec : ", values);
+  try {
+    const response = await fetch("https://backend-lemida.onrender.com/api/inscription", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(values),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) throw new Error(data.message);
+
+    alert("Inscription réussie !");
+    setShowInscriptionForm(false);
+  } catch (error) {
+    alert("Erreur lors de l'envoi : " + error.message);
+  }
+};
+
+
   return (
     <div className="fixed inset-0 z-[2000] w-screen h-screen flex items-center justify-center">
       <div
@@ -79,80 +82,118 @@ const InscriptionForm = ({ setShowInscriptionForm }) => {
           <MdClose className="text-white w-5 h-5" />
         </div>
         <div className="w-full flex flex-col gap-8">
-          <h2 className="text-3xl font-medium text-center">Inscription</h2>
+          <h2 className="text-3xl font-medium text-center">Inscription </h2>
           <form onSubmit={handleSubmit(submit)} className="flex flex-col gap-6">
+            {/* Nom et prénom */}
             <div className="relative z-0 w-full group">
               <input
                 type="text"
                 id="username"
+                {...register("username")}
                 className={`${
                   errors.username ? "border-red-600" : "border-main_color"
-                } block py-2.5 px-0 w-full text-base text-gray-700 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-[#20C997] transition-colors duration-200 delay-0 ease-in-expo peer`}
+                } block py-2.5 px-0 w-full text-base text-gray-700 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:border-[#20C997]`}
                 placeholder=" "
-                {...register("username")}
               />
               <label
                 htmlFor="username"
-                className="absolute text-base peer-focus:font-[500] peer-focus:text-base text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                className="absolute text-base text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]"
               >
                 Nom et Prénom
               </label>
             </div>
 
+            {/* Profession */}
             <div className="relative z-0 w-full group">
               <input
                 type="text"
                 id="job"
+                {...register("job")}
                 className={`${
                   errors.job ? "border-red-600" : "border-main_color"
-                } block py-2.5 px-0 w-full text-base text-gray-700 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-[#20C997] transition-colors duration-200 delay-0 ease-in-expo peer`}
+                } block py-2.5 px-0 w-full text-base text-gray-700 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:border-[#20C997]`}
                 placeholder=" "
-                {...register("job")}
               />
               <label
                 htmlFor="job"
-                className="absolute text-base peer-focus:font-[500] peer-focus:text-base text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                className="absolute text-base text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]"
               >
                 Profession
               </label>
             </div>
 
+            {/* Email */}
             <div className="relative z-0 w-full group">
               <input
                 type="text"
                 id="email"
+                {...register("email")}
                 className={`${
                   errors.email ? "border-red-600" : "border-main_color"
-                } block py-2.5 px-0 w-full text-base text-gray-700 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-[#20C997] transition-colors duration-200 delay-0 ease-in-expo peer`}
+                } block py-2.5 px-0 w-full text-base text-gray-700 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:border-[#20C997]`}
                 placeholder=" "
-                {...register("email")}
               />
               <label
                 htmlFor="email"
-                className="absolute text-base peer-focus:font-[500] peer-focus:text-base text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                className="absolute text-base text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]"
               >
                 Email
               </label>
             </div>
 
+            {/* Téléphone */}
             <div className="relative z-0 w-full group">
               <input
                 type="tel"
-                id="phnoe"
+                id="phone"
+                {...register("phone")}
                 className={`${
                   errors.phone ? "border-red-600" : "border-main_color"
-                } block py-2.5 px-0 w-full text-base text-gray-700 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-[#20C997] transition-colors duration-200 delay-0 ease-in-expo peer`}
+                } block py-2.5 px-0 w-full text-base text-gray-700 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:border-[#20C997]`}
                 placeholder=" "
-                {...register("phone")}
               />
               <label
                 htmlFor="phone"
-                className="absolute text-base peer-focus:font-[500] peer-focus:text-base text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                className="absolute text-base text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]"
               >
                 Numéro de téléphone
               </label>
             </div>
 
+             {/* ✅ Sélecteur de session */}
+    {sessions.length > 0 && (
+           
+            <div className="relative z-0 w-full group">
+              <select
+               id="sessionDate"
+               {...register("sessionDate")}
+               className={`${
+               errors.sessionDate ? "border-red-600" : "border-main_color"
+               } block w-full py-2.5 px-6 text-base text-gray-700 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:border-[#20C997]`}
+              >
+               <option value="">Sélectionner une session</option>
+               {sessions.map((session) => (
+               <option key={session.id} value={session.DateSession}>
+               {session.DateSession}
+               </option>
+            ))}
+              </select>
+     
+
+              <label
+                htmlFor="sessionDate"
+                className="absolute text-base text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]"
+              >
+                Date de la session
+              </label>
+              {errors.sessionDate && (
+                <p className="text-red-600 text-sm">{errors.sessionDate.message}</p>
+              )}
+              
+            </div>
+    )}
+
+            {/* Politique de confidentialité */}
             <div className="mt-0">
               <div className="flex gap-2">
                 <input
@@ -183,15 +224,13 @@ const InscriptionForm = ({ setShowInscriptionForm }) => {
               </div>
             </div>
 
+            {/* Bouton d'envoi */}
             <div className="mt-2">
               <button
                 type="submit"
-                disabled={false}
-                className={`w-full rounded-full bg-main_color hover:bg-[#20C997] transition-all duration-500 ease-in-out p-3 text-white text-base font-medium ${
-                  false && "cursor-not-allowed"
-                }`}
+                className="w-full rounded-full bg-main_color hover:bg-[#20C997] transition-all duration-500 ease-in-out p-3 text-white text-base font-medium"
               >
-                {false ? "Chargement..." : "S'inscrire"}
+                S'inscrire
               </button>
             </div>
           </form>

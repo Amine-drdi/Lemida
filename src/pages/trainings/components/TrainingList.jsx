@@ -23,6 +23,7 @@ const TrainingList = ({ trainings }) => {
           instructors={training.instructors}
           duration={training.duration}
           id ={training.id}
+          tarif ={training.tarif}
 
          />
       ))}
