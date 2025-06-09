@@ -64,7 +64,7 @@ const Footer = () => {
   </div>
   <div className="text-gray-300 text-[10px] leading-4 mt-1 md:mt-0">
     <p className="m-0 p-0">
-      Organisme enregistré par l'Agence nationale du DPC<br />
+      Organisme enregistré par l'Agence nationale du DPC.<br />
        Retrouvez toute l'offre du DPC sur{" "}
       <a 
         href="https://www.mondpc.fr" 

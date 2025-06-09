@@ -23,6 +23,7 @@ const schema = yup.object().shape({
   sessionDate: sessions.length > 0
     ? yup.string().required("Veuillez sélectionner une session")
     : yup.string().notRequired(),
+ 
 });
 
  const {
@@ -40,6 +41,7 @@ const schema = yup.object().shape({
     job: "",
     policy: false,
     sessionDate: "",
+     formationTitle: formation.title
   },
   resolver: yupResolver(schema),
 });
@@ -99,7 +101,7 @@ const schema = yup.object().shape({
                 htmlFor="username"
                 className="absolute text-base text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]"
               >
-                Nom et Prénom
+                Nom et Prénom 
               </label>
             </div>
 

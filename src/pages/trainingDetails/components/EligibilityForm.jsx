@@ -44,35 +44,50 @@ const EligibilityForm = ({ setShowEligibilityForm, formation }) => {
   const policySelected = watch("policy");
 
   const handleDownload = async () => {
-    const fileName = `${formation.title}.docx`; // ou .pdf selon le format de ton fichier
-    const values = getValues();
+  const fileName = `${formation.title}.docx`;
+  const values = getValues();
 
-    try {
-      // Enregistrement des infos de l'utilisateur
-      const res = await fetch("https://backend-lemida.onrender.com/api/enregistrer-demande", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...values,
-          formationTitle: formation.title,
-        }),
-      });
+  try {
+    // 1. Enregistrement de la demande
+    const res = await fetch(`https://backend-lemida.onrender.com/api/demande/enregistrer-demande`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        ...values,
+        formationTitle: formation.title,
+      }),
+    });
 
-      if (!res.ok) {
-        throw new Error("Erreur lors de l'enregistrement");
-      }
+    if (!res.ok) throw new Error("Erreur lors de l'enregistrement");
 
-      // Lancer le téléchargement
-      const url = `https://backend-lemida.onrender.com/api/download/${fileName}`;
-      window.open(url, "_blank");
+    // 2. Téléchargement du fichier
+    const downloadRes = await fetch(`https://backend-lemida.onrender.com/api/download/${encodeURIComponent(fileName)}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        ...values,
+        formationTitle: formation.title,
+      }),
+    });
 
-      // Fermer le modal (optionnel)
-      setShowEligibilityForm(false);
-    } catch (err) {
-      console.error("Erreur :", err);
-      alert("Une erreur est survenue. Veuillez réessayer.");
-    }
-  };
+    if (!downloadRes.ok) throw new Error("Erreur lors du téléchargement");
+
+    // Gestion du téléchargement
+    const blob = await downloadRes.blob();
+    const blobUrl = window.URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = blobUrl;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+
+    setShowEligibilityForm(false);
+  } catch (err) {
+    console.error("Erreur :", err);
+    alert("Une erreur est survenue. Veuillez réessayer.");
+  }
+};
 
   return (
     <div className="fixed inset-0 z-[2000] w-screen h-screen flex items-center justify-center">
