@@ -89,7 +89,7 @@ const professionals = Array.isArray(formation.professionals) ? formation.profess
       </div>
 
      
-
+  
       {/* Section principale */}
       <div className="container mx-auto px-4 py-8 flex flex-col lg:flex-row gap-8">
         {/* Contenu principal */}

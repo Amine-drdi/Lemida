@@ -11,48 +11,72 @@ const Footer = () => {
     <footer className="w-full px-4 sm:px-6 md:px-8 bg-gray-900 text-gray-200">
       <div className="flex flex-col gap-4 py-2 md:py-5">
         {/* Logos section */}
-        <div className="flex flex-col md:flex-row items-start justify-start gap-10 w-full max-w-screen-xl mx-auto px-4 sm:px-8 md:px-16">
+                <div className="flex flex-col md:flex-row items-start justify-start gap-6 lg:gap-10 w-full max-w-screen-xl mx-auto px-4 sm:px-8 md:px-16">
           {/* Logo Lemida et paragraphe */}
-          <div className="flex flex-col md:flex-row items-start gap-4">
-            <div className="w-32 h-16 bg-white flex items-center justify-center">
+          <div className="flex flex-col md:flex-row items-start gap-3 md:gap-4 flex-1 min-w-[250px]">
+            <div className="w-32 h-16 bg-white flex items-center justify-center flex-shrink-0">
               <NavLink to="/">
                 <img
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain p-1"
                   src="/images/logo_lemida.png"
                   alt="Lemida"
                 />
               </NavLink>
             </div>
-            <div className="text-gray-300 text-xs">
-              <p className="m-0 p-0">
-                Lemida est un organisme de formation <br /> dédié à la montée en compétences
-                <br /> des professionnels et des entreprises.
-                <br /> En combinant expertise et pédagogie <br /> innovante, nous proposons des
-                formations
-                <br /> adaptées aux exigences actuelles
-                <br /> du marché et aux besoins <br /> spécifiques de chaque apprenant.
+            <div className="text-gray-300 text-xs mt-1 md:mt-0">
+              <p className="m-0 p-0 leading-5">
+                Lemida est un organisme de formation dédié à la montée en compétences 
+                des professionnels et des entreprises. En combinant expertise et pédagogie 
+                innovante, nous proposons des formations adaptées aux exigences actuelles 
+                et aux besoins spécifiques de chaque apprenant.
               </p>
             </div>
           </div>
 
           {/* Certificat Qualiopi et paragraphe */}
-          <div className="flex flex-col md:flex-row items-start gap-4">
-            <img
-              src="/images/logo-qualiopi.jpeg"
-              alt="Qualiopi"
-              className="w-32 h-20 bg-white"
-            />
-            <div className="text-gray-300 text-xs">
-              <p className="m-0 p-0 ">
-                Notre organisme est certifié Qualiopi
-                <br /> pour les actions de formation (L.6313-1 - 1°).
-                <br /> Cette certification atteste de la qualité des
-                <br /> processus que nous mettons en œuvre pour accompagner
-                <br /> nos clients dans leur montée en compétences,
-                <br /> conformément au référentiel national de certification qualité.
+          <div className="flex flex-col md:flex-row items-start gap-3 md:gap-4 flex-1 min-w-[250px]">
+            <div className="w-32 h-20 bg-white flex items-center justify-center flex-shrink-0">
+              <img
+                src="/images/logo-qualiopi.jpeg"
+                alt="Qualiopi"
+                className="w-full h-full object-contain p-1"
+              />
+            </div>
+            <div className="text-gray-300 text-xs mt-1 md:mt-0">
+              <p className="m-0 p-0 leading-5">
+                Notre organisme est certifié Qualiopi pour les actions de formation (L.6313-1 - 1°). 
+                Cette certification atteste de la qualité des processus que nous mettons en œuvre 
+                pour accompagner nos clients dans leur montée en compétences, conformément au 
+                référentiel national de certification qualité.
               </p>
             </div>
           </div>
+
+          {/* Logo DPC et paragraphe */}
+        
+<div className="flex flex-col md:flex-row items-start gap-3 md:gap-4 flex-1 min-w-[250px]">
+  <div className="w-32 h-20 bg-white flex items-center justify-center flex-shrink-0 p-1">
+    <img
+      src="/images/logo-dpc.jpg"
+      alt="DPC"
+      className="w-full h-full object-contain"
+    />
+  </div>
+  <div className="text-gray-300 text-[10px] leading-4 mt-1 md:mt-0">
+    <p className="m-0 p-0">
+      Organisme enregistré par l'Agence nationale du DPC<br />
+       Retrouvez toute l'offre du DPC sur{" "}
+      <a 
+        href="https://www.mondpc.fr" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="hover:underline text-blue-200"
+      >
+        www.mondpc.fr
+      </a>
+    </p>
+  </div>
+</div>
         </div>
 
         {/* Navigation sections */}
