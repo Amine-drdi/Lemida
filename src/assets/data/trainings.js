@@ -31,7 +31,7 @@ export const trainings = [
         ]
         ,
         Public:`Chirurgiens-Dentistes`,
-        tarif: "343,20€",
+        tarif: "343,20",
         prerequis:
         [
         "Savoir lire et écrire en français.",
