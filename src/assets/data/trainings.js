@@ -14,7 +14,7 @@ export const trainings = [
 {
   id: 1,
         image: dentist,
-        title: "Améliorer la gestion de l’occlusion en prothèse",
+        title: "Améliorer la gestion de l'occlusion en prothèse - évaluation des pratiques professionnelles",
         description: `
          La gestion de l’occlusion est un élément clé pour assurer la qualité, la pérennité et le confort des prothèses réalisées par le chirurgien-dentiste. Cette formation, axée sur l’intégration des prothèses dans la bouche des patients, fournit aux praticiens les outils théoriques et pratiques nécessaires pour garantir une réhabilitation prothétique fonctionnelle et durable. Une occlusion maîtrisée permet de prévenir les douleurs temporo-mandibulaires, les déséquilibres posturaux ainsi que l’usure ou la casse prématurée des prothèses.
          Organisée sous forme d'audit clinique, cette formation vise à évaluer les pratiques professionnelles en situation réelle et à mesurer la conformité des actes aux référentiels de bonnes pratiques. Elle accompagne les praticiens dans l’optimisation de leur prise en charge prothétique quotidienne, avec pour objectif une amélioration tangible de la qualité des soins et de la satisfaction patient, ainsi qu'une diminution significative des complications post-prothétiques.
@@ -31,7 +31,7 @@ export const trainings = [
         ]
         ,
         Public:`Chirurgiens-Dentistes`,
-        tarif: "343,50",
+        tarif: "343,20€",
         prerequis:
         [
         "Savoir lire et écrire en français.",
@@ -40,7 +40,7 @@ export const trainings = [
         "Posséder un ordinateur ou une tablette.",
         "Être un professionnel de santé pour bénéficier des prises en charge financières.",
         ],
-        duration:`6 heures (3h + 3h) - prévoir 3 mois entre les deux audits cliniques.`,
+        duration:`4 heures (2h + 2h) - prévoir 3 mois entre les deux audits cliniques.`,
         numeroActionDPC:`9AVK2525009`,
         moyensPedagogiques:
         [
@@ -64,7 +64,7 @@ export const trainings = [
         `
         100% pris en charge sans avance de frais*
 Validant votre obligation de triennale DPC
-211,20€ d’indemnisation en exercice libéral
+140,80€ d’indemnisation en exercice libéral
         `,
 
         remarqueAvantage:'sous réserve d’éligibilité et de budget disponible' ,
@@ -906,8 +906,7 @@ Cette formation permet au kinésithérapeute de consolider ses connaissances sur
 
 Cette formation sur la prise en charge de la lombalgie chronique en cabinet de kinésithérapie permet : 
 Une mise à jour des connaissances des kinésithérapeutes sur l’anatomie et les pathologies de la région lombaire.
-De fournir aux kinésithérapeutes des outils de bilan leur permettant d’évaluer et prendre en charge la douleur, et d’établir un protocole de rééducation adéquat.
-De proposer des moyens de rééducation en cabinet et un accompagnement du patient vers son autonomisation.
+De fournir aux kinésithérapeutes des outils de bilan leur permettant d’évaluer et prendre en charge la douleur, et d’établir un protocole de rééducation adéquat. De proposer des moyens de rééducation en cabinet et un accompagnement du patient vers son autonomisation.
 `,
 
     modalite:["Formation continue - Classe virtuelle"],
