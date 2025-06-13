@@ -155,7 +155,7 @@ Cette formation DPC sous forme d’audit clinique permet au kinésithérapeute d
       {
   id: 3,
         image: dentaire2,
-        title: "Prise en charge de l’usure dentaire pathologique évaluation des pratiques professionnelles",
+        title: "Prise en charge de l’usure dentaire pathologique - évaluation des pratiques professionnelles",
         description: `
 La prise en charge des usures dentaires pathologiques est un enjeu majeur pour préserver la santé bucco-dentaire, la fonction et l’esthétique des patients. Cette formation, centrée sur l’identification, la prévention et la gestion des usures d’origine mécanique, chimique ou fonctionnelle, apporte aux praticiens les connaissances théoriques et les outils cliniques indispensables pour un diagnostic précis et une prise en charge personnalisée.
 
@@ -173,7 +173,7 @@ Elle permet aux chirurgiens-dentistes d’optimiser leur démarche diagnostique 
         ,
         Public:`Chirurgiens-Dentistes`,
         modalite:["Evaluation des pratiques professionnelles – Audit clinique."],
-        tarif: "514,80",
+        tarif: "343,20",
         prerequis:
         [
         "Savoir lire et écrire en français.",
@@ -183,7 +183,7 @@ Elle permet aux chirurgiens-dentistes d’optimiser leur démarche diagnostique 
 "Être un professionnel de santé pour bénéficier des prises en charge financières."
 
         ],
-        duration:`6 heures (3h + 3h) - prévoir 3 mois entre les deux audits cliniques.`,
+        duration:`4 heures (2h + 2h) - prévoir 3 mois entre les deux audits cliniques.`,
         numeroActionDPC:`9AVK2525011
 `,
         moyensPedagogiques:
@@ -208,7 +208,7 @@ Elle permet aux chirurgiens-dentistes d’optimiser leur démarche diagnostique 
         avantage:
         `100% pris en charge sans avance de frais*
 Validant votre obligation de triennale DPC
-211,20€ d’indemnisation en exercice libéral
+140,80€ d’indemnisation en exercice libéral
 `,
 
          remarqueAvantage:'sous réserve d’éligibilité et de budget disponible' ,
@@ -294,7 +294,7 @@ Cette formation DPC sous forme d’audit clinique permet au kinésithérapeute d
       {
   id: 5,
         image: dentaire,
-        title: "Maîtriser les restaurations adhésives évaluation des pratiques professionnelles",
+        title: "Maîtriser les restaurations adhésives - évaluation des pratiques professionnelles",
         description: `
 L’émergence de la dentisterie adhésive constitue une révolution dans la pratique clinique, en privilégiant la préservation tissulaire grâce aux avancées des matériaux et des techniques de collage. Cette formation propose d'accompagner les praticiens dans l'intégration de cette approche minimalement invasive, qui vise à restaurer la substance dentaire manquante tout en conservant un maximum de structures dentaires saines.
 En répondant aux exigences esthétiques, fonctionnelles et de durabilité, la dentisterie adhésive améliore la qualité des soins et optimise la longévité des restaurations.
@@ -310,7 +310,7 @@ Organisée sous forme d'audit clinique, cette formation permet d’évaluer et d
         ,
         Public:`Chirurgiens-Dentistes`,
         modalite:["Evaluation des pratiques professionnelles – Audit clinique"],
-        tarif: "514,80€",
+        tarif: "343,20",
         prerequis:
         [
         "Savoir lire et écrire en français.",
@@ -320,7 +320,7 @@ Organisée sous forme d'audit clinique, cette formation permet d’évaluer et d
          "Être un professionnel de santé pour bénéficier des prises en charge financières."
 
         ],
-        duration:`6 heures (3h + 3h) - prévoir 3 mois entre les deux audits cliniques.`,
+        duration:`4 heures (2h + 2h) - prévoir 3 mois entre les deux audits cliniques.`,
         numeroActionDPC:`9AVK2525012`,
         moyensPedagogiques:
         [
@@ -344,7 +344,7 @@ Organisée sous forme d'audit clinique, cette formation permet d’évaluer et d
         avantage:
         `100% pris en charge sans avance de frais*
 Validant votre obligation de triennale DPC
-211,20€ d’indemnisation en exercice libéral`,
+140,80€ d’indemnisation en exercice libéral`,
 
  remarqueAvantage:'sous réserve d’éligibilité et de budget disponible' ,
 
@@ -895,7 +895,7 @@ Financements:`DPC, FIFPL, AGEFICE, OPCO, France Travail`,
         {
   id: 11,
         image: Lombalgie,
-        title: "Lombalgie chronique évaluation, traitement et prise en charge de la douleur. classe virtuelle",
+        title: "Lombalgie chronique - évaluation, traitement et prise en charge de la douleur. classe virtuelle",
         description: `La lombalgie chronique représente 1/3 des arrêts maladie de plus de 6 mois (INRS). C’est donc un enjeu majeur de santé publique et un enjeu économique important du fait de son retentissement sur la vie professionnelle des malades.
 
 Les causes physiques de cette douleur sont multiples, il est important que les kinésithérapeutes puissent avoir une bonne vision d’ensemble de la pathologie pour pouvoir la prendre en charge efficacement.
