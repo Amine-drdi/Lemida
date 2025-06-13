@@ -34,7 +34,7 @@ const CookieConsent = () => {
 
   const registerVisitor = async (ip, userAgent) => {
     try {
-      await fetch("https://backend-lemida.onrender.com/visitors/track-visitor", {
+      await fetch("http://localhost:3000/visitors/track-visitor", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

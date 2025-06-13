@@ -49,7 +49,7 @@ const EligibilityForm = ({ setShowEligibilityForm, formation }) => {
 
   try {
     // 1. Enregistrement de la demande
-    const res = await fetch(`https://backend-lemida.onrender.com/api/demande/enregistrer-demande`, {
+    const res = await fetch(`http://localhost:3000/api/demande/enregistrer-demande`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -61,7 +61,7 @@ const EligibilityForm = ({ setShowEligibilityForm, formation }) => {
     if (!res.ok) throw new Error("Erreur lors de l'enregistrement");
 
     // 2. Téléchargement du fichier
-    const downloadRes = await fetch(`https://backend-lemida.onrender.com/api/download/${encodeURIComponent(fileName)}`, {
+    const downloadRes = await fetch(`http://localhost:3000/api/download/${encodeURIComponent(fileName)}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

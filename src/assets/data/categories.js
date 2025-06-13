@@ -42,69 +42,69 @@ import { AiFillPrinter } from "react-icons/ai";
 
 export const medicalCategories = [
   {  id : 1,
-    name: "Améliorer la gestion de l’occlusion en prothèse",
+    name: "Améliorer la gestion de l'occlusion en prothèse - évaluation des pratiques professionnelles",
     icon: TbDentalBroken,
   },
   {
     id : 2,
-    name: "Cervicalgie en phase aiguë",
+    name: "Cervicalgie en phase aiguë - évaluation des pratiques en kinésithérapie",
     icon: TbMassage,
   },
   {
     id : 3,
-    name: "Endométriose",
+    name: "Prise en charge de l’usure dentaire pathologique - évaluation des pratiques professionnelles",
     icon: TbDental,
   },
 
   {
     id : 4,
-    name: "Lombalgie chronique en kinésithérapie ",
+    name: "Lombalgie chronique en kinésithérapie évaluation des pratiques professionnelles",
     icon: TbMassage,
   },
 
   {
     id : 5,
-    name: "Maîtriser les restaurations adhésives",
+    name: "Maîtriser les restaurations adhésives - évaluation des pratiques professionnelles",
     icon: TbDental,
   },
 
   {
     id : 6,
-    name: "Prise en charge de l’usure dentaire pathologique",
+    name: "Endométriose _ Dépistage et orientation en cabinet de sage-femme – évaluation des pratiques professionnelles",
     icon: TbDentalBroken,
   },
 
   {
     id : 7,
-    name: "Suivi de grossesse par les sage-femmes",
+    name: "Suivi de grossesse par les sage-femmes évaluation des pratiques professionnelles",
     icon: MdPregnantWoman,
   },
 
   {
     id : 8,
-    name: "Accompagnement à la parentalité par les sage-femmes",
+    name: "Accompagnement à la parentalité par les sage-femmes classe virtuelle",
     icon: RiPsychotherapyLine,
   },
 
   {
     id : 9,
-    name: "Cervicalgie en phase aigüe ",
+    name: "Cervicalgie en phase aigüe - évaluation, traitement et prise en charge de la douleur - Classe virtuelle",
     icon: TbMassage,
   },
 
   {
     id : 10,
-    name: "Endométriose ",
+    name: "Endométriose dépistage et orientation en cabinet de sage-femme - Classe virtuelle",
     icon: FaUserNurse,
   },
 
   { id : 11,
-    name: "Lombalgie chronique",
+    name: "Lombalgie chronique - évaluation, traitement et prise en charge de la douleur. classe virtuelle",
     icon: FaHandHoldingMedical,
   },
 
   { id : 12,
-    name: "Suivi de grossesse par les sage-femmes",
+    name: "Suivi de grossesse par les sage-femmes classe virtuelle",
     icon: LiaStethoscopeSolid,
   },
 ];

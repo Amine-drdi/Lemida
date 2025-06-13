@@ -85,7 +85,7 @@ Validant votre obligation de triennale DPC
       {
   id: 2,
         image: kinésithérapie,
-        title: "évaluation des pratiques en kinésithérapie",
+        title: "Cervicalgie en phase aiguë - évaluation des pratiques en kinésithérapie",
         description: `
 La cervicalgie aiguë est un motif de consultation très fréquent dans les cabinets médicaux. 
 Elle touche indifféremment tous les types de patients, associée ou non à une notion de traumatisme récent. Le retentissement de cette douleur est majeur d’un point de vue individuel pour le patient concerné, du fait de son intensité et de l’impotence fonctionnelle qui en découle.
@@ -612,7 +612,7 @@ Financements:`DPC, FIFPL, AGEFICE, OPCO, France Travail`,
       {
   id: 9,
         image: Kiné,
-        title: "Cervicalgie en phase aigüe évaluation, traitement et prise en charge de la douleur - Classe virtuelle",
+        title: "Cervicalgie en phase aigüe - évaluation, traitement et prise en charge de la douleur - Classe virtuelle",
         description: `En France, 2/3 de la population subit dans sa vie un épisode de cervicalgie, dont nombreux sont aigus avec un déclenchement brutal des symptômes.
 
 Les causes physiques de cette douleur sont multiples, il est important que les kinésithérapeutes puissent avoir une bonne vision d’ensemble de la pathologie pour pouvoir la prendre en charge efficacement.
