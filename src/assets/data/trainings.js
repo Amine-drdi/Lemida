@@ -1,6 +1,6 @@
 import dentist from "../images/formations/pexels-cedric-fauntleroy-4269694.jpg"
 import kinésithérapie from "../images/formations/medical-specialist-helping-elder-patient-to-cure-physical-injury-with-bones-cracking-procedure-stretching-legs-muscles-in-office-therapist-using-alternative-medicine-to-increase-mobility-1024x576.jpg"
-import kiné from "../images/formations/clinique-du-dos--1000x460.webp"
+import kiné from "../images/formations/lombalgie-chronique-cover-ik-paris.jpg.webp"
 import dentaire from "../images/formations/pexels-karolina-grabowska-6627577.jpg"
 import dentaire2 from "../images/formations/pexels-karolina-grabowska-6627453.jpg"
 import sageFemme from "../images/formations/preparation-naissance.jpg"
@@ -15,11 +15,12 @@ export const trainings = [
   id: 1,
         image: dentist,
         title: "Améliorer la gestion de l'occlusion en prothèse - évaluation des pratiques professionnelles",
+        Competences: "EPP" ,
         description: `
-         La gestion de l’occlusion est un élément clé pour assurer la qualité, la pérennité et le confort des prothèses réalisées par le chirurgien-dentiste. Cette formation, axée sur l’intégration des prothèses dans la bouche des patients, fournit aux praticiens les outils théoriques et pratiques nécessaires pour garantir une réhabilitation prothétique fonctionnelle et durable. Une occlusion maîtrisée permet de prévenir les douleurs temporo-mandibulaires, les déséquilibres posturaux ainsi que l’usure ou la casse prématurée des prothèses.
-         Organisée sous forme d'audit clinique, cette formation vise à évaluer les pratiques professionnelles en situation réelle et à mesurer la conformité des actes aux référentiels de bonnes pratiques. Elle accompagne les praticiens dans l’optimisation de leur prise en charge prothétique quotidienne, avec pour objectif une amélioration tangible de la qualité des soins et de la satisfaction patient, ainsi qu'une diminution significative des complications post-prothétiques.
+La gestion de l’occlusion est un élément clé pour assurer la qualité, la pérennité et le confort des prothèses réalisées par le chirurgien-dentiste. Cette formation, axée sur l’intégration des prothèses dans la bouche des patients, fournit aux praticiens les outils théoriques et pratiques nécessaires pour garantir une réhabilitation prothétique fonctionnelle et durable. Une occlusion maîtrisée permet de prévenir les douleurs temporo-mandibulaires, les déséquilibres posturaux ainsi que l’usure ou la casse prématurée des prothèses.
+Organisée sous forme d'audit clinique, cette formation vise à évaluer les pratiques professionnelles en situation réelle et à mesurer la conformité des actes aux référentiels de bonnes pratiques. Elle accompagne les praticiens dans l’optimisation de leur prise en charge prothétique quotidienne, avec pour objectif une amélioration tangible de la qualité des soins et de la satisfaction patient, ainsi qu'une diminution significative des complications post-prothétiques.
+`,
 
-        `,
         modalite:["Evaluation des pratiques professionnelles – Audit clinique",],
         objectifs:[
         
@@ -44,7 +45,7 @@ export const trainings = [
         numeroActionDPC:`9AVK2525009`,
         moyensPedagogiques:
         [
-        "Transmission des consignes et des outils pédagogiques (présentation, grilles d’audit) par voie postale ou électronique.",
+        "Transmission des consignes et des outils pédagogiques (présentation, grilles d’audit) par voie électronique.",
         "Réalisation de deux audits cliniques à distance sur la base de l'analyse de dossiers patients.",
         "Synthèse des résultats avec un retour individualisé aux apprenants."
         ],
@@ -53,7 +54,8 @@ export const trainings = [
         "Grille d’audit clinique conçue selon les objectifs opérationnels de la thématique de formation. Elle comporte des critères, des indicateurs, une échelle de réponse (OUI/NON/N.A) ainsi qu’un espace pour commentaires et justifications.",
         ],
           programme: [ 
-        {introduction:"La formation comprend la réalisation de deux audits cliniques.Chaque audit porte sur l’analyse de 10 dossiers patients, sélectionnés selon des critères d’inclusion et d’exclusion précis.Un délai de trois mois est prévu entre les deux audits, afin de permettre aux participants de mettre en œuvre les actions d’amélioration identifiées lors du premier audit.L’objectif de ce dispositif est d’analyser la pratique médicale réelle observée du professionnel de santé par rapport à la pratique attendue ou recommandée, afin de définir des actions d’amélioration de l’activité professionnelle et de la qualité de la prise en charge des patients.Cette méthodologie vise à mesurer les écarts de pratiques, sensibiliser aux recommandations en vigueur et favoriser une amélioration continue de la qualité des soins.",
+        {introduction:`La formation comprend la réalisation de deux audits cliniques. Chaque audit porte sur l’analyse de 10 dossiers patients, sélectionnés selon des critères d’inclusion et d’exclusion précis. 
+            Un délai de trois mois est prévu entre les deux audits, afin de permettre aux participants de mettre en œuvre les actions d’amélioration identifiées lors du premier audit. L’objectif de ce dispositif est d’analyser la pratique médicale réelle observée du professionnel de santé par rapport à la pratique attendue ou recommandée, afin de définir des actions d’amélioration de l’activité professionnelle et de la qualité de la prise en charge des patients. Cette méthodologie vise à mesurer les écarts de pratiques, sensibiliser aux recommandations en vigueur et favoriser une amélioration continue de la qualité des soins.`,
          module:[],
           Presentation_module:[],
           objectif:[ ],
@@ -71,11 +73,6 @@ Validant votre obligation de triennale DPC
 
 
   skills: [
-          "Connaissance des vaccins et des indications : Compétence dans la compréhension des différents types de vaccins, leurs indications, contre-indications et effets secondaires.",
-          "Préparation et administration des vaccins : Maîtrise des techniques d'administration des vaccins par voie intramusculaire, sous-cutanée et intradermique, en respectant les protocoles de sécurité.",
-          "Gestion des effets indésirables : Savoir identifier et gérer les effets secondaires possibles après une vaccination, incluant les réactions locales et systémiques.",
-          "Éducation et sensibilisation des patients : Capacité à informer les patients sur l'importance de la vaccination, à répondre à leurs questions et à dissiper les inquiétudes. ",
-          "Suivi et enregistrement des vaccinations : Savoir documenter et assurer le suivi des vaccinations administrées, en maintenant des registres précis et conformes aux normes de santé publique.",
         ],
 
 
@@ -86,6 +83,7 @@ Validant votre obligation de triennale DPC
   id: 2,
         image: kinésithérapie,
         title: "Cervicalgie en phase aiguë - évaluation des pratiques en kinésithérapie",
+        Competences: "EPP" ,
         description: `
 La cervicalgie aiguë est un motif de consultation très fréquent dans les cabinets médicaux. 
 Elle touche indifféremment tous les types de patients, associée ou non à une notion de traumatisme récent. Le retentissement de cette douleur est majeur d’un point de vue individuel pour le patient concerné, du fait de son intensité et de l’impotence fonctionnelle qui en découle.
@@ -108,7 +106,7 @@ Cette formation DPC sous forme d’audit clinique permet au kinésithérapeute d
         ]
         ,
         Public:`Masseur-Kinésithérapeute`,
-        tarif: "518,70€",
+        tarif: "296,40",
         prerequis:
         [
         "Savoir lire et écrire en français.",
@@ -118,11 +116,11 @@ Cette formation DPC sous forme d’audit clinique permet au kinésithérapeute d
         "Être un professionnel de santé pour bénéficier des prises en charge financières.",
 ,
         ],
-        duration:`7 heures (4h + 3h) - prévoir 3 mois entre les deux audits cliniques.`,
+        duration:`4h (2h + 2h).`,
         numeroActionDPC:`9AVK2525007`,
         moyensPedagogiques:
         [
-        "Transmission des consignes et des outils pédagogiques (présentation, grilles d’audit) par voie postale ou électronique.",
+        "Transmission des consignes et des outils pédagogiques (présentation, grilles d’audit) par voie électronique.",
         "Réalisation de deux audits cliniques à distance sur la base de l'analyse de dossiers patients.",
         "Synthèse des résultats avec un retour individualisé aux apprenants.",
 
@@ -132,7 +130,7 @@ Cette formation DPC sous forme d’audit clinique permet au kinésithérapeute d
         "Grille d’audit clinique conçue selon les objectifs opérationnels de la thématique de formation. Elle comporte des critères, des indicateurs, une échelle de réponse (OUI/NON/N.A) ainsi qu’un espace pour commentaires et justifications.",
         ],
           programme: [ 
-        {introduction:"La formation comprend la réalisation de deux audits cliniques.Chaque audit porte sur l’analyse de 10 dossiers patients, sélectionnés selon des critères d’inclusion et d’exclusion précis.Un délai de trois mois est prévu entre les deux audits, afin de permettre aux participants de mettre en œuvre les actions d’amélioration identifiées lors du premier audit.L’objectif de ce dispositif est d’analyser la pratique médicale réelle observée du professionnel de santé par rapport à la pratique attendue ou recommandée, afin de définir des actions d’amélioration de l’activité professionnelle et de la qualité de la prise en charge des patients.Cette méthodologie vise à mesurer les écarts de pratiques, sensibiliser aux recommandations en vigueur et favoriser une amélioration continue de la qualité des soins.",
+        {introduction:"La formation comprend la réalisation de deux audits cliniques. Chaque audit porte sur l’analyse de 10 dossiers patients, sélectionnés selon des critères d’inclusion et d’exclusion précis. Un délai de trois mois est prévu entre les deux audits, afin de permettre aux participants de mettre en œuvre les actions d’amélioration identifiées lors du premier audit. L’objectif de ce dispositif est d’analyser la pratique médicale réelle observée du professionnel de santé par rapport à la pratique attendue ou recommandée, afin de définir des actions d’amélioration de l’activité professionnelle et de la qualité de la prise en charge des patients. Cette méthodologie vise à mesurer les écarts de pratiques, sensibiliser aux recommandations en vigueur et favoriser une amélioration continue de la qualité des soins.",
          module:[],
           Presentation_module:[],
           objectif:[ ],
@@ -142,7 +140,7 @@ Cette formation DPC sous forme d’audit clinique permet au kinésithérapeute d
         avantage:
         `100% pris en charge sans avance de frais*
          Validant votre obligation de triennale DPC
-         212,80€ d’indemnisation en exercice libéral
+         121,60€ d’indemnisation en exercice libéral
          `,
 
           remarqueAvantage:'sous réserve d’éligibilité et de budget disponible' ,
@@ -156,6 +154,7 @@ Cette formation DPC sous forme d’audit clinique permet au kinésithérapeute d
   id: 3,
         image: dentaire2,
         title: "Prise en charge de l’usure dentaire pathologique - évaluation des pratiques professionnelles",
+        Competences: "EPP" ,
         description: `
 La prise en charge des usures dentaires pathologiques est un enjeu majeur pour préserver la santé bucco-dentaire, la fonction et l’esthétique des patients. Cette formation, centrée sur l’identification, la prévention et la gestion des usures d’origine mécanique, chimique ou fonctionnelle, apporte aux praticiens les connaissances théoriques et les outils cliniques indispensables pour un diagnostic précis et une prise en charge personnalisée.
 
@@ -188,7 +187,7 @@ Elle permet aux chirurgiens-dentistes d’optimiser leur démarche diagnostique 
 `,
         moyensPedagogiques:
         [
-        "Transmission des consignes et des outils pédagogiques (présentation, grilles d’audit) par voie postale ou électronique.",
+        "Transmission des consignes et des outils pédagogiques (présentation, grilles d’audit) par voie électronique.",
 "Réalisation de deux audits cliniques à distance sur la base de l'analyse de dossiers patients.",
 "Synthèse des résultats avec un retour individualisé aux apprenants.",
 
@@ -198,7 +197,7 @@ Elle permet aux chirurgiens-dentistes d’optimiser leur démarche diagnostique 
         "Grille d’audit clinique conçue selon les objectifs opérationnels de la thématique de formation. Elle comporte des critères, des indicateurs, une échelle de réponse (OUI/NON/N.A) ainsi qu’un espace pour commentaires et justifications.",
         ],
           programme: [ 
-        {introduction:"La formation comprend la réalisation de deux audits cliniques.Chaque audit porte sur l’analyse de 10 dossiers patients, sélectionnés selon des critères d’inclusion et d’exclusion précis.Un délai de trois mois est prévu entre les deux audits, afin de permettre aux participants de mettre en œuvre les actions d’amélioration identifiées lors du premier audit.L’objectif de ce dispositif est d’analyser la pratique médicale réelle observée du professionnel de santé par rapport à la pratique attendue ou recommandée, afin de définir des actions d’amélioration de l’activité professionnelle et de la qualité de la prise en charge des patients.Cette méthodologie vise à mesurer les écarts de pratiques, sensibiliser aux recommandations en vigueur et favoriser une amélioration continue de la qualité des soins.",
+        {introduction:"La formation comprend la réalisation de deux audits cliniques. Chaque audit porte sur l’analyse de 10 dossiers patients, sélectionnés selon des critères d’inclusion et d’exclusion précis. Un délai de trois mois est prévu entre les deux audits, afin de permettre aux participants de mettre en œuvre les actions d’amélioration identifiées lors du premier audit. L’objectif de ce dispositif est d’analyser la pratique médicale réelle observée du professionnel de santé par rapport à la pratique attendue ou recommandée, afin de définir des actions d’amélioration de l’activité professionnelle et de la qualité de la prise en charge des patients. Cette méthodologie vise à mesurer les écarts de pratiques, sensibiliser aux recommandations en vigueur et favoriser une amélioration continue de la qualité des soins.",
          module:[],
           Presentation_module:[],
           objectif:[ ],
@@ -223,7 +222,8 @@ Validant votre obligation de triennale DPC
       {
   id: 4,
         image: kiné,
-        title: "Lombalgie chronique en kinésithérapie évaluation des pratiques professionnelles",
+        title: "Lombalgie chronique en kinésithérapie - évaluation des pratiques professionnelles",
+        Competences: "EPP" ,
         description: `
 La lombalgie chronique est une des douleurs chroniques les plus fréquentes. Elle représente à elle seule 1/3 des arrêts maladie de plus de 6 mois (INRS). 
 
@@ -244,7 +244,7 @@ Cette formation DPC sous forme d’audit clinique permet au kinésithérapeute d
         ]
         ,
         Public:`Masseur-Kinésithérapeute`,
-        tarif: "518,70€",
+        tarif: "296,40",
         prerequis:
         [
         "Savoir lire et écrire en français.",
@@ -254,13 +254,13 @@ Cette formation DPC sous forme d’audit clinique permet au kinésithérapeute d
         "Être un professionnel de santé pour bénéficier des prises en charge financières."
 ,
         ],
-        duration:`7 heures (4h + 3h)  - prévoir 3 mois entre les deux audits cliniques.
+        duration:`4h (2h + 2h)
 `,
         numeroActionDPC:`9AVK2525008
 `,
         moyensPedagogiques:
         [
-        "Transmission des consignes et des outils pédagogiques (présentation, grilles d’audit) par voie postale ou électronique.",
+        "Transmission des consignes et des outils pédagogiques (présentation, grilles d’audit) par voie électronique.",
         "Réalisation de deux audits cliniques à distance sur la base de l'analyse de dossiers patients.",
         "Synthèse des résultats avec un retour individualisé aux apprenants.",
 
@@ -270,7 +270,7 @@ Cette formation DPC sous forme d’audit clinique permet au kinésithérapeute d
         "Grille d’audit clinique conçue selon les objectifs opérationnels de la thématique de formation. Elle comporte des critères, des indicateurs, une échelle de réponse (OUI/NON/N.A) ainsi qu’un espace pour commentaires et justifications.",
         ],
           programme: [ 
-        {introduction:"La formation comprend la réalisation de deux audits cliniques.Chaque audit porte sur l’analyse de 10 dossiers patients, sélectionnés selon des critères d’inclusion et d’exclusion précis.Un délai de trois mois est prévu entre les deux audits, afin de permettre aux participants de mettre en œuvre les actions d’amélioration identifiées lors du premier audit.L’objectif de ce dispositif est d’analyser la pratique médicale réelle observée du professionnel de santé par rapport à la pratique attendue ou recommandée, afin de définir des actions d’amélioration de l’activité professionnelle et de la qualité de la prise en charge des patients.Cette méthodologie vise à mesurer les écarts de pratiques, sensibiliser aux recommandations en vigueur et favoriser une amélioration continue de la qualité des soins.",
+        {introduction:"La formation comprend la réalisation de deux audits cliniques. Chaque audit porte sur l’analyse de 10 dossiers patients, sélectionnés selon des critères d’inclusion et d’exclusion précis. Un délai de trois mois est prévu entre les deux audits, afin de permettre aux participants de mettre en œuvre les actions d’amélioration identifiées lors du premier audit. L’objectif de ce dispositif est d’analyser la pratique médicale réelle observée du professionnel de santé par rapport à la pratique attendue ou recommandée, afin de définir des actions d’amélioration de l’activité professionnelle et de la qualité de la prise en charge des patients.Cette méthodologie vise à mesurer les écarts de pratiques, sensibiliser aux recommandations en vigueur et favoriser une amélioration continue de la qualité des soins.",
          module:[],
           Presentation_module:[],
           objectif:[ ],
@@ -280,7 +280,7 @@ Cette formation DPC sous forme d’audit clinique permet au kinésithérapeute d
         avantage:
         `100% pris en charge sans avance de frais*
         Validant votre obligation de triennale DPC
-        212,80€ d’indemnisation en exercice libéral`,
+        121,60€ d’indemnisation en exercice libéral`,
 
          remarqueAvantage:'sous réserve d’éligibilité et de budget disponible' ,
 
@@ -295,6 +295,7 @@ Cette formation DPC sous forme d’audit clinique permet au kinésithérapeute d
   id: 5,
         image: dentaire,
         title: "Maîtriser les restaurations adhésives - évaluation des pratiques professionnelles",
+        Competences: "EPP" ,
         description: `
 L’émergence de la dentisterie adhésive constitue une révolution dans la pratique clinique, en privilégiant la préservation tissulaire grâce aux avancées des matériaux et des techniques de collage. Cette formation propose d'accompagner les praticiens dans l'intégration de cette approche minimalement invasive, qui vise à restaurer la substance dentaire manquante tout en conservant un maximum de structures dentaires saines.
 En répondant aux exigences esthétiques, fonctionnelles et de durabilité, la dentisterie adhésive améliore la qualité des soins et optimise la longévité des restaurations.
@@ -324,7 +325,7 @@ Organisée sous forme d'audit clinique, cette formation permet d’évaluer et d
         numeroActionDPC:`9AVK2525012`,
         moyensPedagogiques:
         [
-        "Transmission des consignes et des outils pédagogiques (présentation, grilles d’audit) par voie postale ou électronique.",
+        "Transmission des consignes et des outils pédagogiques (présentation, grilles d’audit) par voie électronique.",
         "Réalisation de deux audits cliniques à distance sur la base de l'analyse de dossiers patients.",
         "Synthèse des résultats avec un retour individualisé aux apprenants.",
 
@@ -334,7 +335,7 @@ Organisée sous forme d'audit clinique, cette formation permet d’évaluer et d
         "Grille d’audit clinique conçue selon les objectifs opérationnels de la thématique de formation. Elle comporte des critères, des indicateurs, une échelle de réponse (OUI/NON/N.A) ainsi qu’un espace pour commentaires et justifications.",
         ],
           programme: [ 
-        {introduction:"La formation comprend la réalisation de deux audits cliniques.Chaque audit porte sur l’analyse de 10 dossiers patients, sélectionnés selon des critères d’inclusion et d’exclusion précis.Un délai de trois mois est prévu entre les deux audits, afin de permettre aux participants de mettre en œuvre les actions d’amélioration identifiées lors du premier audit.L’objectif de ce dispositif est d’analyser la pratique médicale réelle observée du professionnel de santé par rapport à la pratique attendue ou recommandée, afin de définir des actions d’amélioration de l’activité professionnelle et de la qualité de la prise en charge des patients.Cette méthodologie vise à mesurer les écarts de pratiques, sensibiliser aux recommandations en vigueur et favoriser une amélioration continue de la qualité des soins.",
+        {introduction:"La formation comprend la réalisation de deux audits cliniques. chaque audit porte sur l’analyse de 10 dossiers patients, sélectionnés selon des critères d’inclusion et d’exclusion précis. Un délai de trois mois est prévu entre les deux audits, afin de permettre aux participants de mettre en œuvre les actions d’amélioration identifiées lors du premier audit. L’objectif de ce dispositif est d’analyser la pratique médicale réelle observée du professionnel de santé par rapport à la pratique attendue ou recommandée, afin de définir des actions d’amélioration de l’activité professionnelle et de la qualité de la prise en charge des patients. Cette méthodologie vise à mesurer les écarts de pratiques, sensibiliser aux recommandations en vigueur et favoriser une amélioration continue de la qualité des soins.",
          module:[],
           Presentation_module:[],
           objectif:[ ],
@@ -359,6 +360,7 @@ Validant votre obligation de triennale DPC
   id: 6,
         image: kinésithérapie,
         title: "Endométriose _ Dépistage et orientation en cabinet de sage-femme – évaluation des pratiques professionnelles",
+        Competences: "EPP" ,
         description: `
 Les sages-femmes, par le rôle qu’elles ont auprès des femmes tout au long de leurs vies, demeurent des professionnels de santé phares dans le diagnostic et la prise en charge de cette pathologie qui touche en France entre 1,5 et 2,5 millions de femmes. 
 De par leur formation médicale, les sage-femmes se doivent d’être en capacité de dépister et accompagner leurs patientes atteintes d’endométriose afin de respecter les bonnes pratiques et les recommandations de la HAS. 
@@ -370,16 +372,18 @@ Cette formation DPC, sous forme d’évaluation des pratiques professionnelles, 
         modalite:["Evaluation des pratiques professionnelles – Audit clinique "],
         objectifs:[
         
-       " Optimiser l’identification des signes cliniques évocateurs d’endométriose :",
-       "Améliorer la capacité à détecter les symptômes de l’endométriose (dysménorrhée, douleurs pelviennes chroniques, troubles de la fertilité, etc.) au cours des consultations, afin de poser un premier diagnostic plus précoce.",
-       "Renforcer la prescription d’examens paracliniques adaptés :",
-       "S’assurer de la prescription systématique des examens nécessaires (échographie, IRM, laparoscopie) pour confirmer le diagnostic, en fonction des signes cliniques observés.",
-       "Améliorer la prise en charge thérapeutique de la douleur :",
-       "Optimiser la prescription de traitements hormonaux et antalgiques de première intention pour mieux soulager les douleurs liées à l’endométriose, en adaptant les traitements à chaque patiente.",
-       "Renforcer l’accompagnement et l’information avant le diagnostic :",
-       "Assurer un accompagnement plus structuré et une information claire aux patientes en attente de diagnostic, en les préparant aux étapes suivantes et en réduisant l’anxiété liée à l’incertitude.",
-       "Améliorer la coordination et l’accompagnement multidisciplinaire :",
-       "Renforcer la coordination avec d’autres professionnels de santé (gynécologues, spécialistes de la fertilité, kinésithérapeutes, psychologues, diététiciens…) pour offrir une prise en charge plus complète et personnalisée des patientes suspectes d’endométriose.",
+       ` Optimiser l’identification des signes cliniques évocateurs d’endométriose : 
+          Améliorer la capacité à détecter les symptômes de l’endométriose (dysménorrhée, douleurs pelviennes chroniques, troubles de la fertilité, etc.) au cours des consultations, afin de poser un premier diagnostic plus précoce.
+       ` ,
+       
+       ` Renforcer la prescription d’examens paracliniques adaptés :
+        S’assurer de la prescription systématique des examens nécessaires (échographie, IRM, laparoscopie) pour confirmer le diagnostic, en fonction des signes cliniques observés.` ,
+       `Améliorer la prise en charge thérapeutique de la douleur :
+       Optimiser la prescription de traitements hormonaux et antalgiques de première intention pour mieux soulager les douleurs liées à l’endométriose, en adaptant les traitements à chaque patiente.`,
+       `Renforcer l’accompagnement et l’information avant le diagnostic :
+       Assurer un accompagnement plus structuré et une information claire aux patientes en attente de diagnostic, en les préparant aux étapes suivantes et en réduisant l’anxiété liée à l’incertitude.`,
+       `Améliorer la coordination et l’accompagnement multidisciplinaire :,
+       Renforcer la coordination avec d’autres professionnels de santé (gynécologues, spécialistes de la fertilité, kinésithérapeutes, psychologues, diététiciens…) pour offrir une prise en charge plus complète et personnalisée des patientes suspectes d’endométriose.`,
         ],
         Public:`Sages-femmes`,
         tarif: "343,50€",
@@ -396,7 +400,7 @@ Cette formation DPC, sous forme d’évaluation des pratiques professionnelles, 
         numeroActionDPC:`9AVK2525006`,
         moyensPedagogiques:
         [
-        "Transmission des consignes et des outils pédagogiques (présentation, grilles d’audit).",
+        "Transmission des consignes et des outils pédagogiques (présentation, grilles d’audit) par voie électronique.",
         "Réalisation de deux audits cliniques à distance sur la base de l'analyse de dossiers patients.",
         "Synthèse des résultats avec un retour individualisé aux apprenants.",
 
@@ -406,7 +410,7 @@ Cette formation DPC, sous forme d’évaluation des pratiques professionnelles, 
         "Grille d’audit clinique conçue selon les objectifs opérationnels de la thématique de formation. Elle comporte des critères, des indicateurs, une échelle de réponse (OUI/NON/N.A) ainsi qu’un espace pour commentaires et justifications.",
         ],
          programme: [ 
-        {introduction:"La formation comprend la réalisation de deux audits cliniques.Chaque audit porte sur l’analyse de 10 dossiers patients, sélectionnés selon des critères d’inclusion et d’exclusion précis.Un délai de trois mois est prévu entre les deux audits, afin de permettre aux participants de mettre en œuvre les actions d’amélioration identifiées lors du premier audit.L’objectif de ce dispositif est d’analyser la pratique médicale réelle observée du professionnel de santé par rapport à la pratique attendue ou recommandée, afin de définir des actions d’amélioration de l’activité professionnelle et de la qualité de la prise en charge des patients.Cette méthodologie vise à mesurer les écarts de pratiques, sensibiliser aux recommandations en vigueur et favoriser une amélioration continue de la qualité des soins.",
+        {introduction:"La formation comprend la réalisation de deux audits cliniques .Chaque audit porte sur l’analyse de 10 dossiers patients, sélectionnés selon des critères d’inclusion et d’exclusion précis. Un délai de trois mois est prévu entre les deux audits, afin de permettre aux participants de mettre en œuvre les actions d’amélioration identifiées lors du premier audit. L’objectif de ce dispositif est d’analyser la pratique médicale réelle observée du professionnel de santé par rapport à la pratique attendue ou recommandée, afin de définir des actions d’amélioration de l’activité professionnelle et de la qualité de la prise en charge des patients. Cette méthodologie vise à mesurer les écarts de pratiques, sensibiliser aux recommandations en vigueur et favoriser une amélioration continue de la qualité des soins.",
          module:[],
           Presentation_module:[],
           objectif:[ ],
@@ -430,7 +434,8 @@ Cette formation DPC, sous forme d’évaluation des pratiques professionnelles, 
       {
   id: 7,
         image: grossesse,
-        title: "Suivi de grossesse par les sage-femmes évaluation des pratiques professionnelles",
+        title: "Suivi de grossesse par les sages-femmes - évaluation des pratiques professionnelles",
+        Competences: "EPP" ,
         description: `
 La prise en charge de la grossesse fait partie intégrante du rôle de la sage-femme en 2025. Pour préparer au mieux l’arrivée d’un enfant, il est essentiel que la femme enceinte bénéficie d’un suivi complet, d’une information claire et d’un accompagnement personnalisé, prenant en compte ses antécédents, son unicité et ses facteurs de vulnérabilité. Cela doit s'inscrire dans la politique des “1000 jours”, qui vise une prise en charge globale et adaptée à chaque situation.
 
@@ -461,7 +466,7 @@ Cette formation DPC, qui se présente sous forme d’évaluation des pratiques p
         numeroActionDPC:`9AVK2525005`,
         moyensPedagogiques:
         [
-        "Transmission des consignes et des outils pédagogiques (présentation, grilles d’audit).", 
+        "Transmission des consignes et des outils pédagogiques (présentation, grilles d’audit) par voie électronique.", 
         "Réalisation de deux audits cliniques à distance sur la base de l'analyse de dossiers patients.",
         "Synthèse des résultats avec un retour individualisé aux apprenants."
 
@@ -471,7 +476,7 @@ Cette formation DPC, qui se présente sous forme d’évaluation des pratiques p
         "Grille d’audit clinique conçue selon les objectifs opérationnels de la thématique de formation. Elle comporte des critères, des indicateurs, une échelle de réponse (OUI/NON/N.A) ainsi qu’un espace pour commentaires et justifications.",
         ],
         programme: [ 
-        {introduction:"La formation comprend la réalisation de deux audits cliniques.Chaque audit porte sur l’analyse de 10 dossiers patients, sélectionnés selon des critères d’inclusion et d’exclusion précis.Un délai de trois mois est prévu entre les deux audits, afin de permettre aux participants de mettre en œuvre les actions d’amélioration identifiées lors du premier audit.L’objectif de ce dispositif est d’analyser la pratique médicale réelle observée du professionnel de santé par rapport à la pratique attendue ou recommandée, afin de définir des actions d’amélioration de l’activité professionnelle et de la qualité de la prise en charge des patients.Cette méthodologie vise à mesurer les écarts de pratiques, sensibiliser aux recommandations en vigueur et favoriser une amélioration continue de la qualité des soins.",
+        {introduction:"La formation comprend la réalisation de deux audits cliniques. Chaque audit porte sur l’analyse de 10 dossiers patients, sélectionnés selon des critères d’inclusion et d’exclusion précis. Un délai de trois mois est prévu entre les deux audits, afin de permettre aux participants de mettre en œuvre les actions d’amélioration identifiées lors du premier audit. L’objectif de ce dispositif est d’analyser la pratique médicale réelle observée du professionnel de santé par rapport à la pratique attendue ou recommandée, afin de définir des actions d’amélioration de l’activité professionnelle et de la qualité de la prise en charge des patients. Cette méthodologie vise à mesurer les écarts de pratiques, sensibiliser aux recommandations en vigueur et favoriser une amélioration continue de la qualité des soins.",
          module:[],
           Presentation_module:[],
           objectif:[ ],
@@ -495,7 +500,8 @@ Cette formation DPC, qui se présente sous forme d’évaluation des pratiques p
       {
   id: 8,
         image: sageFemme,
-        title: "Accompagnement à la parentalité par les sage-femmes classe virtuelle",
+        title: "Accompagnement à la parentalité par les sages-femmes - Classe virtuelle",
+         Competences: "FC" ,
         description: `L’accompagnement à la parentalité est partie prenante du métier de sage-femme. Pour que l’arrivée d’un enfant se prépare au mieux, la femme enceinte doit pouvoir être informée et accompagnée en prenant en compte ses antériorités, son individualité et ses facteurs de vulnérabilité sur les périodes pré, et post-natales. 
 Cet accompagnement est nécessaire pour tous les futurs parents et s’inscrit dans la politique des “1000 premiers jours” et des dernières recommandations HAS. 
 Cette formation DPC permet d’actualiser les connaissances et la réflexion sur la pratique des sage-femmes impliquées dans le projet de naissance d’un enfant et l’accompagnement du post partum.`,
@@ -572,9 +578,17 @@ Cette formation DPC permet d’actualiser les connaissances et la réflexion sur
 
           ],
 
+         
         }
         
-        ]    ,    
+        ]    ,   
+        
+         skills: [
+            "Prévention des risques pendant la grossesse : Capacité à conseiller les femmes enceintes sur les risques environnementaux, l’alimentation, et la vaccination, en s’appuyant sur les recommandations récentes de santé publique.",
+            "Réalisation de l’entretien prénatal précoce : Maîtrise des objectifs, des modalités et de la posture professionnelle à adopter lors de l’entretien prénatal précoce, en tenant compte des antécédents et du contexte de chaque patiente.",
+            "Repérage et prise en charge des vulnérabilités : Compétence dans l’identification des situations de vulnérabilité sociale ou psychique, et mise en place d’un accompagnement adapté pour prévenir les risques de fragilité parentale."
+          ],
+
 Financements:`DPC, FIFPL, AGEFICE, OPCO, France Travail`,
         avantage:
         `100% pris en charge sans avance de frais*
@@ -583,7 +597,7 @@ Financements:`DPC, FIFPL, AGEFICE, OPCO, France Travail`,
 
           remarqueAvantage:'sous réserve d’éligibilité et de budget disponible' ,
 
-    skills: [],
+  
 
     Session:[
           
@@ -606,13 +620,22 @@ Financements:`DPC, FIFPL, AGEFICE, OPCO, France Travail`,
         }
       ],
 
+        professionals :[
+          {
+            id: 1,
+            name: "Sébastien FLEURY",
+            image:"https://destinationsante.com/wp-content/uploads/2022/11/infirmier-Rido-1920-shutterstock-e1669651998744.jpg",
+            profession: "Sage-femme de coordination (cadre) au CHU de Toulouse",
 
+          },
+        ],
       },
 
       {
   id: 9,
         image: Kiné,
         title: "Cervicalgie en phase aigüe - évaluation, traitement et prise en charge de la douleur - Classe virtuelle",
+        Competences: "FC" ,
         description: `En France, 2/3 de la population subit dans sa vie un épisode de cervicalgie, dont nombreux sont aigus avec un déclenchement brutal des symptômes.
 
 Les causes physiques de cette douleur sont multiples, il est important que les kinésithérapeutes puissent avoir une bonne vision d’ensemble de la pathologie pour pouvoir la prendre en charge efficacement.
@@ -756,6 +779,7 @@ Financements:`DPC, FIFPL, AGEFICE, OPCO, France Travail`,
   id: 10,
         image: Endométriose,
         title: "Endométriose dépistage et orientation en cabinet de sage-femme - Classe virtuelle",
+         Competences: "FC" ,
         description: `En France, près d’une femme sur dix en âge de procréer est touchée par l’endométriose, une maladie encore trop souvent sous-diagnostiquée, malgré les progrès récents. Le délai moyen pour poser un diagnostic reste de 7 à 10 ans, avec des conséquences importantes sur la qualité de vie des patientes.
 En première ligne du suivi gynécologique, les sages-femmes jouent un rôle clé dans le repérage précoce et l’orientation des femmes atteintes. Cette formation DPC vise à renforcer leurs compétences pour améliorer le dépistage, prescrire les examens de première intention, proposer un traitement initial et accompagner efficacement la gestion de la douleur chronique.
 Basée sur les recommandations de la HAS, elle favorise aussi le travail en réseau avec les autres professionnels de santé, pour une prise en charge globale et personnalisée.
@@ -895,7 +919,8 @@ Financements:`DPC, FIFPL, AGEFICE, OPCO, France Travail`,
         {
   id: 11,
         image: Lombalgie,
-        title: "Lombalgie chronique - évaluation, traitement et prise en charge de la douleur. classe virtuelle",
+        title: "Lombalgie chronique : évaluation, traitement et prise en charge de la douleur - Classe virtuelle",
+        Competences: "FC" ,
         description: `La lombalgie chronique représente 1/3 des arrêts maladie de plus de 6 mois (INRS). C’est donc un enjeu majeur de santé publique et un enjeu économique important du fait de son retentissement sur la vie professionnelle des malades.
 
 Les causes physiques de cette douleur sont multiples, il est important que les kinésithérapeutes puissent avoir une bonne vision d’ensemble de la pathologie pour pouvoir la prendre en charge efficacement.
@@ -988,8 +1013,19 @@ La formation se clôture par une évaluation finale sous forme de questionnaire 
           ],
 
         }
+   
         
-        ]    ,    
+        ]    ,  
+        
+             professionals :[
+          {
+            id: 1,
+            name: "Julien BERTRAND",
+            image:"https://www.maiia.com/files/60e5b8de-d1e7-4447-bc15-c6bd82929407-portrait-au-cabinet-thumbnail.jpg",
+            profession: "Masseur-kinésithérapeute et ostéopathe en exercice libéral",
+
+          },
+        ],
 Financements:`DPC, FIFPL, AGEFICE, OPCO, France Travail`,
         avantage: `100% pris en charge sans avance de frais*\nValidant votre obligation de triennale DPC\n266€ d’indemnisation en exercice libéral`,
 
@@ -1031,7 +1067,8 @@ Financements:`DPC, FIFPL, AGEFICE, OPCO, France Travail`,
           {
   id: 12,
         image: SuiviGrossesse,
-        title: "Suivi de grossesse par les sage-femmes classe virtuelle",
+        Competences: "FC" ,
+        title: "Suivi de grossesse par les sages-femmes - Classe virtuelle",
         description: `Cette formation permet aux sages-femmes de consolider, mettre à jour, et améliorer leurs connaissances concernant le suivi et la prise en charge de la grossesse.  
 
 La prise en charge de la grossesse est partie prenante du métier de sage-femme en 2025. Pour que l’arrivée d’un enfant se prépare au mieux, la femme enceinte doit pouvoir être suivie, informée et accompagnée en prenant en compte ses antériorités, son individualité et ses facteurs de vulnérabilité pour une prise en charge globale et adaptée à chacune, s’inscrivant dans la politique des “1000 jours”. 
@@ -1173,8 +1210,6 @@ Financements:`DPC, FIFPL, AGEFICE, OPCO, France Travail`,
       },
 
 ];
-
-
 
 export const btpTrainings = [
   /*{

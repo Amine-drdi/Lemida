@@ -8,8 +8,7 @@ const Card = (props) => {
   //const { id } = useParams(); // Récupère l'ID de l'URL
 
   const { imageUrl, title, duration, instructors,tarif ,id} = props;
-  console.log(id,imageUrl )
-  console.log("********Tarif*******",tarif )
+
   return (
     <section className="relative group flex flex-col h-[460px] bg-white overflow-hidden">
       <NavLink

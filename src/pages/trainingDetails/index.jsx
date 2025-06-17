@@ -55,7 +55,7 @@ const TrainingDetails = () => {
           setToggleResults("Compétences développées");
         }
         if (rectProgram.top <= 220) {
-          setToggleResults("Programmes");
+          setToggleResults("Programme");
         }
         if (rectAids.top <= 220) {
           setToggleResults("Financements");
@@ -82,7 +82,9 @@ const professionals = Array.isArray(formation.professionals) ? formation.profess
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-4">
-            <h1 className="text-4xl font-extrabold text-white mb-4">{formation.title}</h1>
+            <h1 className="text-4xl font-extrabold text-white mb-4 [-webkit-text-stroke:_1px_black]">
+  {formation.title}
+</h1>
             
           </div>
         </div>
@@ -99,6 +101,7 @@ const professionals = Array.isArray(formation.professionals) ? formation.profess
             <Tab 
               toggleResults={toggleResults}
               setToggleResults={setToggleResults}
+              formation={formation}
             />
           </div>
 
@@ -112,9 +115,11 @@ const professionals = Array.isArray(formation.professionals) ? formation.profess
               <Program formation={formation} />
             </div>
 
-            <div ref={skillsRef} className="bg-white p-6 rounded-lg shadow-sm">
-              <Skills formation={formation}/>
-            </div>
+             {formation.skills && formation.skills.length > 0 && (
+    <div ref={skillsRef} className="bg-white p-6 rounded-lg shadow-sm">
+      <Skills formation={formation}/>
+    </div>
+  )}
 
             {/*<div ref={aidsRef} className="bg-white p-6 rounded-lg shadow-sm">
               <Aids 

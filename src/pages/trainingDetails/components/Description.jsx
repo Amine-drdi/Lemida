@@ -7,15 +7,16 @@ const Description = ({ formation }) => {
         Ce que vous allez apprendre dans cette formation
       </p>
       <div className="max-w-4xl">
-        <p className="sm:text-base text-sm">{formation.description}</p>
+        <p className="sm:text-base text-sm whitespace-pre-line">{formation.description}</p>
+
       </div>
 
       {formation.objectifs?.length > 0 && (
         <>
           <h2 className="text-xl font-semibold text-primary">Objectifs pédagogiques</h2>
-          <ul className="list-disc list-inside text-sm text-gray-600">
+          <ul className="list-disc list-inside text-sm text-gray-600 whitespace-pre-line">
             {formation.objectifs.map((objectif, index) => (
-              <li key={index}>{objectif}</li>
+              <li className="mt-4" key={index}>{objectif}</li>
             ))}
           </ul>
         </>

@@ -10,7 +10,7 @@ const AllTrainings = ({ trainings}) => {
           Toutes les formations
         </p>
         <p className="font-normal md:text-base text-sm text-left text-gray-500 px-8">
-          Accédez à des formations certifiantes, 100% en ligne et financées par
+          Accédez à des formations qualifiantes,, 100% en ligne et financées par
           les dispositifs incontournables, dont le DPC. 
         </p>
       </div>
