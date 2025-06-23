@@ -9,7 +9,7 @@ import Kiné from "../images/formations/cervicalgie-institut-kinesitherapie-pari
 import Endométriose from "../images/formations/irm-pelvienne-un-examen-important-dans-le-diagnostic-de-l-endometriose.png"
 import Lombalgie from "../images/formations/osteo-chiro-crack-sonore-est-gage-efficacite-pour-soulager-mal-dos-scaled.jpg"
 import SuiviGrossesse from "../images/formations/femme-consultation.jpg"
-
+import sage_femme from "../images/formations/Sage-femme.jpg"
 export const trainings = [
 {
   id: 1,
@@ -358,7 +358,7 @@ Validant votre obligation de triennale DPC
 
       {
   id: 6,
-        image: kinésithérapie,
+        image: sage_femme,
         title: "Endométriose _ Dépistage et orientation en cabinet de sage-femme – évaluation des pratiques professionnelles",
         Competences: "EPP" ,
         description: `
@@ -586,7 +586,10 @@ Cette formation DPC permet d’actualiser les connaissances et la réflexion sur
          skills: [
             "Prévention des risques pendant la grossesse : Capacité à conseiller les femmes enceintes sur les risques environnementaux, l’alimentation, et la vaccination, en s’appuyant sur les recommandations récentes de santé publique.",
             "Réalisation de l’entretien prénatal précoce : Maîtrise des objectifs, des modalités et de la posture professionnelle à adopter lors de l’entretien prénatal précoce, en tenant compte des antécédents et du contexte de chaque patiente.",
-            "Repérage et prise en charge des vulnérabilités : Compétence dans l’identification des situations de vulnérabilité sociale ou psychique, et mise en place d’un accompagnement adapté pour prévenir les risques de fragilité parentale."
+            "Repérage et prise en charge des vulnérabilités : Compétence dans l’identification des situations de vulnérabilité sociale ou psychique, et mise en place d’un accompagnement adapté pour prévenir les risques de fragilité parentale.",
+            "Préparation à la naissance : Capacité à proposer et animer des séances de préparation à la naissance individualisées, en lien avec les besoins des futurs parents et leur projet de naissance.",
+            "Organisation du retour à domicile : Aptitude à organiser un retour à domicile sécurisé et serein, en prenant en compte les besoins de la mère, du nouveau-né et du co-parent pendant la première semaine de vie.",
+            "Accompagnement post-natal et contraception : Compétence dans l’accompagnement global de la parentalité durant le post-partum, incluant la mise en place d’une contraception adaptée aux besoins et aux situations cliniques."
           ],
 
 Financements:`DPC, FIFPL, AGEFICE, OPCO, France Travail`,
@@ -629,6 +632,7 @@ Financements:`DPC, FIFPL, AGEFICE, OPCO, France Travail`,
 
           },
         ],
+         
       },
 
       {
@@ -748,6 +752,16 @@ Financements:`DPC, FIFPL, AGEFICE, OPCO, France Travail`,
     "Techniques de rééducation en cabinet : Maîtrise d’une variété de techniques adaptées à la prise en charge de la cervicalgie aiguë, incluant mobilisations, exercices actifs, éducation thérapeutique et gestion de la douleur.",
     "Accompagnement vers l’autonomisation du patient : Savoir transmettre au patient des explications claires sur sa pathologie, l’impliquer activement dans sa prise en charge et favoriser l’autogestion de la douleur."
   ],
+
+             professionals :[
+          {
+            id: 1,
+            name: "Julien BERTRAND",
+            image:"https://www.maiia.com/files/60e5b8de-d1e7-4447-bc15-c6bd82929407-portrait-au-cabinet-thumbnail.jpg",
+            profession: "Masseur-kinésithérapeute et ostéopathe en exercice libéral",
+
+          },
+        ],
 
 
   Session:[
