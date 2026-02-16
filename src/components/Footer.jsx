@@ -9,8 +9,8 @@ const Footer = () => {
 
   // Fonction pour télécharger le certificat Qualiopi
   const handleDownloadCertificat = () => {
-    // Chemin vers le fichier PDF dans le dossier assets/data
-    const pdfUrl = "../../public/certificat-QUA007933-2024-12-16T21_40_34.699Z.pdf";
+    // Chemin vers le fichier PDF dans le dossier public/certificats/
+    const pdfUrl = "/certificats/certificat-QUA007933-2024-12-16T21_40_34.699Z.pdf";
     
     // Créer un lien temporaire pour le téléchargement
     const link = document.createElement("a");
@@ -95,7 +95,7 @@ const Footer = () => {
         {/* Navigation sections */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 text-center md:text-left mx-4 sm:mx-8 md:mx-16">
           {/* Découvrir Lemida */}
-          <div className="">
+          <div>
             <p className="text-base font-medium mb-2">Découvrir Lemida</p>
             <ul className="text-xs space-y-1">
               <li>
@@ -130,7 +130,7 @@ const Footer = () => {
           </div>
 
           {/* Informations légales */}
-          <div className="">
+          <div>
             <p className="text-sm font-medium mb-2">Informations légales</p>
             <ul className="text-xs space-y-1">
               <li>
@@ -160,7 +160,7 @@ const Footer = () => {
           </div>
 
           {/* Contact */}
-          <div className="">
+          <div>
             <p className="text-base font-medium mb-2">Contact</p>
             <ul className="text-xs space-y-1">
               <li className="flex justify-center md:justify-start items-center gap-1">
