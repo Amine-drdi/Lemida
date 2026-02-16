@@ -7,11 +7,25 @@ import { MdOutlineMail, MdOutlinePhone } from "react-icons/md";
 const Footer = () => {
   const currentDate = new Date().getFullYear();
 
+  // Fonction pour télécharger le certificat Qualiopi
+  const handleDownloadCertificat = () => {
+    // Chemin vers le fichier PDF dans le dossier assets/data
+    const pdfUrl = "../../public/certificat-QUA007933-2024-12-16T21_40_34.699Z.pdf";
+    
+    // Créer un lien temporaire pour le téléchargement
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "certificat-qualiopi-lemida.pdf"; // Nom du fichier téléchargé
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <footer className="w-full px-4 sm:px-6 md:px-8 bg-gray-900 text-gray-200">
       <div className="flex flex-col gap-4 py-2 md:py-5">
         {/* Logos section */}
-                <div className="flex flex-col md:flex-row items-start justify-start gap-6 lg:gap-10 w-full max-w-screen-xl mx-auto px-4 sm:px-8 md:px-16">
+        <div className="flex flex-col md:flex-row items-start justify-start gap-6 lg:gap-10 w-full max-w-screen-xl mx-auto px-4 sm:px-8 md:px-16">
           {/* Logo Lemida et paragraphe */}
           <div className="flex flex-col md:flex-row items-start gap-3 md:gap-4 flex-1 min-w-[250px]">
             <div className="w-32 h-16 bg-white flex items-center justify-center flex-shrink-0">
@@ -53,30 +67,29 @@ const Footer = () => {
           </div>
 
           {/* Logo DPC et paragraphe */}
-        
-<div className="flex flex-col md:flex-row items-start gap-3 md:gap-4 flex-1 min-w-[250px]">
-  <div className="w-32 h-20 bg-white flex items-center justify-center flex-shrink-0 p-1">
-    <img
-      src="/images/logo-dpc.jpg"
-      alt="DPC"
-      className="w-full h-full object-contain"
-    />
-  </div>
-  <div className="text-gray-300 text-[10px] leading-4 mt-1 md:mt-0">
-    <p className="m-0 p-0">
-      Organisme enregistré par l'Agence nationale du DPC.<br />
-       Retrouvez toute l'offre du DPC sur{" "}
-      <a 
-        href="https://www.mondpc.fr" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="hover:underline text-blue-200"
-      >
-        www.mondpc.fr
-      </a>
-    </p>
-  </div>
-</div>
+          <div className="flex flex-col md:flex-row items-start gap-3 md:gap-4 flex-1 min-w-[250px]">
+            <div className="w-32 h-20 bg-white flex items-center justify-center flex-shrink-0 p-1">
+              <img
+                src="/images/logo-dpc.jpg"
+                alt="DPC"
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <div className="text-gray-300 text-[10px] leading-4 mt-1 md:mt-0">
+              <p className="m-0 p-0">
+                Organisme enregistré par l'Agence nationale du DPC.<br />
+                 Retrouvez toute l'offre du DPC sur{" "}
+                <a 
+                  href="https://www.mondpc.fr" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:underline text-blue-200"
+                >
+                  www.mondpc.fr
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Navigation sections */}
@@ -134,6 +147,14 @@ const Footer = () => {
                 <NavLink to="/mentions-legales" className="hover:underline">
                   Mentions légales
                 </NavLink>
+              </li>
+              <li>
+                <button 
+                  onClick={handleDownloadCertificat}
+                  className="hover:underline cursor-pointer bg-transparent border-none p-0 text-gray-200 text-xs"
+                >
+                  Télécharger notre certificat Qualiopi
+                </button>
               </li>
             </ul>
           </div>

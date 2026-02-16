@@ -1,5 +1,5 @@
 import dentist from "../images/formations/pexels-cedric-fauntleroy-4269694.jpg"
-import kinésithérapie from "../images/formations/medical-specialist-helping-elder-patient-to-cure-physical-injury-with-bones-cracking-procedure-stretching-legs-muscles-in-office-therapist-using-alternative-medicine-to-increase-mobility-1024x576.jpg"
+import kinésithérapie from "../images/formations/kinesitherapie.jpg"
 import kiné from "../images/formations/lombalgie-chronique-cover-ik-paris.jpg.webp"
 import dentaire from "../images/formations/pexels-karolina-grabowska-6627577.jpg"
 import dentaire2 from "../images/formations/pexels-karolina-grabowska-6627453.jpg"
